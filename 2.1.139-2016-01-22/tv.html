@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>app alphaReleaseAndroidTest</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="static/bootstrap.min.css" rel="stylesheet">
+        <link href="static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="static/spoon.css" rel="stylesheet">
+        <link href="static/nivo-slider.css" rel="stylesheet">
+        <script src="static/jquery.min.js"></script>
+        <script src="static/bootstrap.min.js"></script>
+        <script src="static/jquery.nivo.slider.pack.js"></script>
+        <meta name="description" content="">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1 id="title"></h1>
+                <p id="subtitle"></p>
+            </div>
+
+            <div class="row">
+                <div id="test-info" class="span6">
+                    <!-- Current test information -->
+                    <div id="current-test-info" class="test-result">
+                        <h1 id="test-name"></h1>
+                        <h3 id="test-class-name"></h3>
+                        <h3 id="caption"></h3>
+                    </div>
+
+                    <!-- Overall test information -->
+                    <div id="overall-test-info">
+                        <p>Displaying test <span id="current-test-number">0</span> of <span id="total-test-size">0</span></p>
+                        <p>Tests executed on <span id="test-date">Friday, January 22, 4:17 PM</span>, in <span id="duration">16 minutes, 50 seconds</span></p>
+                    </div>
+                </div>
+                <div id="slider-wrapper" class="theme-default span6">
+                    <div id="slider" class="nivoSlider"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var devices = [
+  {
+    "serial": "emulator-5554",
+    "name": "15-nexus-s",
+    "details": "Running Android 4.0.4 (API 15) with locale en-US",
+    "testResults": [
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages With Images Landscape",
+        "serial": "emulator-5554",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 174,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504765514_Mercury.png",
+            "caption": "Mercury"
+          },
+          {
+            "id": 175,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504771842_Venus.png",
+            "caption": "Venus"
+          },
+          {
+            "id": 176,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504781137_Earth.png",
+            "caption": "Earth"
+          },
+          {
+            "id": 177,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504787810_Mars.png",
+            "caption": "Mars"
+          },
+          {
+            "id": 178,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504793803_Jupiter.png",
+            "caption": "Jupiter"
+          },
+          {
+            "id": 179,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504799379_Saturn.png",
+            "caption": "Saturn"
+          },
+          {
+            "id": 180,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504805018_Uranus.png",
+            "caption": "Uranus"
+          },
+          {
+            "id": 181,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504810809_Neptune.png",
+            "caption": "Neptune"
+          },
+          {
+            "id": 182,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504818802_Barack_Obama.png",
+            "caption": "Barack Obama"
+          },
+          {
+            "id": 183,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504824732_Moon.png",
+            "caption": "Moon"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages With Images Portrait",
+        "serial": "emulator-5554",
+        "status": "fail",
+        "screenshots": [
+          {
+            "id": 184,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504838372_Mercury.png",
+            "caption": "Mercury"
+          },
+          {
+            "id": 185,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504848746_Venus.png",
+            "caption": "Venus"
+          },
+          {
+            "id": 186,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504857470_Earth.png",
+            "caption": "Earth"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Without Images Portrait",
+        "serial": "emulator-5554",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 187,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504704651_Mecyclothorax_aa.png",
+            "caption": "Mecyclothorax Aa"
+          },
+          {
+            "id": 188,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504710413_Mecyclothorax_abax.png",
+            "caption": "Mecyclothorax Abax"
+          },
+          {
+            "id": 189,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504715786_Mecyclothorax_acutangulus.png",
+            "caption": "Mecyclothorax Acutangulus"
+          },
+          {
+            "id": 190,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504721314_Mecyclothorax_aeneipennis.png",
+            "caption": "Mecyclothorax Aeneipennis"
+          },
+          {
+            "id": 191,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504727323_Mecyclothorax_aeneus.png",
+            "caption": "Mecyclothorax Aeneus"
+          },
+          {
+            "id": 192,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504733224_Mecyclothorax_altiusculoides.png",
+            "caption": "Mecyclothorax Altiusculoides"
+          },
+          {
+            "id": 193,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504739056_Mecyclothorax_altiusculus.png",
+            "caption": "Mecyclothorax Altiusculus"
+          },
+          {
+            "id": 194,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504744941_Mecyclothorax_amaroides.png",
+            "caption": "Mecyclothorax Amaroides"
+          },
+          {
+            "id": 195,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504751104_Mecyclothorax_ambiguus.png",
+            "caption": "Mecyclothorax Ambiguus"
+          },
+          {
+            "id": 196,
+            "path": "image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504757176_Mecyclothorax_angulosus.png",
+            "caption": "Mecyclothorax Angulosus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "serial": "G0K0H40454230SPH",
+    "name": "Amazon KFFOWI",
+    "details": "Running Android 5.1 (API 22) with locale en-US",
+    "testResults": [
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Rtl Landscape",
+        "serial": "G0K0H40454230SPH",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 48,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1453504978767_Algebra.png",
+            "caption": "Algebra"
+          },
+          {
+            "id": 49,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1453504986495_Water.png",
+            "caption": "Water"
+          },
+          {
+            "id": 50,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1453504993402_Dinosaur.png",
+            "caption": "Dinosaur"
+          },
+          {
+            "id": 51,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1453505001208_Helium.png",
+            "caption": "Helium"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Rtl Portrait",
+        "serial": "G0K0H40454230SPH",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 52,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1453504887239_Algebra.png",
+            "caption": "Algebra"
+          },
+          {
+            "id": 53,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1453504893892_Water.png",
+            "caption": "Water"
+          },
+          {
+            "id": 54,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1453504901442_Dinosaur.png",
+            "caption": "Dinosaur"
+          },
+          {
+            "id": 55,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1453504909468_Helium.png",
+            "caption": "Helium"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages With Images Landscape",
+        "serial": "G0K0H40454230SPH",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 56,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504735898_Mercury.png",
+            "caption": "Mercury"
+          },
+          {
+            "id": 57,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504742222_Venus.png",
+            "caption": "Venus"
+          },
+          {
+            "id": 58,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504749128_Earth.png",
+            "caption": "Earth"
+          },
+          {
+            "id": 59,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504756790_Mars.png",
+            "caption": "Mars"
+          },
+          {
+            "id": 60,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504764061_Jupiter.png",
+            "caption": "Jupiter"
+          },
+          {
+            "id": 61,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504770990_Saturn.png",
+            "caption": "Saturn"
+          },
+          {
+            "id": 62,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504777599_Uranus.png",
+            "caption": "Uranus"
+          },
+          {
+            "id": 63,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504784102_Neptune.png",
+            "caption": "Neptune"
+          },
+          {
+            "id": 64,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504797774_Barack_Obama.png",
+            "caption": "Barack Obama"
+          },
+          {
+            "id": 65,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504805415_Moon.png",
+            "caption": "Moon"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages With Images Portrait",
+        "serial": "G0K0H40454230SPH",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 66,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504813227_Mercury.png",
+            "caption": "Mercury"
+          },
+          {
+            "id": 67,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504819549_Venus.png",
+            "caption": "Venus"
+          },
+          {
+            "id": 68,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504826334_Earth.png",
+            "caption": "Earth"
+          },
+          {
+            "id": 69,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504833929_Mars.png",
+            "caption": "Mars"
+          },
+          {
+            "id": 70,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504841383_Jupiter.png",
+            "caption": "Jupiter"
+          },
+          {
+            "id": 71,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504848587_Saturn.png",
+            "caption": "Saturn"
+          },
+          {
+            "id": 72,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504855257_Uranus.png",
+            "caption": "Uranus"
+          },
+          {
+            "id": 73,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504862009_Neptune.png",
+            "caption": "Neptune"
+          },
+          {
+            "id": 74,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504869605_Barack_Obama.png",
+            "caption": "Barack Obama"
+          },
+          {
+            "id": 75,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504876992_Moon.png",
+            "caption": "Moon"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Without Images Landscape",
+        "serial": "G0K0H40454230SPH",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 76,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504916557_Mecyclothorax_aa.png",
+            "caption": "Mecyclothorax Aa"
+          },
+          {
+            "id": 77,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504922437_Mecyclothorax_abax.png",
+            "caption": "Mecyclothorax Abax"
+          },
+          {
+            "id": 78,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504928391_Mecyclothorax_acutangulus.png",
+            "caption": "Mecyclothorax Acutangulus"
+          },
+          {
+            "id": 79,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504934441_Mecyclothorax_aeneipennis.png",
+            "caption": "Mecyclothorax Aeneipennis"
+          },
+          {
+            "id": 80,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504940353_Mecyclothorax_aeneus.png",
+            "caption": "Mecyclothorax Aeneus"
+          },
+          {
+            "id": 81,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504946247_Mecyclothorax_altiusculoides.png",
+            "caption": "Mecyclothorax Altiusculoides"
+          },
+          {
+            "id": 82,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504952161_Mecyclothorax_altiusculus.png",
+            "caption": "Mecyclothorax Altiusculus"
+          },
+          {
+            "id": 83,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504958055_Mecyclothorax_amaroides.png",
+            "caption": "Mecyclothorax Amaroides"
+          },
+          {
+            "id": 84,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504964040_Mecyclothorax_ambiguus.png",
+            "caption": "Mecyclothorax Ambiguus"
+          },
+          {
+            "id": 85,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504969912_Mecyclothorax_angulosus.png",
+            "caption": "Mecyclothorax Angulosus"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Without Images Portrait",
+        "serial": "G0K0H40454230SPH",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 86,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504676181_Mecyclothorax_aa.png",
+            "caption": "Mecyclothorax Aa"
+          },
+          {
+            "id": 87,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504682068_Mecyclothorax_abax.png",
+            "caption": "Mecyclothorax Abax"
+          },
+          {
+            "id": 88,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504687946_Mecyclothorax_acutangulus.png",
+            "caption": "Mecyclothorax Acutangulus"
+          },
+          {
+            "id": 89,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504693843_Mecyclothorax_aeneipennis.png",
+            "caption": "Mecyclothorax Aeneipennis"
+          },
+          {
+            "id": 90,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504699754_Mecyclothorax_aeneus.png",
+            "caption": "Mecyclothorax Aeneus"
+          },
+          {
+            "id": 91,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504705627_Mecyclothorax_altiusculoides.png",
+            "caption": "Mecyclothorax Altiusculoides"
+          },
+          {
+            "id": 92,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504711530_Mecyclothorax_altiusculus.png",
+            "caption": "Mecyclothorax Altiusculus"
+          },
+          {
+            "id": 93,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504717405_Mecyclothorax_amaroides.png",
+            "caption": "Mecyclothorax Amaroides"
+          },
+          {
+            "id": 94,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504723336_Mecyclothorax_ambiguus.png",
+            "caption": "Mecyclothorax Ambiguus"
+          },
+          {
+            "id": 95,
+            "path": "image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504729209_Mecyclothorax_angulosus.png",
+            "caption": "Mecyclothorax Angulosus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "serial": "84B7N15A07005249",
+    "name": "Huawei Nexus 6P",
+    "details": "Running Android 6.0.1 (API 23)",
+    "testResults": []
+  },
+  {
+    "serial": "LGL41C4a28550",
+    "name": "LGE LGL41C",
+    "details": "Running Android 4.4.2 (API 19) with locale en-US",
+    "testResults": [
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Rtl Landscape",
+        "serial": "LGL41C4a28550",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 126,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1453505005358_Algebra.png",
+            "caption": "Algebra"
+          },
+          {
+            "id": 127,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1453505012594_Water.png",
+            "caption": "Water"
+          },
+          {
+            "id": 128,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1453505020065_Dinosaur.png",
+            "caption": "Dinosaur"
+          },
+          {
+            "id": 129,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1453505029307_Helium.png",
+            "caption": "Helium"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Rtl Portrait",
+        "serial": "LGL41C4a28550",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 130,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1453504904823_Algebra.png",
+            "caption": "Algebra"
+          },
+          {
+            "id": 131,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1453504912703_Water.png",
+            "caption": "Water"
+          },
+          {
+            "id": 132,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1453504920718_Dinosaur.png",
+            "caption": "Dinosaur"
+          },
+          {
+            "id": 133,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1453504928778_Helium.png",
+            "caption": "Helium"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages With Images Landscape",
+        "serial": "LGL41C4a28550",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 134,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504743894_Mercury.png",
+            "caption": "Mercury"
+          },
+          {
+            "id": 135,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504750604_Venus.png",
+            "caption": "Venus"
+          },
+          {
+            "id": 136,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504757980_Earth.png",
+            "caption": "Earth"
+          },
+          {
+            "id": 137,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504765524_Mars.png",
+            "caption": "Mars"
+          },
+          {
+            "id": 138,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504772790_Jupiter.png",
+            "caption": "Jupiter"
+          },
+          {
+            "id": 139,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504780097_Saturn.png",
+            "caption": "Saturn"
+          },
+          {
+            "id": 140,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504787964_Uranus.png",
+            "caption": "Uranus"
+          },
+          {
+            "id": 141,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504795016_Neptune.png",
+            "caption": "Neptune"
+          },
+          {
+            "id": 142,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504802963_Barack_Obama.png",
+            "caption": "Barack Obama"
+          },
+          {
+            "id": 143,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504810400_Moon.png",
+            "caption": "Moon"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages With Images Portrait",
+        "serial": "LGL41C4a28550",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 144,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504822046_Mercury.png",
+            "caption": "Mercury"
+          },
+          {
+            "id": 145,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504828794_Venus.png",
+            "caption": "Venus"
+          },
+          {
+            "id": 146,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504836178_Earth.png",
+            "caption": "Earth"
+          },
+          {
+            "id": 147,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504843943_Mars.png",
+            "caption": "Mars"
+          },
+          {
+            "id": 148,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504851405_Jupiter.png",
+            "caption": "Jupiter"
+          },
+          {
+            "id": 149,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504858531_Saturn.png",
+            "caption": "Saturn"
+          },
+          {
+            "id": 150,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504867574_Uranus.png",
+            "caption": "Uranus"
+          },
+          {
+            "id": 151,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504875424_Neptune.png",
+            "caption": "Neptune"
+          },
+          {
+            "id": 152,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504883107_Barack_Obama.png",
+            "caption": "Barack Obama"
+          },
+          {
+            "id": 153,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504890523_Moon.png",
+            "caption": "Moon"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Without Images Landscape",
+        "serial": "LGL41C4a28550",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 154,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504939705_Mecyclothorax_aa.png",
+            "caption": "Mecyclothorax Aa"
+          },
+          {
+            "id": 155,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504945759_Mecyclothorax_abax.png",
+            "caption": "Mecyclothorax Abax"
+          },
+          {
+            "id": 156,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504951691_Mecyclothorax_acutangulus.png",
+            "caption": "Mecyclothorax Acutangulus"
+          },
+          {
+            "id": 157,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504958144_Mecyclothorax_aeneipennis.png",
+            "caption": "Mecyclothorax Aeneipennis"
+          },
+          {
+            "id": 158,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504964757_Mecyclothorax_aeneus.png",
+            "caption": "Mecyclothorax Aeneus"
+          },
+          {
+            "id": 159,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504970777_Mecyclothorax_altiusculoides.png",
+            "caption": "Mecyclothorax Altiusculoides"
+          },
+          {
+            "id": 160,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504976754_Mecyclothorax_altiusculus.png",
+            "caption": "Mecyclothorax Altiusculus"
+          },
+          {
+            "id": 161,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504982842_Mecyclothorax_amaroides.png",
+            "caption": "Mecyclothorax Amaroides"
+          },
+          {
+            "id": 162,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504988848_Mecyclothorax_ambiguus.png",
+            "caption": "Mecyclothorax Ambiguus"
+          },
+          {
+            "id": 163,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453504994983_Mecyclothorax_angulosus.png",
+            "caption": "Mecyclothorax Angulosus"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Without Images Portrait",
+        "serial": "LGL41C4a28550",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 164,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504680215_Mecyclothorax_aa.png",
+            "caption": "Mecyclothorax Aa"
+          },
+          {
+            "id": 165,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504686464_Mecyclothorax_abax.png",
+            "caption": "Mecyclothorax Abax"
+          },
+          {
+            "id": 166,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504692550_Mecyclothorax_acutangulus.png",
+            "caption": "Mecyclothorax Acutangulus"
+          },
+          {
+            "id": 167,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504698726_Mecyclothorax_aeneipennis.png",
+            "caption": "Mecyclothorax Aeneipennis"
+          },
+          {
+            "id": 168,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504704778_Mecyclothorax_aeneus.png",
+            "caption": "Mecyclothorax Aeneus"
+          },
+          {
+            "id": 169,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504710913_Mecyclothorax_altiusculoides.png",
+            "caption": "Mecyclothorax Altiusculoides"
+          },
+          {
+            "id": 170,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504716988_Mecyclothorax_altiusculus.png",
+            "caption": "Mecyclothorax Altiusculus"
+          },
+          {
+            "id": 171,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504723102_Mecyclothorax_amaroides.png",
+            "caption": "Mecyclothorax Amaroides"
+          },
+          {
+            "id": 172,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504729222_Mecyclothorax_ambiguus.png",
+            "caption": "Mecyclothorax Ambiguus"
+          },
+          {
+            "id": 173,
+            "path": "image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504735470_Mecyclothorax_angulosus.png",
+            "caption": "Mecyclothorax Angulosus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "serial": "0149A4481500E008",
+    "name": "Samsung Galaxy Nexus",
+    "details": "Running Android 4.4.2 (API 19) with locale en-US",
+    "testResults": [
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages With Images Landscape",
+        "serial": "0149A4481500E008",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 96,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504774859_Mercury.png",
+            "caption": "Mercury"
+          },
+          {
+            "id": 97,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504781610_Venus.png",
+            "caption": "Venus"
+          },
+          {
+            "id": 98,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504788826_Earth.png",
+            "caption": "Earth"
+          },
+          {
+            "id": 99,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504795950_Mars.png",
+            "caption": "Mars"
+          },
+          {
+            "id": 100,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504803331_Jupiter.png",
+            "caption": "Jupiter"
+          },
+          {
+            "id": 101,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504810877_Saturn.png",
+            "caption": "Saturn"
+          },
+          {
+            "id": 102,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504817970_Uranus.png",
+            "caption": "Uranus"
+          },
+          {
+            "id": 103,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504824716_Neptune.png",
+            "caption": "Neptune"
+          },
+          {
+            "id": 104,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504832376_Barack_Obama.png",
+            "caption": "Barack Obama"
+          },
+          {
+            "id": 105,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504842968_Moon.png",
+            "caption": "Moon"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages With Images Portrait",
+        "serial": "0149A4481500E008",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 106,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504855275_Mercury.png",
+            "caption": "Mercury"
+          },
+          {
+            "id": 107,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504861970_Venus.png",
+            "caption": "Venus"
+          },
+          {
+            "id": 108,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504869269_Earth.png",
+            "caption": "Earth"
+          },
+          {
+            "id": 109,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504876587_Mars.png",
+            "caption": "Mars"
+          },
+          {
+            "id": 110,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504884018_Jupiter.png",
+            "caption": "Jupiter"
+          },
+          {
+            "id": 111,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504892034_Saturn.png",
+            "caption": "Saturn"
+          },
+          {
+            "id": 112,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504900588_Uranus.png",
+            "caption": "Uranus"
+          },
+          {
+            "id": 113,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504907661_Neptune.png",
+            "caption": "Neptune"
+          },
+          {
+            "id": 114,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504916910_Barack_Obama.png",
+            "caption": "Barack Obama"
+          },
+          {
+            "id": 115,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504925484_Moon.png",
+            "caption": "Moon"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Without Images Portrait",
+        "serial": "0149A4481500E008",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 116,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504707438_Mecyclothorax_aa.png",
+            "caption": "Mecyclothorax Aa"
+          },
+          {
+            "id": 117,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504713737_Mecyclothorax_abax.png",
+            "caption": "Mecyclothorax Abax"
+          },
+          {
+            "id": 118,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504719895_Mecyclothorax_acutangulus.png",
+            "caption": "Mecyclothorax Acutangulus"
+          },
+          {
+            "id": 119,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504727385_Mecyclothorax_aeneipennis.png",
+            "caption": "Mecyclothorax Aeneipennis"
+          },
+          {
+            "id": 120,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504733942_Mecyclothorax_aeneus.png",
+            "caption": "Mecyclothorax Aeneus"
+          },
+          {
+            "id": 121,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504740390_Mecyclothorax_altiusculoides.png",
+            "caption": "Mecyclothorax Altiusculoides"
+          },
+          {
+            "id": 122,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504746707_Mecyclothorax_altiusculus.png",
+            "caption": "Mecyclothorax Altiusculus"
+          },
+          {
+            "id": 123,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504752912_Mecyclothorax_amaroides.png",
+            "caption": "Mecyclothorax Amaroides"
+          },
+          {
+            "id": 124,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504759141_Mecyclothorax_ambiguus.png",
+            "caption": "Mecyclothorax Ambiguus"
+          },
+          {
+            "id": 125,
+            "path": "image/0149A4481500E008/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504765352_Mecyclothorax_angulosus.png",
+            "caption": "Mecyclothorax Angulosus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "serial": "015d2994ed200409",
+    "name": "asus Nexus 7",
+    "details": "Running Android 5.1.1 (API 22) with locale en-US",
+    "testResults": []
+  },
+  {
+    "serial": "42f7300bd9119f15",
+    "name": "samsung SCH-I605",
+    "details": "Running Android 4.4.2 (API 19) with locale en-US",
+    "testResults": []
+  },
+  {
+    "serial": "emulator-5556",
+    "details": "Running Android 5.1.1 (API 22) with locale en-US",
+    "testResults": [
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Rtl Landscape",
+        "serial": "emulator-5556",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 0,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1453505132305_Algebra.png",
+            "caption": "Algebra"
+          },
+          {
+            "id": 1,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1453505141950_Water.png",
+            "caption": "Water"
+          },
+          {
+            "id": 2,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1453505151366_Dinosaur.png",
+            "caption": "Dinosaur"
+          },
+          {
+            "id": 3,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1453505158414_Helium.png",
+            "caption": "Helium"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Rtl Portrait",
+        "serial": "emulator-5556",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 4,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1453505021824_Algebra.png",
+            "caption": "Algebra"
+          },
+          {
+            "id": 5,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1453505029762_Water.png",
+            "caption": "Water"
+          },
+          {
+            "id": 6,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1453505038230_Dinosaur.png",
+            "caption": "Dinosaur"
+          },
+          {
+            "id": 7,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1453505045679_Helium.png",
+            "caption": "Helium"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages With Images Landscape",
+        "serial": "emulator-5556",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 8,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504758683_Mercury.png",
+            "caption": "Mercury"
+          },
+          {
+            "id": 9,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504766352_Venus.png",
+            "caption": "Venus"
+          },
+          {
+            "id": 10,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504775833_Earth.png",
+            "caption": "Earth"
+          },
+          {
+            "id": 11,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504784799_Mars.png",
+            "caption": "Mars"
+          },
+          {
+            "id": 12,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504791154_Jupiter.png",
+            "caption": "Jupiter"
+          },
+          {
+            "id": 13,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504797582_Saturn.png",
+            "caption": "Saturn"
+          },
+          {
+            "id": 14,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504804005_Uranus.png",
+            "caption": "Uranus"
+          },
+          {
+            "id": 15,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504809830_Neptune.png",
+            "caption": "Neptune"
+          },
+          {
+            "id": 16,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504817647_Barack_Obama.png",
+            "caption": "Barack Obama"
+          },
+          {
+            "id": 17,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1453504826022_Moon.png",
+            "caption": "Moon"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages With Images Portrait",
+        "serial": "emulator-5556",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 18,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504836176_Mercury.png",
+            "caption": "Mercury"
+          },
+          {
+            "id": 19,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504842631_Venus.png",
+            "caption": "Venus"
+          },
+          {
+            "id": 20,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504852067_Earth.png",
+            "caption": "Earth"
+          },
+          {
+            "id": 21,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504860004_Mars.png",
+            "caption": "Mars"
+          },
+          {
+            "id": 22,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504867099_Jupiter.png",
+            "caption": "Jupiter"
+          },
+          {
+            "id": 23,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504873307_Saturn.png",
+            "caption": "Saturn"
+          },
+          {
+            "id": 24,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504880550_Uranus.png",
+            "caption": "Uranus"
+          },
+          {
+            "id": 25,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504888182_Neptune.png",
+            "caption": "Neptune"
+          },
+          {
+            "id": 26,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504898526_Barack_Obama.png",
+            "caption": "Barack Obama"
+          },
+          {
+            "id": 27,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1453504907191_Moon.png",
+            "caption": "Moon"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Without Images Landscape",
+        "serial": "emulator-5556",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 28,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453505056843_Mecyclothorax_aa.png",
+            "caption": "Mecyclothorax Aa"
+          },
+          {
+            "id": 29,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453505063880_Mecyclothorax_abax.png",
+            "caption": "Mecyclothorax Abax"
+          },
+          {
+            "id": 30,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453505070389_Mecyclothorax_acutangulus.png",
+            "caption": "Mecyclothorax Acutangulus"
+          },
+          {
+            "id": 31,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453505076177_Mecyclothorax_aeneipennis.png",
+            "caption": "Mecyclothorax Aeneipennis"
+          },
+          {
+            "id": 32,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453505082325_Mecyclothorax_aeneus.png",
+            "caption": "Mecyclothorax Aeneus"
+          },
+          {
+            "id": 33,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453505088393_Mecyclothorax_altiusculoides.png",
+            "caption": "Mecyclothorax Altiusculoides"
+          },
+          {
+            "id": 34,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453505094713_Mecyclothorax_altiusculus.png",
+            "caption": "Mecyclothorax Altiusculus"
+          },
+          {
+            "id": 35,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453505100329_Mecyclothorax_amaroides.png",
+            "caption": "Mecyclothorax Amaroides"
+          },
+          {
+            "id": 36,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453505107323_Mecyclothorax_ambiguus.png",
+            "caption": "Mecyclothorax Ambiguus"
+          },
+          {
+            "id": 37,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1453505113267_Mecyclothorax_angulosus.png",
+            "caption": "Mecyclothorax Angulosus"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "PageLoadTest",
+        "methodPrettyName": "Pages Without Images Portrait",
+        "serial": "emulator-5556",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 38,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504688717_Mecyclothorax_aa.png",
+            "caption": "Mecyclothorax Aa"
+          },
+          {
+            "id": 39,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504695271_Mecyclothorax_abax.png",
+            "caption": "Mecyclothorax Abax"
+          },
+          {
+            "id": 40,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504702521_Mecyclothorax_acutangulus.png",
+            "caption": "Mecyclothorax Acutangulus"
+          },
+          {
+            "id": 41,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504708811_Mecyclothorax_aeneipennis.png",
+            "caption": "Mecyclothorax Aeneipennis"
+          },
+          {
+            "id": 42,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504715393_Mecyclothorax_aeneus.png",
+            "caption": "Mecyclothorax Aeneus"
+          },
+          {
+            "id": 43,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504721546_Mecyclothorax_altiusculoides.png",
+            "caption": "Mecyclothorax Altiusculoides"
+          },
+          {
+            "id": 44,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504727318_Mecyclothorax_altiusculus.png",
+            "caption": "Mecyclothorax Altiusculus"
+          },
+          {
+            "id": 45,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504733260_Mecyclothorax_amaroides.png",
+            "caption": "Mecyclothorax Amaroides"
+          },
+          {
+            "id": 46,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504740392_Mecyclothorax_ambiguus.png",
+            "caption": "Mecyclothorax Ambiguus"
+          },
+          {
+            "id": 47,
+            "path": "image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1453504746863_Mecyclothorax_angulosus.png",
+            "caption": "Mecyclothorax Angulosus"
+          }
+        ]
+      }
+    ]
+  }
+];
+
+            function updateDevice(device) {
+                $('#title').text(device.name);
+                $('#subtitle').text(device.details);
+                $('#total-test-size').text(device.testResults.length)
+
+                testResultIndex = 0
+                updateTest(device.testResults[testResultIndex]);
+            }
+
+            function updateTest(testResult) {
+                $('#current-test-info').removeClass('pass fail error')
+                $('#current-test-info').addClass(testResult.status)
+                $('#test-name').text(testResult.methodPrettyName)
+                $('#test-class-name').text(testResult.classSimpleName)
+
+                $("#slider").empty();
+                $.each(testResult.screenshots, function(index, screenshot) {
+                    tag = '<img alt="' + screenshot.caption + '" src="' + screenshot.path + '" />'
+                    $('#slider').append(tag)
+                });
+
+                $('#current-test-number').text(testResultIndex + 1)
+                screenshotIndex = 0
+
+                // Re-initialize the slider with the new slides
+                $('#slider').nivoSlider({
+                    effect: 'boxRainGrow', // Specify sets like: 'fold,fade,sliceDown'
+                    animSpeed: 500, // Slide transition speed
+                    pauseTime: 3000, // How long each slide will show
+                    directionNav: false, // Next & Prev navigation
+                    controlNavThumbs: false, // Use thumbnails for Control Nav
+                    pauseOnHover: false, // Stop animation while hovering
+                    manualAdvance: false, // Force manual transitions
+                    beforeChange: function(){ // Triggers before a slide transition
+                        screenshotIndex++
+                        if(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex]) {
+                            $('#caption').text(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex].caption)
+                        }
+                    },
+                    lastSlide: function(){ // Triggers when last slide is shown
+                        $('#caption').text("")
+                    },
+                    afterLoad: function(){ // Triggers when slider has loaded
+                        $('#caption').text(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex].caption)
+                    },
+                    slideshowEnd: function() { // Triggers after all slides have been shown
+                        nextTestResult()
+                    }
+                });
+
+                // There's a bug in Nivo where it doesn't know what to do w/ only one screenshot.
+                if(testResult.screenshots.length == 1) {
+                    window.setTimeout(nextTestResult, 3000)
+                }
+            }
+
+            function nextTestResult() {
+                $('#slider').data('nivoslider').stop();
+                $('#slider-wrapper').empty()
+                $('#slider-wrapper').append($('<div id="slider" class="nivoSlider"/>'))
+
+                testResultIndex++
+                tests = devices[deviceIndex].testResults
+                if(testResultIndex < tests.length) {
+                    updateTest(tests[testResultIndex])
+                } else {
+                    nextDevice()
+                }
+            }
+
+            function nextDevice() {
+                if(deviceIndex == devices.length - 1) {
+                    location.reload() // Reload at end to load new spoon results.
+                } else {
+                    deviceIndex++
+                    updateDevice(devices[deviceIndex])
+                }
+            }
+
+            // If we start feeling fancy we could create an actual class. Until then, we're global.
+            var deviceIndex = 0;
+            var testResultIndex = 0;
+            var screenshotIndex = 0;
+
+            // Start it off
+            $(function() {
+                updateDevice(devices[deviceIndex]);
+            });
+        </script>
+    </body>
+</html>

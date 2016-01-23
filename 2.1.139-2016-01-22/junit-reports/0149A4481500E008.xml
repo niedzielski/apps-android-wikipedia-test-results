@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="14" failures="1" errors="0" skipped="0" time="0.0" timestamp="2016-01-22T23:33:11" hostname="localhost">
+  <properties />
+  <testcase name="testSyntaxHighlight" classname="org.wikipedia.editing.richtext.SyntaxHighlighterTest" time="0.581" />
+  <testcase name="testCompare" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelKilometers" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.026" />
+  <testcase name="testGetDistanceLabelMeters" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.001" />
+  <testcase name="testGetDistanceLabelNull" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.026" />
+  <testcase name="testGetDistanceLabelSameLocation" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSort" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.001" />
+  <testcase name="testSortWithNullLocations" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testPagesWithoutImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="72.349" />
+  <testcase name="testPagesWithImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="77.638" />
+  <testcase name="testPagesWithImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="82.585" />
+  <testcase name="testPageFetchWithAmpersand" classname="org.wikipedia.page.PageLoadTest" time="56.056" />
+  <testcase name="testPagesRtlPortrait" classname="org.wikipedia.page.PageLoadTest" time="602.722">
+    <failure>Test failed to run to completion. Reason: 'Failed to receive adb shell test output within 600000 ms. Test may have timed out, or adb connection to device became unresponsive'. Check device logcat for details</failure>
+  </testcase>
+</testsuite>
