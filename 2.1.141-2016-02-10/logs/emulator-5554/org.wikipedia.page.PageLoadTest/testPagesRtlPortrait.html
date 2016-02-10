@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pages Rtl Portrait</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../../static/spoon.css" rel="stylesheet">
+        <script src="../../../static/jquery.min.js"></script>
+        <script src="../../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Test passed in 25 seconds on 15-nexus-s">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Pages Rtl Portrait</h1>
+                <p>Test passed in 25 seconds on 15-nexus-s</p>
+            </div>
+            <div class="row log">
+                <div class="span12">
+                    <table class="table table-striped table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Level</th>
+                                <th>Tag</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="level-info info">
+                                <td>02-10 21:53:52.032</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>started: testPagesRtlPortrait(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>02-10 21:53:52.052</td>
+                                <td>info</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Activities that are still in CREATED to STOPPED: 1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.082</td>
+                                <td>debug</td>
+                                <td>ActivityInstrumentationRule</td>
+                                <td>Launching activity org.wikipedia.page.PageActivity</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.162</td>
+                                <td>debug</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>execStartActivity(context, ibinder, ibinder, activity, intent, int)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.212</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@a8971810 in: PRE_ON_CREATE</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>02-10 21:53:52.212</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppCrashReporter</td>
+                                <td>checkCrashes():39: Checking for HockeyApp crashes.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.212</td>
+                                <td>debug</td>
+                                <td>HockeyApp</td>
+                                <td>Looking for exceptions in: /data/data/org.wikipedia.alpha/files</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.212</td>
+                                <td>debug</td>
+                                <td>HockeyApp</td>
+                                <td>Current handler class = org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.222</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageActivity</td>
+                                <td>registerBus():939: Registered bus.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.222</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@a8971810 in: CREATED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.222</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.RemoteConfigRefreshTask</td>
+                                <td>Skipping recurring task, remote-config-refresher. Last execution was Wed Feb 10 21:50:51 GMT+00:00 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.222</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.snippet.SharedImageCleanupTask</td>
+                                <td>Skipping recurring task, shared-image-cleanup. Last execution was Wed Feb 10 21:50:51 GMT+00:00 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.232</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.recurring.DailyEventTask</td>
+                                <td>Skipping recurring task, dailyEventTask. Last execution was Wed Feb 10 21:50:51 GMT+00:00 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.232</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.alphaupdater.AlphaUpdateChecker</td>
+                                <td>Skipping recurring task, alpha-update-checker. Last execution was Wed Feb 10 21:50:52 GMT+00:00 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.282</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 320K, 18% free 21549K/26119K, paused 0ms+1ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.302</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 17K, 18% free 21532K/26119K, paused 8ms</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>02-10 21:53:52.302</td>
+                                <td>info</td>
+                                <td>dalvikvm-heap</td>
+                                <td>Grow heap (frag case) to 23.892MB for 2949132-byte allocation</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.323</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 0K, 17% free 24412K/29063K, paused 6ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.372</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>loadFromBackStack():209: Loaded page Main Page from backstack</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.392</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@a8971810 in: STARTED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.392</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@a8971810 in: RESUMED</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>02-10 21:53:52.464</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Skipping entry 0x109003a in package table 0 because it is not complex!</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.492</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Algebra tag=Algebra</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.842</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageActivity</td>
+                                <td>unregisterBus():945: Unregistered bus.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.842</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@a9002290 in: STOPPED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.842</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@a9002290 in: DESTROYED</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>02-10 21:53:52.972</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$2</td>
+                                <td>success():279: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-lead/Algebra</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:52.992</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():630: Sent message &#39;displayLeadSection&#39; for page: جبر</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:53.172</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 2709K, 19% free 23716K/29063K, paused 7ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:53.262</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 472K, 18% free 23968K/29063K, paused 0ms+1ms</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>02-10 21:53:53.282</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$17</td>
+                                <td>success():808: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-remaining/%D8%AC%D8%A8%D8%B1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:53.282</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Algebra</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:53.352</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1060K, 18% free 23963K/29063K, paused 5ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:53.382</td>
+                                <td>debug</td>
+                                <td>webviewglue</td>
+                                <td>nativeDestroy view: 0xa5c5a78</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:53.515</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Algebra&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:53.732</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.leadimages.ImageViewWithFace</td>
+                                <td>detectFace():82: Face detection took 285ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:53.862</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 5566K, 31% free 20320K/29063K, paused 1ms+1ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:58.532</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Water tag=Water</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:58.532</td>
+                                <td>debug</td>
+                                <td>Analytics</td>
+                                <td>PageScrollFunnel: Sending event, event_pageID = 1318, event_pageHeight = 19448, event_scrollFluxDown = 0, event_scrollFluxUp = 0, event_maxPercentViewed = 2</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:58.632</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1744K, 30% free 20376K/29063K, paused 16ms</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>02-10 21:53:58.812</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$2</td>
+                                <td>success():279: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-lead/Water</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:58.842</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():630: Sent message &#39;displayLeadSection&#39; for page: ماء</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:59.112</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1237K, 28% free 21121K/29063K, paused 10ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:59.152</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 11K, 27% free 21334K/29063K, paused 1ms+1ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:59.233</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.leadimages.ImageViewWithFace</td>
+                                <td>detectFace():82: Face detection took 54ms</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>02-10 21:53:59.243</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$17</td>
+                                <td>success():808: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-remaining/%D9%85%D8%A7%D8%A1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:59.273</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Water</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:59.323</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 2012K, 27% free 21360K/29063K, paused 1ms+2ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:59.372</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 366K, 21% free 22989K/29063K, paused 1ms+0ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:53:59.842</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Water&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:04.852</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Dinosaur tag=Dinosaur</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:04.882</td>
+                                <td>debug</td>
+                                <td>Analytics</td>
+                                <td>PageScrollFunnel: Sending event, event_pageID = 7, event_pageHeight = 24300, event_scrollFluxDown = 0, event_scrollFluxUp = 0, event_maxPercentViewed = 2</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:05.082</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 3929K, 28% free 21100K/29063K, paused 1ms+1ms</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>02-10 21:54:05.092</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$2</td>
+                                <td>success():279: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-lead/Dinosaur</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:05.102</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():630: Sent message &#39;displayLeadSection&#39; for page: ديناصور</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:05.502</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1712K, 27% free 21433K/29063K, paused 7ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:05.522</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed &lt;1K, 27% free 21448K/29063K, paused 1ms+1ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:05.602</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.leadimages.ImageViewWithFace</td>
+                                <td>detectFace():82: Face detection took 42ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:05.652</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1638K, 26% free 21729K/29063K, paused 0ms+0ms</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>02-10 21:54:05.652</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$17</td>
+                                <td>success():808: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-remaining/%D8%AF%D9%8A%D9%86%D8%A7%D8%B5%D9%88%D8%B1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:05.662</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Dinosaur</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:05.692</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1413K, 26% free 21780K/29063K, paused 6ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:05.772</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 34K, 23% free 22421K/29063K, paused 8ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:06.123</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Dinosaur&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:06.193</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 2178K, 25% free 22016K/29063K, paused 6ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:08.102</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 2552K, 27% free 21416K/29063K, paused 1ms+1ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:11.133</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Helium tag=Helium</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:11.163</td>
+                                <td>debug</td>
+                                <td>Analytics</td>
+                                <td>PageScrollFunnel: Sending event, event_pageID = 46404, event_pageHeight = 40618, event_scrollFluxDown = 0, event_scrollFluxUp = 0, event_maxPercentViewed = 1</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>02-10 21:54:11.832</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$2</td>
+                                <td>success():279: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-lead/Helium</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:11.862</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1791K, 26% free 21654K/29063K, paused 1ms+1ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:11.922</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.leadimages.ImageViewWithFace</td>
+                                <td>detectFace():82: Face detection took 7ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:11.932</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():630: Sent message &#39;displayLeadSection&#39; for page: هيليوم</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>02-10 21:54:12.103</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$17</td>
+                                <td>success():808: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-remaining/%D9%87%D9%8A%D9%84%D9%8A%D9%88%D9%85</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:12.113</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Helium</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:12.123</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 2519K, 28% free 21138K/29063K, paused 6ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:12.143</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1499K, 27% free 21461K/29063K, paused 0ms+1ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:12.312</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Helium&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:12.942</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 2367K, 28% free 21014K/29063K, paused 1ms+1ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:17.193</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1854K, 28% free 21093K/29063K, paused 1ms+2ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:17.322</td>
+                                <td>debug</td>
+                                <td>Analytics</td>
+                                <td>PageScrollFunnel: Sending event, event_pageID = 4401, event_pageHeight = 20780, event_scrollFluxDown = 0, event_scrollFluxUp = 0, event_maxPercentViewed = 2</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>02-10 21:54:17.322</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@a8971810 in: PAUSED</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>02-10 21:54:17.392</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>finished: testPagesRtlPortrait(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
