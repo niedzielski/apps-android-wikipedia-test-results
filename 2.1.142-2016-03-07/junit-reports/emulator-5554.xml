@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="73" failures="8" errors="0" skipped="0" time="785.358" timestamp="2016-03-07T21:20:45" hostname="localhost">
+  <properties />
+  <testcase name="testPreview" classname="org.wikipedia.editing.EditPreviewTaskTest" time="0.402" />
+  <testcase name="testSyntaxHighlight" classname="org.wikipedia.editing.richtext.SyntaxHighlighterTest" time="0.038">
+    <failure>java.lang.RuntimeException: Can't create handler inside thread that has not called Looper.prepare()
+at android.os.Handler.&lt;init&gt;(Handler.java:197)
+at android.os.Handler.&lt;init&gt;(Handler.java:111)
+at android.widget.Editor$UserDictionaryListener.&lt;init&gt;(Editor.java:3836)
+at android.widget.Editor.&lt;init&gt;(Editor.java:192)
+at android.widget.TextView.createEditorIfNeeded(TextView.java:8489)
+at android.widget.TextView.&lt;init&gt;(TextView.java:1121)
+at android.widget.EditText.&lt;init&gt;(EditText.java:60)
+at android.widget.EditText.&lt;init&gt;(EditText.java:56)
+at android.widget.EditText.&lt;init&gt;(EditText.java:52)
+at org.wikipedia.editing.richtext.SyntaxHighlighterTest.testSyntaxHighlight(SyntaxHighlighterTest.java:28)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:54)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:240)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1661)
+</failure>
+  </testcase>
+  <testcase name="testCompare" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelKilometers" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelMeters" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelNull" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelSameLocation" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSort" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSortWithNullLocations" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testPagesWithoutImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="56.966" />
+  <testcase name="testPagesWithImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="101.738" />
+  <testcase name="testPagesWithImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="142.882" />
+  <testcase name="testPageFetchWithAmpersand" classname="org.wikipedia.page.PageLoadTest" time="25.456" />
+  <testcase name="testPagesRtlPortrait" classname="org.wikipedia.page.PageLoadTest" time="47.407">
+    <failure>java.lang.RuntimeException: Could not launch intent Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=org.wikipedia/.page.PageActivity } within 45 seconds. Perhaps the main thread has not gone idle within a reasonable amount of time? There could be an animation or something constantly repainting the screen. Or the activity is doing network calls on creation? See the threaddump logs. For your reference the last time the event queue was idle before your activity launch request was 1457385172026 and now the last time the queue went idle was: 1457385175713. If these numbers are the same your activity might be hogging the event queue.
+at android.support.test.runner.MonitoringInstrumentation.startActivitySync(MonitoringInstrumentation.java:362)
+at android.support.test.rule.ActivityTestRule.launchActivity(ActivityTestRule.java:219)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:255)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:54)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:240)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1661)
+</failure>
+  </testcase>
+  <testcase name="testPagesWithoutImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="53.318">
+    <failure>java.lang.RuntimeException: Could not launch intent Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=org.wikipedia/.page.PageActivity } within 45 seconds. Perhaps the main thread has not gone idle within a reasonable amount of time? There could be an animation or something constantly repainting the screen. Or the activity is doing network calls on creation? See the threaddump logs. For your reference the last time the event queue was idle before your activity launch request was 1457385175713 and now the last time the queue went idle was: 1457385250798. If these numbers are the same your activity might be hogging the event queue.
+at android.support.test.runner.MonitoringInstrumentation.startActivitySync(MonitoringInstrumentation.java:362)
+at android.support.test.rule.ActivityTestRule.launchActivity(ActivityTestRule.java:219)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:255)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:54)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:240)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1661)
+</failure>
+  </testcase>
+  <testcase name="testPageFetch" classname="org.wikipedia.page.PageLoadTest" time="51.053">
+    <failure>java.lang.RuntimeException: Could not launch intent Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=org.wikipedia/.page.PageActivity } within 45 seconds. Perhaps the main thread has not gone idle within a reasonable amount of time? There could be an animation or something constantly repainting the screen. Or the activity is doing network calls on creation? See the threaddump logs. For your reference the last time the event queue was idle before your activity launch request was 1457385250798 and now the last time the queue went idle was: 1457385250798. If these numbers are the same your activity might be hogging the event queue.
+at android.support.test.runner.MonitoringInstrumentation.startActivitySync(MonitoringInstrumentation.java:362)
+at android.support.test.rule.ActivityTestRule.launchActivity(ActivityTestRule.java:219)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:255)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:54)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:240)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1661)
+</failure>
+  </testcase>
+  <testcase name="testPagesRtlLandscape" classname="org.wikipedia.page.PageLoadTest" time="53.636">
+    <failure>java.lang.RuntimeException: Could not launch intent Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=org.wikipedia/.page.PageActivity } within 45 seconds. Perhaps the main thread has not gone idle within a reasonable amount of time? There could be an animation or something constantly repainting the screen. Or the activity is doing network calls on creation? See the threaddump logs. For your reference the last time the event queue was idle before your activity launch request was 1457385250798 and now the last time the queue went idle was: 1457385250798. If these numbers are the same your activity might be hogging the event queue.
+at android.support.test.runner.MonitoringInstrumentation.startActivitySync(MonitoringInstrumentation.java:362)
+at android.support.test.rule.ActivityTestRule.launchActivity(ActivityTestRule.java:219)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:255)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:54)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:240)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1661)
+</failure>
+  </testcase>
+  <testcase name="testNonClosedImgTag" classname="org.wikipedia.savedpages.ImageUrlMapTests" time="8.28" />
+  <testcase name="testUrlRewrite" classname="org.wikipedia.savedpages.ImageUrlMapTests" time="0.703" />
+  <testcase name="testDOMLoaded" classname="org.wikipedia.test.BridgeTests" time="13.624" />
+  <testcase name="testPingBackHandling" classname="org.wikipedia.test.BridgeTests" time="5.954" />
+  <testcase name="testTokenFetch" classname="org.wikipedia.test.CreateAccountTaskTest" time="4.239" />
+  <testcase name="testAbuseFilterTriggerStopOnArbitraryErrorCode" classname="org.wikipedia.test.EditTaskTest" time="5.021" />
+  <testcase name="testEdit" classname="org.wikipedia.test.EditTaskTest" time="1.439" />
+  <testcase name="testCaptcha" classname="org.wikipedia.test.EditTaskTest" time="0.828" />
+  <testcase name="testAbuseFilterTriggerStop" classname="org.wikipedia.test.EditTaskTest" time="0.376" />
+  <testcase name="testAbuseFilterTriggerWarn" classname="org.wikipedia.test.EditTaskTest" time="0.427" />
+  <testcase name="testPageFetch" classname="org.wikipedia.test.FetchSectionWikitextTaskTests" time="2.375" />
+  <testcase name="testEmptyResults" classname="org.wikipedia.test.FullSearchTaskTests" time="1.53" />
+  <testcase name="testFullTextSearchWithResults" classname="org.wikipedia.test.FullSearchTaskTests" time="1.555" />
+  <testcase name="testOneTitle" classname="org.wikipedia.test.GetDescriptionsTaskTests" time="1.532" />
+  <testcase name="testThreeTitles" classname="org.wikipedia.test.GetDescriptionsTaskTests" time="0.201" />
+  <testcase name="testDefaultLocaleAndAcceptLanguageAgree" classname="org.wikipedia.test.LanguageVariantTests" time="0.828" />
+  <testcase name="testLogin" classname="org.wikipedia.test.LoginTaskTest" time="3.461" />
+  <testcase name="testJSONSerialization" classname="org.wikipedia.test.PageTests" time="0.652" />
+  <testcase name="testCanonicalURL" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testColonChar" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testEquals" classname="org.wikipedia.test.PageTitleTests" time="0.025" />
+  <testcase name="testFile" classname="org.wikipedia.test.PageTitleTests" time="0.025" />
+  <testcase name="testFromInternalLink" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testHashChar" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testJSONSerialization" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testMainpage" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testParsing" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testPrefixedText" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testSite" classname="org.wikipedia.test.PageTitleTests" time="0.001" />
+  <testcase name="testSpecial" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testHistoryEntry" classname="org.wikipedia.test.ParcelableTest" time="0.15" />
+  <testcase name="testLruCache" classname="org.wikipedia.test.ParcelableTest" time="0.026" />
+  <testcase name="testPageImage" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testPageProperties" classname="org.wikipedia.test.ParcelableTest" time="0.025" />
+  <testcase name="testPageTitle" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testPageTitleTalk" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testSite" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testJSONSerialization" classname="org.wikipedia.test.SectionTests" time="0.025" />
+  <testcase name="testSectionLead" classname="org.wikipedia.test.SectionTests" time="0.0" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="org.wikipedia.test.SectionTests" time="0.0" />
+  <testcase name="testEquals" classname="org.wikipedia.test.SiteTests" time="0.0" />
+  <testcase name="testIsSupportedSite" classname="org.wikipedia.test.SiteTests" time="0.025" />
+  <testcase name="testNormalization" classname="org.wikipedia.test.SiteTests" time="0.0" />
+  <testcase name="testTitleForInternalLink" classname="org.wikipedia.test.SiteTests" time="0.0" />
+  <testcase name="testFilter1ResultDifferentFromTitle" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.527" />
+  <testcase name="testFilter1ResultSameAsTitleIgnoreCase" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.075" />
+  <testcase name="testFilter4ResultsDifferentFromTitle" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.026" />
+  <testcase name="testFilterNoResults" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.05" />
+  <testcase name="testTask" classname="org.wikipedia.test.SuggestionsTaskTests" time="1.731" />
+  <testcase name="testAllTranslations" classname="org.wikipedia.test.TranslationTests" time="54.759">
+    <failure>java.lang.RuntimeException: Could not launch intent Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=org.wikipedia/.page.PageActivity } within 45 seconds. Perhaps the main thread has not gone idle within a reasonable amount of time? There could be an animation or something constantly repainting the screen. Or the activity is doing network calls on creation? See the threaddump logs. For your reference the last time the event queue was idle before your activity launch request was 1457385496637 and now the last time the queue went idle was: 1457385496637. If these numbers are the same your activity might be hogging the event queue.
+at android.support.test.runner.MonitoringInstrumentation.startActivitySync(MonitoringInstrumentation.java:362)
+at android.test.InstrumentationTestCase.launchActivityWithIntent(InstrumentationTestCase.java:119)
+at android.test.InstrumentationTestCase.launchActivity(InstrumentationTestCase.java:97)
+at android.test.ActivityInstrumentationTestCase2.getActivity(ActivityInstrumentationTestCase2.java:104)
+at org.wikipedia.test.TranslationTests.setUp(TranslationTests.java:43)
+at junit.framework.TestCase.runBare(TestCase.java:132)
+at junit.framework.TestResult$1.protect(TestResult.java:115)
+at android.support.test.internal.runner.junit3.AndroidTestResult.runProtected(AndroidTestResult.java:77)
+at junit.framework.TestResult.run(TestResult.java:118)
+at android.support.test.internal.runner.junit3.AndroidTestResult.run(AndroidTestResult.java:55)
+at junit.framework.TestCase.run(TestCase.java:124)
+at android.support.test.internal.runner.junit3.NonLeakyTestSuite$NonLeakyTest.run(NonLeakyTestSuite.java:63)
+at junit.framework.TestSuite.runTest(TestSuite.java:243)
+at junit.framework.TestSuite.run(TestSuite.java:238)
+at android.support.test.internal.runner.junit3.DelegatingTestSuite.run(DelegatingTestSuite.java:103)
+at android.support.test.internal.runner.junit3.AndroidTestSuite.run(AndroidTestSuite.java:69)
+at android.support.test.internal.runner.junit3.JUnit38ClassRunner.run(JUnit38ClassRunner.java:90)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:54)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:240)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1661)
+</failure>
+  </testcase>
+  <testcase name="testAppropriateThreadException" classname="org.wikipedia.test.concurrency.AsyncTaskTest" time="10.747" />
+  <testcase name="testAppropriateThreadFinish" classname="org.wikipedia.test.concurrency.AsyncTaskTest" time="3.338" />
+  <testcase name="testExceptionHandling" classname="org.wikipedia.test.concurrency.AsyncTaskTest" time="3.638">
+    <failure>junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:48)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at org.wikipedia.test.concurrency.AsyncTaskTest.testExceptionHandling(AsyncTaskTest.java:70)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+at junit.framework.TestCase.runBare(TestCase.java:134)
+at junit.framework.TestResult$1.protect(TestResult.java:115)
+at android.support.test.internal.runner.junit3.AndroidTestResult.runProtected(AndroidTestResult.java:77)
+at junit.framework.TestResult.run(TestResult.java:118)
+at android.support.test.internal.runner.junit3.AndroidTestResult.run(AndroidTestResult.java:55)
+at junit.framework.TestCase.run(TestCase.java:124)
+at android.support.test.internal.runner.junit3.NonLeakyTestSuite$NonLeakyTest.run(NonLeakyTestSuite.java:63)
+at junit.framework.TestSuite.runTest(TestSuite.java:243)
+at junit.framework.TestSuite.run(TestSuite.java:238)
+at android.support.test.internal.runner.junit3.DelegatingTestSuite.run(DelegatingTestSuite.java:103)
+at android.support.test.internal.runner.junit3.AndroidTestSuite.run(AndroidTestSuite.java:69)
+at android.support.test.internal.runner.junit3.JUnit38ClassRunner.run(JUnit38ClassRunner.java:90)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:54)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:240)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1661)
+</failure>
+  </testcase>
+  <testcase name="testFinishHandling" classname="org.wikipedia.test.concurrency.AsyncTaskTest" time="0.426" />
+  <testcase name="testLoadPages" classname="org.wikipedia.test.perf.PageLoadPerformanceTests" time="54.848">
+    <failure>java.lang.RuntimeException: Could not launch intent Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=org.wikipedia/.page.PageActivity } within 45 seconds. Perhaps the main thread has not gone idle within a reasonable amount of time? There could be an animation or something constantly repainting the screen. Or the activity is doing network calls on creation? See the threaddump logs. For your reference the last time the event queue was idle before your activity launch request was 1457385572841 and now the last time the queue went idle was: 1457385572841. If these numbers are the same your activity might be hogging the event queue.
+at android.support.test.runner.MonitoringInstrumentation.startActivitySync(MonitoringInstrumentation.java:362)
+at android.support.test.rule.ActivityTestRule.launchActivity(ActivityTestRule.java:219)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:255)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:54)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:240)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1661)
+</failure>
+  </testcase>
+</testsuite>
