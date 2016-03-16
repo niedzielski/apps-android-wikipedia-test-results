@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Fetch With Ampersand</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../static/spoon.css" rel="stylesheet">
+        <script src="../../static/jquery.min.js"></script>
+        <script src="../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Ran on 7 devices with 2 passing and 5 failing in an average of 5 seconds">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Page Fetch With Ampersand</h1>
+                <p>Ran on 7 devices with 2 passing and 5 failing in an average of 5 seconds</p>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        samsung SCH-I605
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPageFetchWithAmpersand.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/42f7300bd9119f15.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-42f7300bd9119f15">java.lang.RuntimeException: retrofit.RetrofitError: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-42f7300bd9119f15">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.PageLoadLatchCallback.onLoadError(PageLoadLatchCallback.java:17)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.PageFragment.onPageLoadError(PageFragment.java:816)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.JsonPageLoadStrategy$12$1$1.call(JsonPageLoadStrategy.java:494)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.JsonPageLoadStrategy$3.onCatch(JsonPageLoadStrategy.java:333)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:44)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask.finish(AsyncTask.java:632)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask.access$600(AsyncTask.java:177)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Handler.dispatchMessage(Handler.java:102)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Looper.loop(Looper.java:146)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.ActivityThread.main(ActivityThread.java:5602)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invokeNative(Native Method)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Method.java:515)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1283)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1099)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at dalvik.system.NativeStart.main(Native Method)</div>
+                            <div class="stacktrace-line">Caused by: retrofit.RetrofitError: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: retrofit.converter.ConversionException: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Huawei Nexus 6P
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPageFetchWithAmpersand.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/84B7N15A07005249.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        17-nexus-s
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/emulator-5556/org.wikipedia.page.PageLoadTest/testPageFetchWithAmpersand.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/emulator-5556.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-emulator-5556">java.lang.RuntimeException: retrofit.RetrofitError: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-emulator-5556">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.PageLoadLatchCallback.onLoadError(PageLoadLatchCallback.java:17)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.PageFragment.onPageLoadError(PageFragment.java:816)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.JsonPageLoadStrategy$12$1$1.call(JsonPageLoadStrategy.java:494)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.JsonPageLoadStrategy$3.onCatch(JsonPageLoadStrategy.java:333)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:44)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask.finish(AsyncTask.java:631)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask.access$600(AsyncTask.java:177)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Handler.dispatchMessage(Handler.java:99)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Looper.loop(Looper.java:137)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.ActivityThread.main(ActivityThread.java:5041)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invokeNative(Native Method)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Method.java:511)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:560)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at dalvik.system.NativeStart.main(Native Method)</div>
+                            <div class="stacktrace-line">Caused by: retrofit.RetrofitError: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: retrofit.converter.ConversionException: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        Amazon KFFOWI
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPageFetchWithAmpersand.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/G0K0H40454230SPH.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-G0K0H40454230SPH">java.lang.RuntimeException: retrofit.RetrofitError: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-G0K0H40454230SPH">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.PageLoadLatchCallback.onLoadError(PageLoadLatchCallback.java:17)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.PageFragment.onPageLoadError(PageFragment.java:816)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.JsonPageLoadStrategy$12$1$1.call(JsonPageLoadStrategy.java:494)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.JsonPageLoadStrategy$3.onCatch(JsonPageLoadStrategy.java:333)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:44)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask.finish(AsyncTask.java:636)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask.access$500(AsyncTask.java:177)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:653)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Handler.dispatchMessage(Handler.java:102)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Looper.loop(Looper.java:135)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.ActivityThread.main(ActivityThread.java:5468)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Native Method)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Method.java:372)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:976)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:771)</div>
+                            <div class="stacktrace-line">Caused by: retrofit.RetrofitError: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: retrofit.converter.ConversionException: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        LGE LGL41C
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPageFetchWithAmpersand.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/LGL41C4a28550.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        21-nexus-s
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/emulator-5560/org.wikipedia.page.PageLoadTest/testPageFetchWithAmpersand.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/emulator-5560.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-emulator-5560">java.lang.RuntimeException: retrofit.RetrofitError: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-emulator-5560">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.PageLoadLatchCallback.onLoadError(PageLoadLatchCallback.java:17)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.PageFragment.onPageLoadError(PageFragment.java:816)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.JsonPageLoadStrategy$12$1$1.call(JsonPageLoadStrategy.java:494)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.JsonPageLoadStrategy$3.onCatch(JsonPageLoadStrategy.java:333)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:44)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask.finish(AsyncTask.java:632)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask.access$600(AsyncTask.java:177)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Handler.dispatchMessage(Handler.java:102)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Looper.loop(Looper.java:135)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.ActivityThread.main(ActivityThread.java:5221)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Native Method)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Method.java:372)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)</div>
+                            <div class="stacktrace-line">Caused by: retrofit.RetrofitError: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: retrofit.converter.ConversionException: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        15-nexus-s
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/emulator-5554/org.wikipedia.page.PageLoadTest/testPageFetchWithAmpersand.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/emulator-5554.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-emulator-5554">java.lang.RuntimeException: retrofit.RetrofitError: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-emulator-5554">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.PageLoadLatchCallback.onLoadError(PageLoadLatchCallback.java:17)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.PageFragment.onPageLoadError(PageFragment.java:816)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.JsonPageLoadStrategy$12$1$1.call(JsonPageLoadStrategy.java:494)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.page.JsonPageLoadStrategy$3.onCatch(JsonPageLoadStrategy.java:333)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:44)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask.finish(AsyncTask.java:602)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask.access$600(AsyncTask.java:156)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:615)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Handler.dispatchMessage(Handler.java:99)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Looper.loop(Looper.java:137)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.ActivityThread.main(ActivityThread.java:4424)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invokeNative(Native Method)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Method.java:511)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at dalvik.system.NativeStart.main(Native Method)</div>
+                            <div class="stacktrace-line">Caused by: retrofit.RetrofitError: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: retrofit.converter.ConversionException: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                            <div class="stacktrace-line">Caused by: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('.icon, .thumbnail img').tooltip({
+                container: 'body'
+            });
+        </script>
+    </body>
+</html>

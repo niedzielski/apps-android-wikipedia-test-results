@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="14" failures="1" errors="0" skipped="0" time="0.0" timestamp="2016-03-16T21:40:00" hostname="localhost">
+  <properties />
+  <testcase name="testPreview" classname="org.wikipedia.editing.EditPreviewTaskTest" time="0.529" />
+  <testcase name="testSyntaxHighlight" classname="org.wikipedia.editing.richtext.SyntaxHighlighterTest" time="0.503" />
+  <testcase name="testCompare" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelKilometers" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelMeters" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelNull" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelSameLocation" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSort" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSortWithNullLocations" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.025" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testPagesWithoutImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="59.065" />
+  <testcase name="testPagesWithImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="71.143" />
+  <testcase name="testPagesWithImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="89.075" />
+  <testcase name="testPageFetchWithAmpersand" classname="org.wikipedia.page.PageLoadTest" time="4.811">
+    <failure>java.lang.RuntimeException: retrofit.RetrofitError: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision
+at org.wikipedia.page.PageLoadLatchCallback.onLoadError(PageLoadLatchCallback.java:17)
+at org.wikipedia.page.PageFragment.onPageLoadError(PageFragment.java:816)
+at org.wikipedia.page.JsonPageLoadStrategy$12$1$1.call(JsonPageLoadStrategy.java:494)
+at org.wikipedia.page.JsonPageLoadStrategy$3.onCatch(JsonPageLoadStrategy.java:333)
+at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:44)
+at android.os.AsyncTask.finish(AsyncTask.java:632)
+at android.os.AsyncTask.access$600(AsyncTask.java:177)
+at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:135)
+at android.app.ActivityThread.main(ActivityThread.java:5221)
+at java.lang.reflect.Method.invoke(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:372)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+Caused by: retrofit.RetrofitError: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision
+at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:383)
+at retrofit.RestAdapter$RestHandler.access$100(RestAdapter.java:220)
+at retrofit.RestAdapter$RestHandler$2.obtainResponse(RestAdapter.java:278)
+at retrofit.CallbackRunnable.run(CallbackRunnable.java:42)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+at retrofit.Platform$Android$2$1.run(Platform.java:142)
+at java.lang.Thread.run(Thread.java:818)
+Caused by: retrofit.converter.ConversionException: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision
+at retrofit.converter.GsonConverter.fromBody(GsonConverter.java:67)
+at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:367)
+... 7 more
+Caused by: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision
+at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:221)
+at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.read(ReflectiveTypeAdapterFactory.java:117)
+at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:217)
+at com.google.gson.Gson.fromJson(Gson.java:861)
+at com.google.gson.Gson.fromJson(Gson.java:826)
+at retrofit.converter.GsonConverter.fromBody(GsonConverter.java:63)
+... 8 more
+Caused by: java.lang.IllegalStateException: Expected a long but was BOOLEAN at line 1 column 107 path $.mobileview.revision
+at com.google.gson.stream.JsonReader.nextLong(JsonReader.java:973)
+at com.google.gson.internal.bind.TypeAdapters$11.read(TypeAdapters.java:325)
+at com.google.gson.internal.bind.TypeAdapters$11.read(TypeAdapters.java:317)
+at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.read(ReflectiveTypeAdapterFactory.java:117)
+at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:217)
+... 13 more
+</failure>
+  </testcase>
+</testsuite>
