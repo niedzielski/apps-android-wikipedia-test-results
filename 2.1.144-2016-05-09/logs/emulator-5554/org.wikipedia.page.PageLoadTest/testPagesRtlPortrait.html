@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pages Rtl Portrait</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../../static/spoon.css" rel="stylesheet">
+        <script src="../../../static/jquery.min.js"></script>
+        <script src="../../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Test passed in 24 seconds on 16-nexus-s">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Pages Rtl Portrait</h1>
+                <p>Test passed in 24 seconds on 16-nexus-s</p>
+            </div>
+            <div class="row log">
+                <div class="span12">
+                    <table class="table table-striped table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Level</th>
+                                <th>Tag</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="level-info info">
+                                <td>05-09 13:52:06.331</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>started: testPagesRtlPortrait(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-09 13:52:06.341</td>
+                                <td>info</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Activities that are still in CREATED to STOPPED: 1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.341</td>
+                                <td>debug</td>
+                                <td>ActivityInstrumentationRule</td>
+                                <td>Launching activity org.wikipedia.page.PageActivity</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.341</td>
+                                <td>debug</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.481</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@9779ec50 in: PRE_ON_CREATE</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-09 13:52:06.481</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppCrashReporter</td>
+                                <td>checkCrashes():39: Checking for HockeyApp crashes.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.491</td>
+                                <td>debug</td>
+                                <td>HockeyApp</td>
+                                <td>Looking for exceptions in: /data/data/org.wikipedia/files</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.491</td>
+                                <td>debug</td>
+                                <td>HockeyApp</td>
+                                <td>Current handler class = org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.501</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageActivity</td>
+                                <td>registerBus():958: Registered bus.</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-09 13:52:06.501</td>
+                                <td>info</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionContentResolver</td>
+                                <td>requestSync():48: no account</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.501</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.RemoteConfigRefreshTask</td>
+                                <td>Skipping recurring task, remote-config-refresher. Last execution was Mon May 09 13:49:16 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.501</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.snippet.SharedImageCleanupTask</td>
+                                <td>Skipping recurring task, shared-image-cleanup. Last execution was Mon May 09 13:49:16 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.501</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.recurring.DailyEventTask</td>
+                                <td>Skipping recurring task, dailyEventTask. Last execution was Mon May 09 13:49:16 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.501</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@9779ec50 in: CREATED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.532</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 291K, 22% free 20299K/25991K, paused 23ms+0ms, total 30ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.552</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 22K, 22% free 20277K/25991K, paused 6ms, total 6ms</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-09 13:52:06.552</td>
+                                <td>info</td>
+                                <td>dalvikvm-heap</td>
+                                <td>Grow heap (frag case) to 22.645MB for 2949132-byte allocation</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.572</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 0K, 20% free 23157K/28935K, paused 17ms+0ms, total 22ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.592</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>loadFromBackStack():209: Loaded page Main Page from backstack</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.592</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@9779ec50 in: STARTED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.592</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@9779ec50 in: RESUMED</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-09 13:52:06.662</td>
+                                <td>warn</td>
+                                <td>EGL_emulation</td>
+                                <td>eglSurfaceAttrib not implemented</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:06.742</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Algebra tag=Algebra</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-09 13:52:07.131</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$2</td>
+                                <td>success():279: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-lead/%D8%AC%D8%A8%D8%B1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:07.151</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():630: Sent message &#39;displayLeadSection&#39; for page: جبر</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:07.211</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@97c71438 in: STOPPED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:07.221</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageActivity</td>
+                                <td>unregisterBus():964: Unregistered bus.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:07.221</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@97c71438 in: DESTROYED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:07.361</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 2853K, 24% free 22223K/28935K, paused 17ms+1ms, total 24ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:07.431</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.leadimages.ImageViewWithFace</td>
+                                <td>detectFace():82: Face detection took 10ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:07.431</td>
+                                <td>debug</td>
+                                <td>webviewglue</td>
+                                <td>nativeDestroy view: 0xb9aa5ba8</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-09 13:52:07.441</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$17</td>
+                                <td>success():808: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-remaining/%D8%AC%D8%A8%D8%B1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:07.441</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Algebra</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:07.461</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 4905K, 35% free 18909K/28935K, paused 6ms, total 6ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:07.562</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Algebra&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:07.971</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 2055K, 36% free 18792K/28935K, paused 0ms+5ms, total 6ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:12.572</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Water tag=Water</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-09 13:52:12.772</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$2</td>
+                                <td>success():279: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-lead/%D9%85%D8%A7%D8%A1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:12.802</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1772K, 35% free 18951K/28935K, paused 17ms+1ms, total 27ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:12.811</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():630: Sent message &#39;displayLeadSection&#39; for page: ماء</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:12.881</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.leadimages.ImageViewWithFace</td>
+                                <td>detectFace():82: Face detection took 4ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:13.082</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1680K, 34% free 19206K/28935K, paused 16ms+1ms, total 23ms</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-09 13:52:13.101</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$17</td>
+                                <td>success():808: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-remaining/%D9%85%D8%A7%D8%A1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:13.111</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Water</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:13.131</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1659K, 33% free 19509K/28935K, paused 15ms, total 17ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:13.151</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 6K, 32% free 19897K/28935K, paused 13ms+1ms, total 19ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:13.181</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 82K, 25% free 21821K/28935K, paused 11ms+1ms, total 17ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:13.391</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Water&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:15.961</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 4665K, 35% free 19094K/28935K, paused 0ms+1ms, total 6ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:18.401</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Dinosaur tag=Dinosaur</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-09 13:52:18.592</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$2</td>
+                                <td>success():279: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-lead/%D8%AF%D9%8A%D9%86%D8%A7%D8%B5%D9%88%D8%B1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:18.612</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():630: Sent message &#39;displayLeadSection&#39; for page: ديناصور</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:18.722</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.leadimages.ImageViewWithFace</td>
+                                <td>detectFace():82: Face detection took 6ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:18.732</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1905K, 34% free 19211K/28935K, paused 1ms+0ms, total 11ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:18.812</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1575K, 33% free 19561K/28935K, paused 17ms+1ms, total 22ms</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-09 13:52:18.832</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$17</td>
+                                <td>success():808: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-remaining/%D8%AF%D9%8A%D9%86%D8%A7%D8%B5%D9%88%D8%B1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:18.832</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Dinosaur</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:18.842</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1833K, 33% free 19511K/28935K, paused 5ms, total 5ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:18.881</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 988K, 31% free 19992K/28935K, paused 22ms, total 22ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:18.922</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 14K, 26% free 21491K/28935K, paused 4ms, total 4ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:19.202</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Dinosaur&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:19.622</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 4095K, 34% free 19328K/28935K, paused 1ms+0ms, total 6ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:22.051</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1963K, 34% free 19376K/28935K, paused 7ms, total 7ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:22.071</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed &lt;1K, 33% free 19461K/28935K, paused 17ms+0ms, total 22ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:24.211</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Helium tag=Helium</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:24.511</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 2019K, 33% free 19468K/28935K, paused 0ms+1ms, total 10ms</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-09 13:52:24.511</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$2</td>
+                                <td>success():279: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-lead/%D9%87%D9%8A%D9%84%D9%8A%D9%88%D9%85</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:24.552</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():630: Sent message &#39;displayLeadSection&#39; for page: هيليوم</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:24.682</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.leadimages.ImageViewWithFace</td>
+                                <td>detectFace():82: Face detection took 6ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:24.792</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1742K, 32% free 19686K/28935K, paused 7ms, total 9ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:24.812</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 48K, 32% free 19735K/28935K, paused 20ms+1ms, total 28ms</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-09 13:52:24.832</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$17</td>
+                                <td>success():808: https://ar.wikipedia.org/api/rest_v1/page/mobile-sections-remaining/%D9%87%D9%8A%D9%84%D9%8A%D9%88%D9%85</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:24.832</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Helium</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:24.852</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1745K, 32% free 19745K/28935K, paused 17ms, total 18ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:24.912</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1145K, 30% free 20521K/28935K, paused 19ms+1ms, total 25ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:25.071</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Helium&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:26.842</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 3399K, 35% free 19041K/28935K, paused 20ms+1ms, total 29ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-09 13:52:30.081</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@9779ec50 in: PAUSED</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-09 13:52:30.081</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>finished: testPagesRtlPortrait(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

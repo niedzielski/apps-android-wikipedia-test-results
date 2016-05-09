@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="11" failures="1" errors="0" skipped="0" time="0.0" timestamp="2016-05-09T19:49:20" hostname="localhost">
+  <properties />
+  <testcase name="testPreview" classname="org.wikipedia.editing.EditPreviewTaskTest" time="0.686" />
+  <testcase name="testSyntaxHighlight" classname="org.wikipedia.editing.richtext.SyntaxHighlighterTest" time="0.53" />
+  <testcase name="testCompare" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.025" />
+  <testcase name="testGetDistanceLabelKilometers" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelMeters" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelNull" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelSameLocation" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSort" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.025" />
+  <testcase name="testSortWithNullLocations" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testPagesWithoutImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="0.718">
+    <failure>Test failed to run to completion. Reason: 'Instrumentation run failed due to 'Process crashed.''. Check device logcat for details</failure>
+  </testcase>
+</testsuite>
