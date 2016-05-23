@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pages Without Images Landscape</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../../static/spoon.css" rel="stylesheet">
+        <script src="../../../static/jquery.min.js"></script>
+        <script src="../../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Test passed in 53 seconds on 17-nexus-s">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Pages Without Images Landscape</h1>
+                <p>Test passed in 53 seconds on 17-nexus-s</p>
+            </div>
+            <div class="row log">
+                <div class="span12">
+                    <table class="table table-striped table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Level</th>
+                                <th>Tag</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="level-info info">
+                                <td>05-23 19:28:58.829</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>started: testPagesWithoutImagesLandscape(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 19:28:58.829</td>
+                                <td>info</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Activities that are still in CREATED to STOPPED: 1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:58.839</td>
+                                <td>debug</td>
+                                <td>ActivityTestRule</td>
+                                <td>Launching activity org.wikipedia.page.PageActivity</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:58.839</td>
+                                <td>debug</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:58.939</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@97797170 in: PRE_ON_CREATE</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-23 19:28:58.939</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppCrashReporter</td>
+                                <td>checkCrashes():40: Checking for HockeyApp crashes.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.009</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1152K, 24% free 22205K/28956K, paused 3ms+2ms, total 41ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.039</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageActivity</td>
+                                <td>registerBus():981: Registered bus.</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 19:28:59.039</td>
+                                <td>info</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionContentResolver</td>
+                                <td>requestSync():48: no account</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.039</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.RemoteConfigRefreshTask</td>
+                                <td>Skipping recurring task, remote-config-refresher. Last execution was Mon May 23 19:09:12 GMT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.039</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.snippet.SharedImageCleanupTask</td>
+                                <td>Skipping recurring task, shared-image-cleanup. Last execution was Mon May 23 19:09:12 GMT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.039</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.recurring.DailyEventTask</td>
+                                <td>Skipping recurring task, dailyEventTask. Last execution was Mon May 23 19:09:12 GMT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.039</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@97797170 in: CREATED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.069</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 260K, 21% free 23146K/28956K, paused 17ms, total 18ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.099</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 26K, 16% free 24399K/28956K, paused 11ms, total 11ms</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 19:28:59.099</td>
+                                <td>info</td>
+                                <td>dalvikvm-heap</td>
+                                <td>Grow heap (frag case) to 26.708MB for 2949132-byte allocation</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.129</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed &lt;1K, 15% free 27279K/31840K, paused 23ms, total 23ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.149</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 0K, 15% free 27279K/31840K, paused 10ms+2ms, total 21ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.179</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>loadFromBackStack():206: Loaded page Main Page from backstack</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.189</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@97797170 in: STARTED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.199</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@97797170 in: RESUMED</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 19:28:59.309</td>
+                                <td>warn</td>
+                                <td>EGL_emulation</td>
+                                <td>eglSurfaceAttrib not implemented</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.469</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Reading from cache: Main Page</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.519</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$13</td>
+                                <td>onGetComplete():503: Using page from cache: Main Page</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.539</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: Main Page</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:59.679</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax aa tag=Mecyclothorax_aa</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 19:28:59.860</td>
+                                <td>warn</td>
+                                <td>EGL_emulation</td>
+                                <td>eglSurfaceAttrib not implemented</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:00.019</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 2810K, 18% free 26403K/31840K, paused 7ms+1ms, total 16ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:00.019</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@97a36728 in: STOPPED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:00.019</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageActivity</td>
+                                <td>unregisterBus():987: Unregistered bus.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:00.019</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@97a36728 in: DESTROYED</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 19:29:00.029</td>
+                                <td>warn</td>
+                                <td>EGL_emulation</td>
+                                <td>eglSurfaceAttrib not implemented</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:00.229</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax aa&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:00.289</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax aa</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:00.299</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 746K, 18% free 26398K/31840K, paused 11ms, total 11ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:00.429</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_aa&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:00.610</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1872K, 17% free 26445K/31840K, paused 10ms+1ms, total 19ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:05.439</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax abax tag=Mecyclothorax_abax</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:05.530</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax abax&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:05.580</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax abax</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:05.590</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1101K, 17% free 26518K/31840K, paused 8ms, total 9ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:05.650</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_abax&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:05.929</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1925K, 17% free 26522K/31836K, paused 2ms+1ms, total 10ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:10.660</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax acutangulus tag=Mecyclothorax_acutangulus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:10.749</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax acutangulus&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:10.799</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax acutangulus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:10.809</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1205K, 17% free 26482K/31836K, paused 8ms, total 9ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:10.869</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_acutangulus&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:11.219</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1954K, 17% free 26448K/31836K, paused 6ms+1ms, total 13ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:15.879</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax aeneipennis tag=Mecyclothorax_aeneipennis</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:15.969</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax aeneipennis&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:16.039</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax aeneipennis</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:16.049</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1090K, 17% free 26520K/31836K, paused 8ms, total 8ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:16.109</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_aeneipennis&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:16.360</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1976K, 17% free 26464K/31836K, paused 10ms+2ms, total 19ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:21.119</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax aeneus tag=Mecyclothorax_aeneus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:21.209</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax aeneus&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:21.270</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax aeneus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:21.280</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1093K, 17% free 26473K/31836K, paused 7ms, total 7ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:21.330</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_aeneus&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:21.570</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1931K, 17% free 26462K/31836K, paused 10ms+1ms, total 20ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:26.340</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax altiusculoides tag=Mecyclothorax_altiusculoides</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:26.430</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax altiusculoides&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:26.479</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax altiusculoides</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:26.490</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1078K, 17% free 26473K/31836K, paused 8ms, total 9ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:26.540</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_altiusculoides&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:26.749</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1927K, 17% free 26466K/31836K, paused 10ms+1ms, total 18ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:31.550</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax altiusculus tag=Mecyclothorax_altiusculus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:31.649</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax altiusculus&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:31.699</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax altiusculus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:31.709</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1103K, 17% free 26474K/31836K, paused 9ms, total 9ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:31.769</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_altiusculus&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:31.999</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1935K, 17% free 26459K/31836K, paused 6ms+1ms, total 14ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:36.779</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax amaroides tag=Mecyclothorax_amaroides</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:36.869</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax amaroides&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:36.939</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax amaroides</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:36.950</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1106K, 17% free 26470K/31836K, paused 9ms, total 10ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:37.010</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_amaroides&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:37.270</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1929K, 17% free 26461K/31836K, paused 9ms+1ms, total 21ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:42.020</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax ambiguus tag=Mecyclothorax_ambiguus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:42.110</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax ambiguus&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:42.160</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax ambiguus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:42.170</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1094K, 17% free 26471K/31836K, paused 8ms, total 8ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:42.220</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_ambiguus&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:42.430</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1933K, 17% free 26458K/31836K, paused 7ms+1ms, total 15ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:47.230</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax angulosus tag=Mecyclothorax_angulosus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:47.310</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax angulosus&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:47.370</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax angulosus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:47.380</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1102K, 17% free 26469K/31836K, paused 8ms, total 9ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:47.470</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_angulosus&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:47.699</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1927K, 17% free 26461K/31836K, paused 10ms+1ms, total 18ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:29:52.480</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@97797170 in: PAUSED</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 19:29:52.480</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>finished: testPagesWithoutImagesLandscape(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

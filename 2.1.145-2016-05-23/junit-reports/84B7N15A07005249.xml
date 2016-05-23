@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="28" failures="1" errors="0" skipped="0" time="0.0" timestamp="2016-05-23T19:30:31" hostname="localhost">
+  <properties />
+  <testcase name="testPreview" classname="org.wikipedia.editing.EditPreviewTaskTest" time="0.405" />
+  <testcase name="testSyntaxHighlight" classname="org.wikipedia.editing.richtext.SyntaxHighlighterTest" time="0.534" />
+  <testcase name="testCompare" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelKilometers" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelMeters" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelNull" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.026" />
+  <testcase name="testGetDistanceLabelSameLocation" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSort" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSortWithNullLocations" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testPagesWithoutImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="61.015" />
+  <testcase name="testPagesWithImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="61.771" />
+  <testcase name="testPagesWithImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="64.423" />
+  <testcase name="testPageFetchWithAmpersand" classname="org.wikipedia.page.PageLoadTest" time="1.082" />
+  <testcase name="testPagesRtlPortrait" classname="org.wikipedia.page.PageLoadTest" time="32.503" />
+  <testcase name="testPagesWithoutImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="61.661" />
+  <testcase name="testPageFetch" classname="org.wikipedia.page.PageLoadTest" time="0.627" />
+  <testcase name="testPagesRtlLandscape" classname="org.wikipedia.page.PageLoadTest" time="25.713" />
+  <testcase name="testNonClosedImgTag" classname="org.wikipedia.savedpages.ImageUrlMapTests" time="0.1" />
+  <testcase name="testUrlRewrite" classname="org.wikipedia.savedpages.ImageUrlMapTests" time="0.026" />
+  <testcase name="testDOMLoaded" classname="org.wikipedia.test.BridgeTests" time="0.302" />
+  <testcase name="testPingBackHandling" classname="org.wikipedia.test.BridgeTests" time="0.1" />
+  <testcase name="testTokenFetch" classname="org.wikipedia.test.CreateAccountTaskTest" time="0.502" />
+  <testcase name="testAbuseFilterTriggerStopOnArbitraryErrorCode" classname="org.wikipedia.test.EditTaskTest" time="0.452" />
+  <testcase name="testEdit" classname="org.wikipedia.test.EditTaskTest" time="0.402" />
+  <testcase name="testCaptcha" classname="org.wikipedia.test.EditTaskTest" time="0.276" />
+  <testcase name="testAbuseFilterTriggerStop" classname="org.wikipedia.test.EditTaskTest" time="0.428" />
+  <testcase name="testAbuseFilterTriggerWarn" classname="org.wikipedia.test.EditTaskTest" time="0.317">
+    <failure>java.lang.RuntimeException: ratelimited: You've exceeded your rate limit. Please wait some time and try again
+at org.wikipedia.ApiTask.onCatch(ApiTask.java:46)
+at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:72)
+at android.os.AsyncTask.finish(AsyncTask.java:651)
+at android.os.AsyncTask.-wrap1(AsyncTask.java)
+at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:148)
+at android.app.ActivityThread.main(ActivityThread.java:5461)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+Caused by: ratelimited: You've exceeded your rate limit. Please wait some time and try again
+at org.mediawiki.api.json.ApiResult.assertSuccess(ApiResult.java:110)
+at org.mediawiki.api.json.ApiResult.asObject(ApiResult.java:81)
+at org.wikipedia.editing.EditTask.processResult(EditTask.java:56)
+at org.wikipedia.editing.EditTask.processResult(EditTask.java:13)
+at org.wikipedia.ApiTask.performTask(ApiTask.java:31)
+at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:57)
+at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:16)
+at android.os.AsyncTask$2.call(AsyncTask.java:295)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+at java.lang.Thread.run(Thread.java:818)
+</failure>
+  </testcase>
+</testsuite>

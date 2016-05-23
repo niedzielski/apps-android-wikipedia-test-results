@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="24" failures="2" errors="0" skipped="0" time="0.0" timestamp="2016-05-23T19:30:41" hostname="localhost">
+  <properties />
+  <testcase name="testPreview" classname="org.wikipedia.editing.EditPreviewTaskTest" time="0.49" />
+  <testcase name="testSyntaxHighlight" classname="org.wikipedia.editing.richtext.SyntaxHighlighterTest" time="0.212">
+    <failure>java.lang.RuntimeException: Can't create handler inside thread that has not called Looper.prepare()
+at android.os.Handler.&lt;init&gt;(Handler.java:200)
+at android.os.Handler.&lt;init&gt;(Handler.java:114)
+at android.sec.clipboard.ClipboardExManager$1.&lt;init&gt;(ClipboardExManager.java:118)
+at android.sec.clipboard.ClipboardExManager.&lt;init&gt;(ClipboardExManager.java:118)
+at android.app.ContextImpl$11.createService(ContextImpl.java:492)
+at android.app.ContextImpl$ServiceFetcher.getService(ContextImpl.java:372)
+at android.app.ContextImpl.getSystemService(ContextImpl.java:2265)
+at android.view.ContextThemeWrapper.getSystemService(ContextThemeWrapper.java:117)
+at android.widget.EditText.&lt;init&gt;(EditText.java:81)
+at android.widget.EditText.&lt;init&gt;(EditText.java:75)
+at android.widget.EditText.&lt;init&gt;(EditText.java:71)
+at org.wikipedia.editing.richtext.SyntaxHighlighterTest.testSyntaxHighlight(SyntaxHighlighterTest.java:28)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:515)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1729)
+</failure>
+  </testcase>
+  <testcase name="testCompare" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelKilometers" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelMeters" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.001" />
+  <testcase name="testGetDistanceLabelNull" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelSameLocation" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSort" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSortWithNullLocations" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.001" />
+  <testcase name="testPagesWithoutImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="61.148" />
+  <testcase name="testPagesWithImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="65.878" />
+  <testcase name="testPagesWithImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="73.089" />
+  <testcase name="testPageFetchWithAmpersand" classname="org.wikipedia.page.PageLoadTest" time="2.611" />
+  <testcase name="testPagesRtlPortrait" classname="org.wikipedia.page.PageLoadTest" time="32.192" />
+  <testcase name="testPagesWithoutImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="61.667" />
+  <testcase name="testPageFetch" classname="org.wikipedia.page.PageLoadTest" time="1.58" />
+  <testcase name="testPagesRtlLandscape" classname="org.wikipedia.page.PageLoadTest" time="28.239" />
+  <testcase name="testNonClosedImgTag" classname="org.wikipedia.savedpages.ImageUrlMapTests" time="0.076" />
+  <testcase name="testUrlRewrite" classname="org.wikipedia.savedpages.ImageUrlMapTests" time="0.0" />
+  <testcase name="testDOMLoaded" classname="org.wikipedia.test.BridgeTests" time="1.081" />
+  <testcase name="testPingBackHandling" classname="org.wikipedia.test.BridgeTests" time="0.05" />
+  <testcase name="testTokenFetch" classname="org.wikipedia.test.CreateAccountTaskTest" time="0.528" />
+  <testcase name="testAbuseFilterTriggerStopOnArbitraryErrorCode" classname="org.wikipedia.test.EditTaskTest" time="0.254">
+    <failure>java.lang.RuntimeException: ratelimited: You've exceeded your rate limit. Please wait some time and try again
+at org.wikipedia.ApiTask.onCatch(ApiTask.java:46)
+at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:72)
+at android.os.AsyncTask.finish(AsyncTask.java:632)
+at android.os.AsyncTask.access$600(AsyncTask.java:177)
+at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:146)
+at android.app.ActivityThread.main(ActivityThread.java:5602)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:515)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1283)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1099)
+at dalvik.system.NativeStart.main(Native Method)
+Caused by: ratelimited: You've exceeded your rate limit. Please wait some time and try again
+at org.mediawiki.api.json.ApiResult.assertSuccess(ApiResult.java:110)
+at org.mediawiki.api.json.ApiResult.asObject(ApiResult.java:81)
+at org.wikipedia.editing.EditTask.processResult(EditTask.java:56)
+at org.wikipedia.editing.EditTask.processResult(EditTask.java:13)
+at org.wikipedia.ApiTask.performTask(ApiTask.java:31)
+at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:57)
+at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:16)
+at android.os.AsyncTask$2.call(AsyncTask.java:288)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+at java.lang.Thread.run(Thread.java:841)
+</failure>
+  </testcase>
+</testsuite>

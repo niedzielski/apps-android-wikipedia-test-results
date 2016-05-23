@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pages Without Images Portrait</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../../static/spoon.css" rel="stylesheet">
+        <script src="../../../static/jquery.min.js"></script>
+        <script src="../../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Test passed in 1 minute, 6 seconds on 21-nexus-s">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Pages Without Images Portrait</h1>
+                <p>Test passed in 1 minute, 6 seconds on 21-nexus-s</p>
+            </div>
+            <div class="row log">
+                <div class="span12">
+                    <table class="table table-striped table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Level</th>
+                                <th>Tag</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:14.588</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>started: testPagesWithoutImagesPortrait(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:14.591</td>
+                                <td>info</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Activities that are still in CREATED to STOPPED: 0</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:14.591</td>
+                                <td>debug</td>
+                                <td>ActivityTestRule</td>
+                                <td>Launching activity org.wikipedia.page.PageActivity</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:14.598</td>
+                                <td>debug</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:14.625</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@3de668d8 in: PRE_ON_CREATE</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-23 13:25:14.726</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppCrashReporter</td>
+                                <td>checkCrashes():40: Checking for HockeyApp crashes.</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 13:25:14.880</td>
+                                <td>warn</td>
+                                <td>art</td>
+                                <td>Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:14.929</td>
+                                <td>info</td>
+                                <td>art</td>
+                                <td>Background sticky concurrent mark sweep GC freed 682(80KB) AllocSpace objects, 0(0B) LOS objects, 2% free, 5MB/5MB, paused 8.485ms total 29.999ms</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:15.089</td>
+                                <td>info</td>
+                                <td>art</td>
+                                <td>Background partial concurrent mark sweep GC freed 7430(489KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 5MB/9MB, paused 1.496ms total 112.733ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:15.282</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageActivity</td>
+                                <td>registerBus():981: Registered bus.</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:15.355</td>
+                                <td>info</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionContentResolver</td>
+                                <td>requestSync():48: no account</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:15.356</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@3de668d8 in: CREATED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:15.358</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.RemoteConfigRefreshTask</td>
+                                <td>Skipping recurring task, remote-config-refresher. Last execution was Mon May 23 13:08:31 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:15.358</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.snippet.SharedImageCleanupTask</td>
+                                <td>Skipping recurring task, shared-image-cleanup. Last execution was Mon May 23 13:08:31 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:15.359</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.recurring.DailyEventTask</td>
+                                <td>Skipping recurring task, dailyEventTask. Last execution was Mon May 23 13:08:31 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:15.570</td>
+                                <td>info</td>
+                                <td>WebViewFactory</td>
+                                <td>Loading com.android.webview version 37 (2781484-x86) (code 100007)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:15.580</td>
+                                <td>info</td>
+                                <td>LibraryLoader</td>
+                                <td>Loading: webviewchromium</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:15.587</td>
+                                <td>info</td>
+                                <td>LibraryLoader</td>
+                                <td>Time to load native libraries: 7 ms (timestamps 4947-4954)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:15.588</td>
+                                <td>info</td>
+                                <td>LibraryLoader</td>
+                                <td>Expected native library version number &quot;&quot;,actual native library version number &quot;&quot;</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-23 13:25:15.606</td>
+                                <td>verbose</td>
+                                <td>WebViewChromiumFactoryProvider</td>
+                                <td>Binding Chromium to main looper Looper (main, tid 1) {3f267441}</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:15.608</td>
+                                <td>info</td>
+                                <td>LibraryLoader</td>
+                                <td>Expected native library version number &quot;&quot;,actual native library version number &quot;&quot;</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:15.608</td>
+                                <td>info</td>
+                                <td>chromium</td>
+                                <td>[INFO:library_loader_hooks.cc(106)] Chromium logging enabled: level = 0, default verbosity = 0</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:15.623</td>
+                                <td>info</td>
+                                <td>BrowserStartupController</td>
+                                <td>Initializing chromium process, renderers=0</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 13:25:15.625</td>
+                                <td>warn</td>
+                                <td>art</td>
+                                <td>Attempt to remove local handle scope entry from IRT, ignoring</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 13:25:15.643</td>
+                                <td>warn</td>
+                                <td>chromium</td>
+                                <td>[WARNING:resource_bundle.cc(315)] locale_file_path.empty()</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:15.644</td>
+                                <td>info</td>
+                                <td>chromium</td>
+                                <td>[INFO:aw_browser_main_parts.cc(63)] Load from apk succesful, fd=36 off=46092 len=2953</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:15.644</td>
+                                <td>info</td>
+                                <td>chromium</td>
+                                <td>[INFO:aw_browser_main_parts.cc(78)] Loading webviewchromium.pak from, fd:37 off:228796 len:643667</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 13:25:15.650</td>
+                                <td>warn</td>
+                                <td>AudioManagerAndroid</td>
+                                <td>Requires BLUETOOTH permission</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 13:25:15.650</td>
+                                <td>warn</td>
+                                <td>AudioManagerAndroid</td>
+                                <td>[ 05-23 13:25:15.670  3527: 3527 D/         ]</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 13:25:15.650</td>
+                                <td>warn</td>
+                                <td>AudioManagerAndroid</td>
+                                <td>HostConnection::get() New Host Connection established 0xabfea520, tid 3527</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 13:25:16.473</td>
+                                <td>warn</td>
+                                <td>chromium</td>
+                                <td>[WARNING:proxy_service.cc(901)] PAC support disabled because there is no system implementation</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 13:25:16.478</td>
+                                <td>warn</td>
+                                <td>chromium</td>
+                                <td>[WARNING:data_reduction_proxy_settings.cc(403)] SPDY proxy OFF at startup</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 13:25:16.546</td>
+                                <td>warn</td>
+                                <td>art</td>
+                                <td>Attempt to remove local handle scope entry from IRT, ignoring</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 13:25:16.558</td>
+                                <td>warn</td>
+                                <td>AwContents</td>
+                                <td>onDetachedFromWindow called when already detached. Ignoring</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:17.000</td>
+                                <td>info</td>
+                                <td>art</td>
+                                <td>Background sticky concurrent mark sweep GC freed 25150(1274KB) AllocSpace objects, 2(32KB) LOS objects, 0% free, 9MB/9MB, paused 795us total 214.979ms</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 13:25:17.150</td>
+                                <td>warn</td>
+                                <td>art</td>
+                                <td>Attempt to remove local handle scope entry from IRT, ignoring</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 13:25:17.150</td>
+                                <td>warn</td>
+                                <td>art</td>
+                                <td>Attempt to remove local handle scope entry from IRT, ignoring</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:17.208</td>
+                                <td>info</td>
+                                <td>art</td>
+                                <td>Background partial concurrent mark sweep GC freed 3407(224KB) AllocSpace objects, 1(16KB) LOS objects, 28% free, 10MB/14MB, paused 1.516ms total 179.783ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:17.239</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>loadFromBackStack():206: Loaded page Main Page from backstack</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:17.242</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@3de668d8 in: STARTED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:17.260</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@3de668d8 in: RESUMED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:17.283</td>
+                                <td>debug</td>
+                                <td>OpenGLRenderer</td>
+                                <td>Render dirty regions requested: true</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:17.352</td>
+                                <td>debug</td>
+                                <td>Atlas</td>
+                                <td>Validating map...</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:17.552</td>
+                                <td>info</td>
+                                <td>OpenGLRenderer</td>
+                                <td>Initialized EGL, version 1.4</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:17.552</td>
+                                <td>info</td>
+                                <td>OpenGLRenderer</td>
+                                <td>[ 05-23 13:25:17.553  3527: 3582 D/         ]</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:17.552</td>
+                                <td>info</td>
+                                <td>OpenGLRenderer</td>
+                                <td>HostConnection::get() New Host Connection established 0xaeff2280, tid 3582</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:18.053</td>
+                                <td>debug</td>
+                                <td>OpenGLRenderer</td>
+                                <td>Enabling debug mode 0</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:18.243</td>
+                                <td>info</td>
+                                <td>Choreographer</td>
+                                <td>Skipped 50 frames!  The application may be doing too much work on its main thread.</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-23 13:25:18.328</td>
+                                <td>verbose</td>
+                                <td>RenderScript</td>
+                                <td>0x9df9bc00 Launching thread(s), CPUs 2</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:20.147</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Reading from cache: Main Page</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:20.238</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$13</td>
+                                <td>onGetComplete():503: Using page from cache: Main Page</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:20.280</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: Main Page</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:20.418</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax aa tag=Mecyclothorax_aa</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:20.965</td>
+                                <td>debug</td>
+                                <td>WikipediaWeb</td>
+                                <td>file:///android_asset/bundle.js:512 - Uncaught NotFoundError: Failed to execute &#39;removeChild&#39; on &#39;Node&#39;: The node to be removed is not a child of this node.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:21.544</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax aa&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:21.665</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax aa</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:22.150</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_aa&#39;.</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:22.454</td>
+                                <td>info</td>
+                                <td>art</td>
+                                <td>Background partial concurrent mark sweep GC freed 6878(469KB) AllocSpace objects, 2(1513KB) LOS objects, 26% free, 11MB/15MB, paused 1.190ms total 119.010ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:27.152</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax abax tag=Mecyclothorax_abax</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:27.593</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax abax&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:27.718</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax abax</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:27.999</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_abax&#39;.</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:31.515</td>
+                                <td>info</td>
+                                <td>Choreographer</td>
+                                <td>Skipped 217 frames!  The application may be doing too much work on its main thread.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:33.011</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax acutangulus tag=Mecyclothorax_acutangulus</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:33.781</td>
+                                <td>info</td>
+                                <td>Choreographer</td>
+                                <td>Skipped 37 frames!  The application may be doing too much work on its main thread.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:34.178</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax acutangulus&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:34.258</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax acutangulus</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:34.336</td>
+                                <td>info</td>
+                                <td>art</td>
+                                <td>Background sticky concurrent mark sweep GC freed 14536(1513KB) AllocSpace objects, 11(1657KB) LOS objects, 12% free, 13MB/15MB, paused 16.449ms total 69.739ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:34.458</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_acutangulus&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:39.459</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax aeneipennis tag=Mecyclothorax_aeneipennis</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:39.836</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax aeneipennis&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:39.995</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax aeneipennis</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:40.378</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_aeneipennis&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:45.379</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax aeneus tag=Mecyclothorax_aeneus</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:45.575</td>
+                                <td>info</td>
+                                <td>art</td>
+                                <td>Background partial concurrent mark sweep GC freed 6694(439KB) AllocSpace objects, 2(2MB) LOS objects, 25% free, 11MB/15MB, paused 888us total 193.601ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:46.229</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax aeneus&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:47.194</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax aeneus</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:47.196</td>
+                                <td>info</td>
+                                <td>Choreographer</td>
+                                <td>Skipped 44 frames!  The application may be doing too much work on its main thread.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:47.796</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_aeneus&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:52.799</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax altiusculoides tag=Mecyclothorax_altiusculoides</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:53.323</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax altiusculoides&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:53.395</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax altiusculoides</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:53.477</td>
+                                <td>info</td>
+                                <td>art</td>
+                                <td>Background sticky concurrent mark sweep GC freed 13784(1491KB) AllocSpace objects, 10(1640KB) LOS objects, 12% free, 13MB/15MB, paused 6.117ms total 51.422ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:53.690</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_altiusculoides&#39;.</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:25:54.903</td>
+                                <td>info</td>
+                                <td>Choreographer</td>
+                                <td>Skipped 83 frames!  The application may be doing too much work on its main thread.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:58.691</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax altiusculus tag=Mecyclothorax_altiusculus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:59.140</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax altiusculus&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:59.283</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax altiusculus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:25:59.446</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_altiusculus&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:04.447</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax amaroides tag=Mecyclothorax_amaroides</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:04.705</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax amaroides&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:04.773</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax amaroides</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:04.906</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_amaroides&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:09.907</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax ambiguus tag=Mecyclothorax_ambiguus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:10.220</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax ambiguus&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:10.305</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax ambiguus</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:26:10.344</td>
+                                <td>info</td>
+                                <td>art</td>
+                                <td>Background sticky concurrent mark sweep GC freed 12699(1314KB) AllocSpace objects, 11(1653KB) LOS objects, 12% free, 13MB/15MB, paused 7.372ms total 39.563ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:10.551</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_ambiguus&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:15.552</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mecyclothorax angulosus tag=Mecyclothorax_angulosus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:15.831</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax angulosus&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:15.908</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Mecyclothorax angulosus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:16.032</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>Captured screenshot &#39;Mecyclothorax_angulosus&#39;.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:16.032</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>[ 05-23 13:26:21.035  1524: 1805 D/         ]</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 13:26:16.032</td>
+                                <td>debug</td>
+                                <td>Spoon</td>
+                                <td>HostConnection::get() New Host Connection established 0xaf231580, tid 1805</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 13:26:21.246</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>finished: testPagesWithoutImagesPortrait(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

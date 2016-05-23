@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Fetch With Ampersand</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../../static/spoon.css" rel="stylesheet">
+        <script src="../../../static/jquery.min.js"></script>
+        <script src="../../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Test passed in 0 seconds on 17-nexus-s">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Page Fetch With Ampersand</h1>
+                <p>Test passed in 0 seconds on 17-nexus-s</p>
+            </div>
+            <div class="row log">
+                <div class="span12">
+                    <table class="table table-striped table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Level</th>
+                                <th>Tag</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="level-info info">
+                                <td>05-23 19:28:33.099</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>started: testPageFetchWithAmpersand(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 19:28:33.099</td>
+                                <td>info</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Activities that are still in CREATED to STOPPED: 1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.099</td>
+                                <td>debug</td>
+                                <td>ActivityTestRule</td>
+                                <td>Launching activity org.wikipedia.page.PageActivity</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.099</td>
+                                <td>debug</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.278</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@9700ca80 in: PRE_ON_CREATE</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>05-23 19:28:33.278</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppCrashReporter</td>
+                                <td>checkCrashes():40: Checking for HockeyApp crashes.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.319</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 349K, 30% free 17432K/24696K, paused 8ms+0ms, total 15ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.329</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageActivity</td>
+                                <td>registerBus():981: Registered bus.</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 19:28:33.339</td>
+                                <td>info</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionContentResolver</td>
+                                <td>requestSync():48: no account</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.339</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.RemoteConfigRefreshTask</td>
+                                <td>Skipping recurring task, remote-config-refresher. Last execution was Mon May 23 19:09:12 GMT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.339</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.snippet.SharedImageCleanupTask</td>
+                                <td>Skipping recurring task, shared-image-cleanup. Last execution was Mon May 23 19:09:12 GMT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.339</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.recurring.DailyEventTask</td>
+                                <td>Skipping recurring task, dailyEventTask. Last execution was Mon May 23 19:09:12 GMT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.339</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@9700ca80 in: CREATED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.359</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 239K, 24% free 18931K/24696K, paused 8ms, total 8ms</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 19:28:33.359</td>
+                                <td>info</td>
+                                <td>dalvikvm-heap</td>
+                                <td>Grow heap (frag case) to 21.369MB for 2949132-byte allocation</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.369</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 3K, 21% free 21808K/27580K, paused 12ms, total 12ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.379</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 0K, 21% free 21808K/27580K, paused 3ms+1ms, total 10ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.399</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>loadFromBackStack():206: Loaded page Main Page from backstack</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.409</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@9700ca80 in: STARTED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.409</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@9700ca80 in: RESUMED</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>05-23 19:28:33.479</td>
+                                <td>warn</td>
+                                <td>EGL_emulation</td>
+                                <td>eglSurfaceAttrib not implemented</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.589</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Reading from cache: Main Page</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.589</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$13</td>
+                                <td>onGetComplete():503: Using page from cache: Main Page</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.609</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: Main Page</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.828</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 2839K, 25% free 20889K/27580K, paused 10ms+1ms, total 20ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.898</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: Ampersand &amp; title</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:33.958</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Ampersand &amp; title</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 19:28:34.019</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@9700ca80 in: PAUSED</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 19:28:34.019</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>finished: testPageFetchWithAmpersand(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
