@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Abuse Filter Trigger Stop On Arbitrary Error Code</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../../static/spoon.css" rel="stylesheet">
+        <script src="../../../static/jquery.min.js"></script>
+        <script src="../../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Test failed in 0 seconds on 21-nexus-s">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Abuse Filter Trigger Stop On Arbitrary Error Code</h1>
+                <p>Test failed in 0 seconds on 21-nexus-s</p>
+            </div>
+            <div class="row log">
+                <div class="span12">
+                    <table class="table table-striped table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Level</th>
+                                <th>Tag</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.052</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>started: testAbuseFilterTriggerStopOnArbitraryErrorCode(org.wikipedia.test.EditTaskTest)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.053</td>
+                                <td>info</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Activities that are still in CREATED to STOPPED: 0</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>onPostExecute():71: </td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>ratelimited: You&#39;ve exceeded your rate limit. Please wait some time and try again</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>&#9;at org.mediawiki.api.json.ApiResult.assertSuccess(ApiResult.java:110)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>&#9;at org.mediawiki.api.json.ApiResult.asObject(ApiResult.java:81)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>&#9;at org.wikipedia.editing.EditTask.processResult(EditTask.java:58)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>&#9;at org.wikipedia.editing.EditTask.processResult(EditTask.java:15)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>&#9;at org.wikipedia.ApiTask.performTask(ApiTask.java:31)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>&#9;at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:57)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>&#9;at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:16)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>&#9;at android.os.AsyncTask$2.call(AsyncTask.java:288)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>&#9;at java.util.concurrent.FutureTask.run(FutureTask.java:237)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>&#9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>&#9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.714</td>
+                                <td>info</td>
+                                <td>org.wikipedia.concurrency.SaneAsyncTask</td>
+                                <td>&#9;at java.lang.Thread.run(Thread.java:818)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 18:42:48.714</td>
+                                <td>debug</td>
+                                <td>AndroidRuntime</td>
+                                <td>Shutting down VM</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Exception encountered by: Thread[main,5,main]. Dumping thread state to outputs and pining for the fjords.</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>java.lang.RuntimeException: ratelimited: You&#39;ve exceeded your rate limit. Please wait some time and try again</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at org.wikipedia.ApiTask.onCatch(ApiTask.java:46)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:72)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at android.os.AsyncTask.finish(AsyncTask.java:632)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at android.os.AsyncTask.access$600(AsyncTask.java:177)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at android.os.Handler.dispatchMessage(Handler.java:102)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at android.os.Looper.loop(Looper.java:135)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at android.app.ActivityThread.main(ActivityThread.java:5221)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at java.lang.reflect.Method.invoke(Native Method)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at java.lang.reflect.Method.invoke(Method.java:372)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Caused by: ratelimited: You&#39;ve exceeded your rate limit. Please wait some time and try again</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at org.mediawiki.api.json.ApiResult.assertSuccess(ApiResult.java:110)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at org.mediawiki.api.json.ApiResult.asObject(ApiResult.java:81)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at org.wikipedia.editing.EditTask.processResult(EditTask.java:58)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at org.wikipedia.editing.EditTask.processResult(EditTask.java:15)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at org.wikipedia.ApiTask.performTask(ApiTask.java:31)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:57)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:16)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at android.os.AsyncTask$2.call(AsyncTask.java:288)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at java.util.concurrent.FutureTask.run(FutureTask.java:237)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.729</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>&#9;at java.lang.Thread.run(Thread.java:818)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>  Thread[pool-2-thread-2,5,main]</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Object.wait(Native Method)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Thread.parkFor(Thread.java:1220)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    sun.misc.Unsafe.park(Unsafe.java:299)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2016)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Thread.run(Thread.java:818)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>  Thread[Signal Catcher,5,system]</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>  Thread[Thread-186,5,main]</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Object.wait(Native Method)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Thread.parkFor(Thread.java:1220)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    sun.misc.Unsafe.park(Unsafe.java:299)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2016)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    com.facebook.imagepipeline.core.PriorityThreadFactory$1.run(PriorityThreadFactory.java:43)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Thread.run(Thread.java:818)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>  Thread[CleanupReference,5,main]</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Object.wait(Native Method)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Object.wait(Object.java:422)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:101)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:72)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    com.android.org.chromium.content.common.CleanupReference$1.run(CleanupReference.java:50)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>  Thread[AsyncTask #2,5,main]</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Object.wait(Native Method)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Thread.parkFor(Thread.java:1220)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    sun.misc.Unsafe.park(Unsafe.java:299)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2016)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Thread.run(Thread.java:818)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>  Thread[AsyncTask #3,5,main]</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Object.wait(Native Method)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Thread.parkFor(Thread.java:1220)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    sun.misc.Unsafe.park(Unsafe.java:299)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2016)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Thread.run(Thread.java:818)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>  Thread[pool-1-thread-1,5,main]</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    libcore.io.Posix.fsync(Native Method)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    libcore.io.BlockGuardOs.fsync(BlockGuardOs.java:143)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.io.FileDescriptor.sync(FileDescriptor.java:74)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    android.os.FileUtils.sync(FileUtils.java:153)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    android.app.SharedPreferencesImpl.writeToFile(SharedPreferencesImpl.java:598)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    android.app.SharedPreferencesImpl.access$800(SharedPreferencesImpl.java:51)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    android.app.SharedPreferencesImpl$2.run(SharedPreferencesImpl.java:512)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>    java.lang.Thread.run(Thread.java:818)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>THREAD_STATE</td>
+                                <td>  Thread[OkHttp Co</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Dying now...</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>java.lang.RuntimeException: ratelimited: You&#39;ve exceeded your rate limit. Please wait some time and try again</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at org.wikipedia.ApiTask.onCatch(ApiTask.java:46)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:72)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at android.os.AsyncTask.finish(AsyncTask.java:632)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at android.os.AsyncTask.access$600(AsyncTask.java:177)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at android.os.Handler.dispatchMessage(Handler.java:102)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at android.os.Looper.loop(Looper.java:135)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at android.app.ActivityThread.main(ActivityThread.java:5221)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at java.lang.reflect.Method.invoke(Native Method)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at java.lang.reflect.Method.invoke(Method.java:372)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>Caused by: ratelimited: You&#39;ve exceeded your rate limit. Please wait some time and try again</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at org.mediawiki.api.json.ApiResult.assertSuccess(ApiResult.java:110)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at org.mediawiki.api.json.ApiResult.asObject(ApiResult.java:81)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at org.wikipedia.editing.EditTask.processResult(EditTask.java:58)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at org.wikipedia.editing.EditTask.processResult(EditTask.java:15)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at org.wikipedia.ApiTask.performTask(ApiTask.java:31)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:57)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:16)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at android.os.AsyncTask$2.call(AsyncTask.java:288)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at java.util.concurrent.FutureTask.run(FutureTask.java:237)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>05-23 18:42:48.798</td>
+                                <td>error</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppExceptionHandler</td>
+                                <td>&#9;at java.lang.Thread.run(Thread.java:818)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>05-23 18:42:48.837</td>
+                                <td>debug</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.887</td>
+                                <td>info</td>
+                                <td>art</td>
+                                <td>System.exit called, status: 0</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>05-23 18:42:48.887</td>
+                                <td>info</td>
+                                <td>AndroidRuntime</td>
+                                <td>VM exiting with result code 0, cleanup skipped.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

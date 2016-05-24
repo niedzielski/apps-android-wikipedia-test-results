@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pages With Images Landscape</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../static/spoon.css" rel="stylesheet">
+        <script src="../../static/jquery.min.js"></script>
+        <script src="../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Ran on 8 devices with 6 passing and 2 failing in an average of 1 minute, 5 seconds">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Pages With Images Landscape</h1>
+                <p>Ran on 8 devices with 6 passing and 2 failing in an average of 1 minute, 5 seconds</p>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        23-nexus-s
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/emulator-5558/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/emulator-5558.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-emulator-5558">java.lang.RuntimeException: Could not launch intent Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=org.wikipedia/.page.PageActivity } within 45 seconds. Perhaps the main thread has not gone idle within a reasonable amount of time? There could be an animation or something constantly repainting the screen. Or the activity is doing network calls on creation? See the threaddump logs. For your reference the last time the event queue was idle before your activity launch request was 1464050239573 and now the last time the queue went idle was: 1464050239573. If these numbers are the same your activity might be hogging the event queue.</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-emulator-5558">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.runner.MonitoringInstrumentation.startActivitySync(MonitoringInstrumentation.java:360)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.rule.ActivityTestRule.launchActivity(ActivityTestRule.java:219)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.rules.RunRules.evaluate(RunRules.java:20)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:128)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:27)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        16-nexus-s
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/emulator-5556.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                        <a href="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.gif" title="View as animated GIF" class="pull-right icon">
+                            <img src="../../static/icon-animated.png" alt="View as animated GIF">
+                        </a>
+                    </h2>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <a href="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050240905_Mercury.png" class="thumbnail">
+                                <img src="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050240905_Mercury.png" title="Mercury">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050246322_Venus.png" class="thumbnail">
+                                <img src="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050246322_Venus.png" title="Venus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050252077_Earth.png" class="thumbnail">
+                                <img src="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050252077_Earth.png" title="Earth">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050257667_Mars.png" class="thumbnail">
+                                <img src="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050257667_Mars.png" title="Mars">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050263215_Jupiter.png" class="thumbnail">
+                                <img src="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050263215_Jupiter.png" title="Jupiter">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050268826_Saturn.png" class="thumbnail">
+                                <img src="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050268826_Saturn.png" title="Saturn">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050277008_Uranus.png" class="thumbnail">
+                                <img src="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050277008_Uranus.png" title="Uranus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050285941_Neptune.png" class="thumbnail">
+                                <img src="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050285941_Neptune.png" title="Neptune">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050293819_Barack_Obama.png" class="thumbnail">
+                                <img src="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050293819_Barack_Obama.png" title="Barack Obama">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050302589_Moon.png" class="thumbnail">
+                                <img src="../../image/emulator-5556/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050302589_Moon.png" title="Moon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        samsung SCH-I605
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/42f7300bd9119f15.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                        <a href="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.gif" title="View as animated GIF" class="pull-right icon">
+                            <img src="../../static/icon-animated.png" alt="View as animated GIF">
+                        </a>
+                    </h2>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <a href="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028633209_Mercury.png" class="thumbnail">
+                                <img src="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028633209_Mercury.png" title="Mercury">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028639797_Venus.png" class="thumbnail">
+                                <img src="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028639797_Venus.png" title="Venus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028646406_Earth.png" class="thumbnail">
+                                <img src="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028646406_Earth.png" title="Earth">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028653282_Mars.png" class="thumbnail">
+                                <img src="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028653282_Mars.png" title="Mars">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028660052_Jupiter.png" class="thumbnail">
+                                <img src="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028660052_Jupiter.png" title="Jupiter">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028666620_Saturn.png" class="thumbnail">
+                                <img src="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028666620_Saturn.png" title="Saturn">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028672882_Uranus.png" class="thumbnail">
+                                <img src="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028672882_Uranus.png" title="Uranus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028679295_Neptune.png" class="thumbnail">
+                                <img src="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028679295_Neptune.png" title="Neptune">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028685799_Barack_Obama.png" class="thumbnail">
+                                <img src="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028685799_Barack_Obama.png" title="Barack Obama">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028692434_Moon.png" class="thumbnail">
+                                <img src="../../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464028692434_Moon.png" title="Moon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Huawei Nexus 6P
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/84B7N15A07005249.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                        <a href="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.gif" title="View as animated GIF" class="pull-right icon">
+                            <img src="../../static/icon-animated.png" alt="View as animated GIF">
+                        </a>
+                    </h2>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <a href="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050274655_Mercury.png" class="thumbnail">
+                                <img src="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050274655_Mercury.png" title="Mercury">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050280701_Venus.png" class="thumbnail">
+                                <img src="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050280701_Venus.png" title="Venus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050286972_Earth.png" class="thumbnail">
+                                <img src="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050286972_Earth.png" title="Earth">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050293035_Mars.png" class="thumbnail">
+                                <img src="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050293035_Mars.png" title="Mars">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050299351_Jupiter.png" class="thumbnail">
+                                <img src="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050299351_Jupiter.png" title="Jupiter">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050305386_Saturn.png" class="thumbnail">
+                                <img src="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050305386_Saturn.png" title="Saturn">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050311542_Uranus.png" class="thumbnail">
+                                <img src="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050311542_Uranus.png" title="Uranus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050317549_Neptune.png" class="thumbnail">
+                                <img src="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050317549_Neptune.png" title="Neptune">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050323474_Barack_Obama.png" class="thumbnail">
+                                <img src="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050323474_Barack_Obama.png" title="Barack Obama">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050329420_Moon.png" class="thumbnail">
+                                <img src="../../image/84B7N15A07005249/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050329420_Moon.png" title="Moon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        21-nexus-s
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/emulator-5560/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/emulator-5560.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-emulator-5560">java.lang.RuntimeException: Could not launch intent Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=org.wikipedia/.page.PageActivity } within 45 seconds. Perhaps the main thread has not gone idle within a reasonable amount of time? There could be an animation or something constantly repainting the screen. Or the activity is doing network calls on creation? See the threaddump logs. For your reference the last time the event queue was idle before your activity launch request was 1464050300476 and now the last time the queue went idle was: 1464050300476. If these numbers are the same your activity might be hogging the event queue.</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-emulator-5560">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.runner.MonitoringInstrumentation.startActivitySync(MonitoringInstrumentation.java:360)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.rule.ActivityTestRule.launchActivity(ActivityTestRule.java:219)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.rules.RunRules.evaluate(RunRules.java:20)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:128)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:27)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1837)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        17-nexus-s
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/emulator-5554.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                        <a href="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.gif" title="View as animated GIF" class="pull-right icon">
+                            <img src="../../static/icon-animated.png" alt="View as animated GIF">
+                        </a>
+                    </h2>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <a href="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050207635_Mercury.png" class="thumbnail">
+                                <img src="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050207635_Mercury.png" title="Mercury">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050213108_Venus.png" class="thumbnail">
+                                <img src="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050213108_Venus.png" title="Venus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050218511_Earth.png" class="thumbnail">
+                                <img src="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050218511_Earth.png" title="Earth">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050224031_Mars.png" class="thumbnail">
+                                <img src="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050224031_Mars.png" title="Mars">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050229450_Jupiter.png" class="thumbnail">
+                                <img src="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050229450_Jupiter.png" title="Jupiter">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050235083_Saturn.png" class="thumbnail">
+                                <img src="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050235083_Saturn.png" title="Saturn">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050240526_Uranus.png" class="thumbnail">
+                                <img src="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050240526_Uranus.png" title="Uranus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050245910_Neptune.png" class="thumbnail">
+                                <img src="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050245910_Neptune.png" title="Neptune">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050251516_Barack_Obama.png" class="thumbnail">
+                                <img src="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050251516_Barack_Obama.png" title="Barack Obama">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050257909_Moon.png" class="thumbnail">
+                                <img src="../../image/emulator-5554/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050257909_Moon.png" title="Moon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Amazon KFFOWI
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/G0K0H40454230SPH.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                        <a href="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.gif" title="View as animated GIF" class="pull-right icon">
+                            <img src="../../static/icon-animated.png" alt="View as animated GIF">
+                        </a>
+                    </h2>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <a href="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050278946_Mercury.png" class="thumbnail">
+                                <img src="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050278946_Mercury.png" title="Mercury">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050284794_Venus.png" class="thumbnail">
+                                <img src="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050284794_Venus.png" title="Venus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050291105_Earth.png" class="thumbnail">
+                                <img src="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050291105_Earth.png" title="Earth">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050297916_Mars.png" class="thumbnail">
+                                <img src="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050297916_Mars.png" title="Mars">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050303999_Jupiter.png" class="thumbnail">
+                                <img src="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050303999_Jupiter.png" title="Jupiter">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050310008_Saturn.png" class="thumbnail">
+                                <img src="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050310008_Saturn.png" title="Saturn">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050316223_Uranus.png" class="thumbnail">
+                                <img src="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050316223_Uranus.png" title="Uranus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050322479_Neptune.png" class="thumbnail">
+                                <img src="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050322479_Neptune.png" title="Neptune">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050328609_Barack_Obama.png" class="thumbnail">
+                                <img src="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050328609_Barack_Obama.png" title="Barack Obama">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050334882_Moon.png" class="thumbnail">
+                                <img src="../../image/G0K0H40454230SPH/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050334882_Moon.png" title="Moon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        LGE LGL41C
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/LGL41C4a28550.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                        <a href="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.gif" title="View as animated GIF" class="pull-right icon">
+                            <img src="../../static/icon-animated.png" alt="View as animated GIF">
+                        </a>
+                    </h2>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <a href="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050279598_Mercury.png" class="thumbnail">
+                                <img src="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050279598_Mercury.png" title="Mercury">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050285647_Venus.png" class="thumbnail">
+                                <img src="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050285647_Venus.png" title="Venus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050292198_Earth.png" class="thumbnail">
+                                <img src="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050292198_Earth.png" title="Earth">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050298731_Mars.png" class="thumbnail">
+                                <img src="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050298731_Mars.png" title="Mars">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050305197_Jupiter.png" class="thumbnail">
+                                <img src="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050305197_Jupiter.png" title="Jupiter">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050311462_Saturn.png" class="thumbnail">
+                                <img src="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050311462_Saturn.png" title="Saturn">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050317806_Uranus.png" class="thumbnail">
+                                <img src="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050317806_Uranus.png" title="Uranus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050324068_Neptune.png" class="thumbnail">
+                                <img src="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050324068_Neptune.png" title="Neptune">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050331223_Barack_Obama.png" class="thumbnail">
+                                <img src="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050331223_Barack_Obama.png" title="Barack Obama">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050338117_Moon.png" class="thumbnail">
+                                <img src="../../image/LGL41C4a28550/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1464050338117_Moon.png" title="Moon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('.icon, .thumbnail img').tooltip({
+                container: 'body'
+            });
+        </script>
+    </body>
+</html>

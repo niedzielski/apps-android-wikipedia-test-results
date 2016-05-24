@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="73" failures="2" errors="0" skipped="0" time="461.736" timestamp="2016-05-24T00:44:47" hostname="localhost">
+  <properties />
+  <testcase name="testPreview" classname="org.wikipedia.editing.EditPreviewTaskTest" time="6.281" />
+  <testcase name="testSyntaxHighlight" classname="org.wikipedia.editing.richtext.SyntaxHighlighterTest" time="8.769" />
+  <testcase name="testCompare" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.703" />
+  <testcase name="testGetDistanceLabelKilometers" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelMeters" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelNull" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelSameLocation" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSort" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSortWithNullLocations" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.001" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testPagesWithoutImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="45.02">
+    <failure>java.lang.RuntimeException: Could not launch intent Intent { act=android.intent.action.MAIN flg=0x14000000 cmp=org.wikipedia/.page.PageActivity } within 45 seconds. Perhaps the main thread has not gone idle within a reasonable amount of time? There could be an animation or something constantly repainting the screen. Or the activity is doing network calls on creation? See the threaddump logs. For your reference the last time the event queue was idle before your activity launch request was 1464050239573 and now the last time the queue went idle was: 1464050239573. If these numbers are the same your activity might be hogging the event queue.
+at android.support.test.runner.MonitoringInstrumentation.startActivitySync(MonitoringInstrumentation.java:360)
+at android.support.test.rule.ActivityTestRule.launchActivity(ActivityTestRule.java:219)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:268)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+</failure>
+  </testcase>
+  <testcase name="testPagesWithImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="45.189">
+    <failure>java.lang.RuntimeException: Could not launch intent Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=org.wikipedia/.page.PageActivity } within 45 seconds. Perhaps the main thread has not gone idle within a reasonable amount of time? There could be an animation or something constantly repainting the screen. Or the activity is doing network calls on creation? See the threaddump logs. For your reference the last time the event queue was idle before your activity launch request was 1464050239573 and now the last time the queue went idle was: 1464050239573. If these numbers are the same your activity might be hogging the event queue.
+at android.support.test.runner.MonitoringInstrumentation.startActivitySync(MonitoringInstrumentation.java:360)
+at android.support.test.rule.ActivityTestRule.launchActivity(ActivityTestRule.java:219)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:268)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1879)
+</failure>
+  </testcase>
+  <testcase name="testPagesWithImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="102.136" />
+  <testcase name="testPageFetchWithAmpersand" classname="org.wikipedia.page.PageLoadTest" time="2.663" />
+  <testcase name="testPagesRtlPortrait" classname="org.wikipedia.page.PageLoadTest" time="27.447" />
+  <testcase name="testPagesWithoutImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="55.922" />
+  <testcase name="testPageFetch" classname="org.wikipedia.page.PageLoadTest" time="5.927" />
+  <testcase name="testPagesRtlLandscape" classname="org.wikipedia.page.PageLoadTest" time="70.534" />
+  <testcase name="testNonClosedImgTag" classname="org.wikipedia.savedpages.ImageUrlMapTests" time="2.335" />
+  <testcase name="testUrlRewrite" classname="org.wikipedia.savedpages.ImageUrlMapTests" time="0.052" />
+  <testcase name="testDOMLoaded" classname="org.wikipedia.test.BridgeTests" time="1.246" />
+  <testcase name="testPingBackHandling" classname="org.wikipedia.test.BridgeTests" time="0.277" />
+  <testcase name="testTokenFetch" classname="org.wikipedia.test.CreateAccountTaskTest" time="0.833" />
+  <testcase name="testAbuseFilterTriggerStopOnArbitraryErrorCode" classname="org.wikipedia.test.EditTaskTest" time="0.667" />
+  <testcase name="testEdit" classname="org.wikipedia.test.EditTaskTest" time="2.484" />
+  <testcase name="testCaptcha" classname="org.wikipedia.test.EditTaskTest" time="0.265" />
+  <testcase name="testAbuseFilterTriggerStop" classname="org.wikipedia.test.EditTaskTest" time="0.665" />
+  <testcase name="testAbuseFilterTriggerWarn" classname="org.wikipedia.test.EditTaskTest" time="0.532" />
+  <testcase name="testPageFetch" classname="org.wikipedia.test.FetchSectionWikitextTaskTests" time="0.638" />
+  <testcase name="testEmptyResults" classname="org.wikipedia.test.FullSearchTaskTests" time="1.303" />
+  <testcase name="testFullTextSearchWithResults" classname="org.wikipedia.test.FullSearchTaskTests" time="0.748" />
+  <testcase name="testOneTitle" classname="org.wikipedia.test.GetDescriptionsTaskTests" time="0.352" />
+  <testcase name="testThreeTitles" classname="org.wikipedia.test.GetDescriptionsTaskTests" time="0.351" />
+  <testcase name="testDefaultLocaleAndAcceptLanguageAgree" classname="org.wikipedia.test.LanguageVariantTests" time="0.05" />
+  <testcase name="testLogin" classname="org.wikipedia.test.LoginTaskTest" time="1.532" />
+  <testcase name="testJSONSerialization" classname="org.wikipedia.test.PageTests" time="0.0" />
+  <testcase name="testCanonicalURL" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testColonChar" classname="org.wikipedia.test.PageTitleTests" time="0.077" />
+  <testcase name="testEquals" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testFile" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testFromInternalLink" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testHashChar" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testJSONSerialization" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testMainpage" classname="org.wikipedia.test.PageTitleTests" time="0.053" />
+  <testcase name="testParsing" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testPrefixedText" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testSite" classname="org.wikipedia.test.PageTitleTests" time="0.0" />
+  <testcase name="testSpecial" classname="org.wikipedia.test.PageTitleTests" time="0.05" />
+  <testcase name="testHistoryEntry" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testLruCache" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testPageImage" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testPageProperties" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testPageTitle" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testPageTitleTalk" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testSite" classname="org.wikipedia.test.ParcelableTest" time="0.001" />
+  <testcase name="testJSONSerialization" classname="org.wikipedia.test.SectionTests" time="0.0" />
+  <testcase name="testSectionLead" classname="org.wikipedia.test.SectionTests" time="0.028" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="org.wikipedia.test.SectionTests" time="0.0" />
+  <testcase name="testEquals" classname="org.wikipedia.test.SiteTests" time="0.0" />
+  <testcase name="testIsSupportedSite" classname="org.wikipedia.test.SiteTests" time="0.001" />
+  <testcase name="testNormalization" classname="org.wikipedia.test.SiteTests" time="0.054" />
+  <testcase name="testTitleForInternalLink" classname="org.wikipedia.test.SiteTests" time="0.0" />
+  <testcase name="testFilter1ResultDifferentFromTitle" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.052" />
+  <testcase name="testFilter1ResultSameAsTitleIgnoreCase" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.103" />
+  <testcase name="testFilter4ResultsDifferentFromTitle" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.105" />
+  <testcase name="testFilterNoResults" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.268" />
+  <testcase name="testTask" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.342" />
+  <testcase name="testAllTranslations" classname="org.wikipedia.test.TranslationTests" time="20.28" />
+  <testcase name="testAppropriateThreadException" classname="org.wikipedia.test.concurrency.AsyncTaskTest" time="0.552" />
+  <testcase name="testAppropriateThreadFinish" classname="org.wikipedia.test.concurrency.AsyncTaskTest" time="0.176" />
+  <testcase name="testExceptionHandling" classname="org.wikipedia.test.concurrency.AsyncTaskTest" time="0.427" />
+  <testcase name="testFinishHandling" classname="org.wikipedia.test.concurrency.AsyncTaskTest" time="0.125" />
+  <testcase name="testLoadPages" classname="org.wikipedia.test.perf.PageLoadPerformanceTests" time="14.113" />
+</testsuite>
