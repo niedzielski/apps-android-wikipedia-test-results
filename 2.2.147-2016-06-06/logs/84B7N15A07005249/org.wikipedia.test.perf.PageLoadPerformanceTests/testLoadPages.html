@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Load Pages</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../../static/spoon.css" rel="stylesheet">
+        <script src="../../../static/jquery.min.js"></script>
+        <script src="../../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Test passed in 4 seconds on Huawei Nexus 6P">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Load Pages</h1>
+                <p>Test passed in 4 seconds on Huawei Nexus 6P</p>
+            </div>
+            <div class="row log">
+                <div class="span12">
+                    <table class="table table-striped table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Level</th>
+                                <th>Tag</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="level-info info">
+                                <td>06-06 12:00:36.604</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>started: testLoadPages(org.wikipedia.test.perf.PageLoadPerformanceTests)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>06-06 12:00:36.605</td>
+                                <td>info</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Activities that are still in CREATED to STOPPED: 0</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.605</td>
+                                <td>debug</td>
+                                <td>ActivityTestRule</td>
+                                <td>Launching activity org.wikipedia.page.PageActivity</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.643</td>
+                                <td>debug</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.664</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@d013bc in: PRE_ON_CREATE</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>06-06 12:00:36.674</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppCrashReporter</td>
+                                <td>checkCrashes():40: Checking for HockeyApp crashes.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.702</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageActivity</td>
+                                <td>registerBus():981: Registered bus.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.704</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.RemoteConfigRefreshTask</td>
+                                <td>Skipping recurring task, remote-config-refresher. Last execution was Mon Jun 06 09:49:20 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.704</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.snippet.SharedImageCleanupTask</td>
+                                <td>Skipping recurring task, shared-image-cleanup. Last execution was Mon Jun 06 09:49:20 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.705</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.recurring.DailyEventTask</td>
+                                <td>Skipping recurring task, dailyEventTask. Last execution was Mon Jun 06 09:49:20 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.743</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@d013bc in: CREATED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.752</td>
+                                <td>debug</td>
+                                <td>cr_Ime</td>
+                                <td>[InputMethodManagerWrapper.java:30] Constructor</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>06-06 12:00:36.752</td>
+                                <td>warn</td>
+                                <td>cr_AwContents</td>
+                                <td>onDetachedFromWindow called when already detached. Ignoring</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.753</td>
+                                <td>debug</td>
+                                <td>cr_Ime</td>
+                                <td>[InputMethodManagerWrapper.java:59] isActive: false</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>06-06 12:00:36.754</td>
+                                <td>error</td>
+                                <td>MediaPlayer-JNI</td>
+                                <td>JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0</td>
+                            </tr>
+                            <tr class="level-error error">
+                                <td>06-06 12:00:36.754</td>
+                                <td>error</td>
+                                <td>MediaPlayer-JNI</td>
+                                <td>JNIMediaPlayerFactory: bIsQCMediaPlayerPresent 0</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>06-06 12:00:36.767</td>
+                                <td>info</td>
+                                <td>cr_Ime</td>
+                                <td>ImeThread is not enabled.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.774</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>loadFromBackStack():206: Loaded page Gases nobles from backstack</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.774</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@d013bc in: STARTED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.776</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@d013bc in: RESUMED</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>06-06 12:00:36.927</td>
+                                <td>warn</td>
+                                <td>cr_BindingManager</td>
+                                <td>Cannot call determinedVisibility() - never saw a connection for the pid: 16944</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.927</td>
+                                <td>debug</td>
+                                <td>cr_Ime</td>
+                                <td>[InputMethodManagerWrapper.java:59] isActive: true</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:36.928</td>
+                                <td>debug</td>
+                                <td>cr_Ime</td>
+                                <td>[InputMethodManagerWrapper.java:68] hideSoftInputFromWindow</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>06-06 12:00:36.986</td>
+                                <td>info</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionSyncAdapter</td>
+                                <td>upload():61: uploading 3 option(s)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:37.020</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Reading from cache: Gases nobles</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:37.068</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$13</td>
+                                <td>onGetComplete():503: Using page from cache: Gases nobles</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:37.087</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: Gases nobles</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:37.090</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.leadimages.ImageViewWithFace</td>
+                                <td>detectFace():83: Face detection took 6ms</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>06-06 12:00:38.078</td>
+                                <td>info</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionSyncAdapter</td>
+                                <td>download():55: downloaded 3 option(s)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>06-06 12:00:38.330</td>
+                                <td>info</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionSyncAdapter</td>
+                                <td>upload():61: uploading 3 option(s)</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>06-06 12:00:38.677</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.test.perf.MeasurementController</td>
+                                <td>start():27: Start(Test_page_for_app_testing/Section1)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:39.137</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: Test page for app testing/Section1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:39.332</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Test page for app testing/Section1</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>06-06 12:00:39.333</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.test.perf.MeasurementController</td>
+                                <td>stop():41: Duration(Test_page_for_app_testing/Section1) = 655ms</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>06-06 12:00:39.334</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.test.perf.MeasurementController</td>
+                                <td>start():27: Start(A_long_page)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>06-06 12:00:39.519</td>
+                                <td>info</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionSyncAdapter</td>
+                                <td>download():55: downloaded 3 option(s)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:39.572</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: A long page</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:39.765</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: A long page</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>06-06 12:00:39.765</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.test.perf.MeasurementController</td>
+                                <td>stop():41: Duration(A_long_page) = 431ms</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>06-06 12:00:39.768</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.test.perf.MeasurementController</td>
+                                <td>start():27: Start(Barack_Obama)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:40.059</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():608: Sent message &#39;displayLeadSection&#39; for page: Barack Obama</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:40.107</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.leadimages.ImageViewWithFace</td>
+                                <td>detectFace():81: Found face at 0.49398437, 0.1661019</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:40.108</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.leadimages.ImageViewWithFace</td>
+                                <td>detectFace():83: Face detection took 47ms</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>06-06 12:00:40.573</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.test.perf.MeasurementController</td>
+                                <td>stop():41: Duration(Barack_Obama) = 805ms</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>06-06 12:00:40.574</td>
+                                <td>info</td>
+                                <td>org.wikipedia.test.perf.MeasurementController</td>
+                                <td>analyzeAll():45: ---</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>06-06 12:00:40.576</td>
+                                <td>info</td>
+                                <td>org.wikipedia.test.perf.MeasurementController</td>
+                                <td>analyze():53: Test_page_for_app_testing/Section1: 655ms(n: 1; min: 655ms; max: 655ms)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>06-06 12:00:40.576</td>
+                                <td>info</td>
+                                <td>org.wikipedia.test.perf.MeasurementController</td>
+                                <td>analyze():53: Barack_Obama: 805ms(n: 1; min: 805ms; max: 805ms)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>06-06 12:00:40.577</td>
+                                <td>info</td>
+                                <td>org.wikipedia.test.perf.MeasurementController</td>
+                                <td>analyze():53: A_long_page: 431ms(n: 1; min: 431ms; max: 431ms)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>06-06 12:00:40.577</td>
+                                <td>info</td>
+                                <td>org.wikipedia.test.perf.MeasurementController</td>
+                                <td>analyzeAll():49: ---</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>06-06 12:00:40.579</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Barack Obama</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>06-06 12:00:40.602</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>finished: testLoadPages(org.wikipedia.test.perf.PageLoadPerformanceTests)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
