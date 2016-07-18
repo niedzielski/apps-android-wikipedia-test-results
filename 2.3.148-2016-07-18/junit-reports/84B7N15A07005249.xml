@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="1" failures="1" errors="0" skipped="0" time="0.0" timestamp="2016-07-18T19:49:09" hostname="localhost">
+  <properties />
+  <testcase name="testPreview" classname="org.wikipedia.editing.EditPreviewTaskTest" time="20.364">
+    <failure>java.lang.RuntimeException: org.mediawiki.api.json.ApiException: java.net.SocketTimeoutException: failed to connect to test.wikipedia.org/2620:0:860:ed1a::1 (port 443) after 10000ms
+at org.wikipedia.ApiTask.onCatch(ApiTask.java:46)
+at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:72)
+at android.os.AsyncTask.finish(AsyncTask.java:651)
+at android.os.AsyncTask.-wrap1(AsyncTask.java)
+at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:148)
+at android.app.ActivityThread.main(ActivityThread.java:5461)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+Caused by: org.mediawiki.api.json.ApiException: java.net.SocketTimeoutException: failed to connect to test.wikipedia.org/2620:0:860:ed1a::1 (port 443) after 10000ms
+at org.mediawiki.api.json.Api.setupRequest(Api.java:225)
+at org.mediawiki.api.json.RequestBuilder.setupRequest(RequestBuilder.java:70)
+at org.mediawiki.api.json.RequestBuilder.post(RequestBuilder.java:97)
+at org.wikipedia.editing.EditPreviewTask.makeRequest(EditPreviewTask.java:36)
+at org.wikipedia.ApiTask.performTask(ApiTask.java:30)
+at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:57)
+at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:16)
+at android.os.AsyncTask$2.call(AsyncTask.java:295)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+at java.lang.Thread.run(Thread.java:818)
+Caused by: java.net.SocketTimeoutException: failed to connect to test.wikipedia.org/2620:0:860:ed1a::1 (port 443) after 10000ms
+at libcore.io.IoBridge.connectErrno(IoBridge.java:169)
+at libcore.io.IoBridge.connect(IoBridge.java:122)
+at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:183)
+at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:452)
+at java.net.Socket.connect(Socket.java:884)
+at okhttp3.internal.AndroidPlatform.connectSocket(AndroidPlatform.java:55)
+at okhttp3.internal.io.RealConnection.connectSocket(RealConnection.java:185)
+at okhttp3.internal.io.RealConnection.buildConnection(RealConnection.java:170)
+at okhttp3.internal.io.RealConnection.connect(RealConnection.java:111)
+at okhttp3.internal.http.StreamAllocation.findConnection(StreamAllocation.java:187)
+at okhttp3.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:123)
+at okhttp3.internal.http.StreamAllocation.newStream(StreamAllocation.java:93)
+at okhttp3.internal.http.HttpEngine.connect(HttpEngine.java:296)
+at okhttp3.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+at okhttp3.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:473)
+at okhttp3.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:129)
+at okhttp3.internal.huc.HttpURLConnectionImpl.getOutputStream(HttpURLConnectionImpl.java:263)
+at okhttp3.internal.huc.DelegatingHttpsURLConnection.getOutputStream(DelegatingHttpsURLConnection.java:218)
+at okhttp3.internal.huc.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:26)
+at com.github.kevinsawicki.http.HttpRequest.openOutput(HttpRequest.java:2688)
+at com.github.kevinsawicki.http.HttpRequest.form(HttpRequest.java:3111)
+at com.github.kevinsawicki.http.HttpRequest.form(HttpRequest.java:3071)
+at com.github.kevinsawicki.http.HttpRequest.form(HttpRequest.java:3136)
+at com.github.kevinsawicki.http.HttpRequest.form(HttpRequest.java:3041)
+at org.mediawiki.api.json.Api.setupRequest(Api.java:223)
+... 11 more
+</failure>
+  </testcase>
+</testsuite>

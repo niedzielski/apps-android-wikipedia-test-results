@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pages With Images Portrait</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../../static/spoon.css" rel="stylesheet">
+        <script src="../../../static/jquery.min.js"></script>
+        <script src="../../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Test failed in 1 second on 16-nexus-s">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Pages With Images Portrait</h1>
+                <p>Test failed in 1 second on 16-nexus-s</p>
+            </div>
+            <div class="row log">
+                <div class="span12">
+                    <table class="table table-striped table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Level</th>
+                                <th>Tag</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:47.695</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>started: testPagesWithImagesPortrait(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:47.727</td>
+                                <td>info</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Activities that are still in CREATED to STOPPED: 2</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.727</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>&lt;-- HTTP FAILED: java.net.SocketException: Socket closed</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.735</td>
+                                <td>debug</td>
+                                <td>ActivityTestRule</td>
+                                <td>Launching activity org.wikipedia.MainActivity</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.771</td>
+                                <td>debug</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.776</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionSyncAdapter</td>
+                                <td>onPerformSync():47: </td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.776</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionSyncAdapter</td>
+                                <td>java.io.IOException: No token for meta.wikimedia.org</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.776</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionSyncAdapter</td>
+                                <td>&#9;at org.wikipedia.useroption.dataclient.DefaultUserOptionDataClient.getToken(DefaultUserOptionDataClient.java:77)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.776</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionSyncAdapter</td>
+                                <td>&#9;at org.wikipedia.useroption.dataclient.DefaultUserOptionDataClient.post(DefaultUserOptionDataClient.java:53)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.776</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionSyncAdapter</td>
+                                <td>&#9;at org.wikipedia.useroption.sync.UserOptionSyncAdapter.upload(UserOptionSyncAdapter.java:70)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.776</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionSyncAdapter</td>
+                                <td>&#9;at org.wikipedia.useroption.sync.UserOptionSyncAdapter.onPerformSync(UserOptionSyncAdapter.java:42)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.776</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionSyncAdapter</td>
+                                <td>&#9;at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:254)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1848K, 13% free 16145K/18439K, paused 15ms+0ms, total 26ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>WAIT_FOR_CONCURRENT_GC blocked 7ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>&lt;-- 200 OK https://en.wikipedia.org/w/api.php?format=json&amp;formatversion=2&amp;action=query&amp;prop=pageterms|pageimages|pageprops&amp;ppprop=mainpage|disambiguation&amp;wbptterms=description&amp;generator=search&amp;gsrnamespace=0&amp;gsrwhat=text&amp;gsrinfo=&amp;gsrprop=redirecttitle&amp;gsrlimit=5&amp;piprop=thumbnail&amp;pithumbsize=320&amp;pilimit=5&amp;gsrsearch=morelike:Mesopotamia (285ms)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Date: Mon, 18 Jul 2016 19:48:49 GMT</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Content-Type: application/json; charset=utf-8</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Connection: keep-alive</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Server: mw1231.eqiad.wmnet</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Powered-By: HHVM/3.12.1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Content-Type-Options: nosniff</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Cache-control: private, must-revalidate, max-age=0</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Frame-Options: SAMEORIGIN</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Vary: Accept-Encoding</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Backend-Timing: D=63702 t=1468871329551642</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Varnish: 1291158826, 4174298356, 2045034436</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Via: 1.1 varnish, 1.1 varnish, 1.1 varnish</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Accept-Ranges: bytes</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Age: 0</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Cache: cp1067 pass, cp2004 pass, cp2007 pass</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Strict-Transport-Security: max-age=31536000; includeSubDomains; preload</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Analytics: ns=-1;special=Badtitle;loggedIn=1;WMF-Last-Access=18-Jul-2016;https=1;wmfuuid=ebc04a89-225a-4ae8-a25d-c9ac0c5738b7</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Client-IP: 73.34.253.51</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>{&quot;batchcomplete&quot;:true,&quot;continue&quot;:{&quot;gsroffset&quot;:5,&quot;continue&quot;:&quot;gsroffset||&quot;},&quot;query&quot;:{&quot;pages&quot;:[{&quot;pageid&quot;:1566,&quot;ns&quot;:0,&quot;title&quot;:&quot;Akkadian Empire&quot;,&quot;index&quot;:3,&quot;terms&quot;:{&quot;description&quot;:[&quot;historical state in Mesopotamia&quot;]},&quot;thumbnail&quot;:{&quot;source&quot;:&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Empire_akkad.svg/320px-Empire_akkad.svg.png&quot;,&quot;width&quot;:320,&quot;height&quot;:249}},{&quot;pageid&quot;:2085,&quot;ns&quot;:0,&quot;title&quot;:&quot;Assyria&quot;,&quot;index&quot;:2,&quot;terms&quot;:{&quot;description&quot;:[&quot;major Mesopotamian East Semitic kingdom&quot;]},&quot;thumbnail&quot;:{&quot;source&quot;:&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Ancient_Egypt_and_Mesopotamia_c._1450_BC.png/261px-Ancient_Egypt_and_Mesopotamia_c._1450_BC.png&quot;,&quot;width&quot;:261,&quot;height&quot;:320}},{&quot;pageid&quot;:50521,&quot;ns&quot;:0,&quot;title&quot;:&quot;Sumer&quot;,&quot;index&quot;:1,&quot;terms&quot;:{&quot;description&quot;:[&quot;ancient civilization and historical region in southern Mesopotamia&quot;]},&quot;thumbnail&quot;:{&quot;source&quot;:&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Cities_of_Sumer_%28en%29.svg/291px-Cities_of_Sumer_%28en%29.svg.png&quot;,&quot;width&quot;:291,&quot;height&quot;:320}},{&quot;pageid&quot;:85442,&quot;ns&quot;:0,&quot;title&quot;:&quot;Uruk&quot;,&quot;index&quot;:4,&quot;terms&quot;:{&quot;description&quot;:[&quot;ancient city of Sumer and Babylonia&quot;]},&quot;thumbnail&quot;:{&quot;source&quot;:&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Part_of_front_of_Inanna_temple_of_Kara_Indasch_from_Uruk_Vorderasiatisches_Museum_Berlin.jpg/320px-Part_of_front_of_Inanna_temple_of_Kara_Indasch_from_Uruk_Vorderasiatisches_Museum_Berlin.jpg&quot;,&quot;width&quot;:320,&quot;height&quot;:248}},{&quot;pageid&quot;:5223262,&quot;ns&quot;:0,&quot;title&quot;:&quot;History of Mesopotamia&quot;,&quot;index&quot;:5,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/N-Mesopotamia_and_Syria_english.svg/320px-N-Mesopotamia_and_Syria_english.svg.png&quot;,&quot;width&quot;:320,&quot;height&quot;:226}}]}}</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>&lt;-- END HTTP (1681-byte body)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.825</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.views.FaceAndColorDetectImageView</td>
+                                <td>detectFace():87: Face detection took 4ms</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>07-18 13:48:47.895</td>
+                                <td>warn</td>
+                                <td>IInputConnectionWrapper</td>
+                                <td>showStatusIcon on inactive InputConnection</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.965</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97a02430 in: PRE_ON_CREATE</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>07-18 13:48:47.965</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppCrashReporter</td>
+                                <td>checkCrashes():40: Checking for HockeyApp crashes.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.995</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.MainActivity</td>
+                                <td>registerBus():1170: Registered bus.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.995</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.RemoteConfigRefreshTask</td>
+                                <td>Skipping recurring task, remote-config-refresher. Last execution was Mon Jul 18 13:48:45 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.995</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.snippet.SharedImageCleanupTask</td>
+                                <td>Skipping recurring task, shared-image-cleanup. Last execution was Mon Jul 18 13:48:45 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.995</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.recurring.DailyEventTask</td>
+                                <td>Skipping recurring task, dailyEventTask. Last execution was Mon Jul 18 13:48:45 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:47.995</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97a02430 in: CREATED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.015</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 950K, 13% free 16171K/18439K, paused 10ms, total 17ms</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.015</td>
+                                <td>info</td>
+                                <td>dalvikvm-heap</td>
+                                <td>Grow heap (frag case) to 16.565MB for 777612-byte allocation</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.025</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 65K, 13% free 16865K/19207K, paused 5ms, total 5ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.035</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 0K, 13% free 16865K/19207K, paused 9ms, total 9ms</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.035</td>
+                                <td>info</td>
+                                <td>dalvikvm-heap</td>
+                                <td>Grow heap (frag case) to 18.169MB for 1749612-byte allocation</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.045</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 0K, 12% free 18573K/20935K, paused 6ms, total 6ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.055</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; GET http://en.wikipedia.org/api/rest_v1/feed/featured/2016/07/18 http/1.1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.055</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; END GET</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.055</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97a02430 in: STARTED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.055</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97a02430 in: RESUMED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.065</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97db8f18 in: STOPPED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.065</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.MainActivity</td>
+                                <td>unregisterBus():1176: Unregistered bus.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.065</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97db8f18 in: DESTROYED</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.075</td>
+                                <td>info</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionSyncAdapter</td>
+                                <td>upload():61: uploading 2 option(s)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.075</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; POST https://meta.wikimedia.org/w/api.php?format=json&amp;formatversion=2&amp;action=options&amp;optionname=userjs-app-pref-font-size&amp;optionvalue=7 http/1.1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.075</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Content-Type: application/x-www-form-urlencoded</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.075</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Content-Length: 52</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.075</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>token=48a7813dd13407727828fa34f009d27b578d32a1%2B%5C</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.075</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; END POST (52-byte body)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>&lt;-- 200 OK https://en.wikipedia.org/api/rest_v1/feed/featured/2016/07/18 (73ms)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Date: Mon, 18 Jul 2016 19:48:48 GMT</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Content-Type: application/json; charset=utf-8; profile=&quot;https://www.mediawiki.org/wiki/Specs/content-services/0.2.0&quot;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Connection: keep-alive</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>cache-control: s-maxage=60, max-age=30</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>access-control-allow-origin: *</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>access-control-allow-headers: accept, content-type</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>access-control-expose-headers: etag</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>x-xss-protection: 1; mode=block</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>x-content-type-options: nosniff</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>x-frame-options: SAMEORIGIN</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>content-security-policy: default-src &#39;none&#39;; frame-ancestors &#39;none&#39;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>x-content-security-policy: default-src &#39;none&#39;; frame-ancestors &#39;none&#39;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>x-webkit-csp: default-src &#39;none&#39;; frame-ancestors &#39;none&#39;</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>etag: 20160718/a022a6ff-4d20-11e6-9868-4479c0e3ae2e</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>vary: Accept-Encoding</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>access-control-allow-methods: GET</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>x-request-id: 9ff741aa-4d20-11e6-98b9-b0d6ee682e9e</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Varnish: 2270457991, 189438946, 2045032087 2045002956</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Via: 1.1 varnish, 1.1 varnish, 1.1 varnish</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Accept-Ranges: bytes</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.125</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Age: 8</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.135</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Cache: cp1065 miss, cp2007 miss, cp2007 hit/1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.135</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Strict-Transport-Security: max-age=31536000; includeSubDomains; preload</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.135</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Analytics: WMF-Last-Access=18-Jul-2016;https=1;wmfuuid=ebc04a89-225a-4ae8-a25d-c9ac0c5738b7</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.135</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Client-IP: 73.34.253.51</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.135</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>{&quot;tfa&quot;:{&quot;title&quot;:&quot;California_State_Route_56&quot;,&quot;normalizedtitle&quot;:&quot;California State Route 56&quot;,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/California_State_Route_56.svg/640px-California_State_Route_56.svg.png&quot;,&quot;width&quot;:640,&quot;height&quot;:380},&quot;description&quot;:&quot;east–west state highway in the U.S. state of California&quot;,&quot;extract&quot;:&quot;State Route 56 (SR 56) is an east–west state highway in the U.S. state of California. It runs 9.210 miles (14.822 km) from Interstate 5 (I-5) in the Carmel Valley neighborhood of San Diego to I-15. The eastern terminus of the highway is also the western end of the Ted Williams Parkway. SR 56 serves as an important connector between I-5 and I-15, being the only east–west freeway between SR 78 in north San Diego County, several miles away, and SR 52 near Marine Corps Air Station Miramar. It is also named the Ted Williams Freeway, after the San Diego-born baseball player.&quot;},&quot;random&quot;:{&quot;items&quot;:[{&quot;title&quot;:&quot;Eddie_Flynn&quot;}]},&quot;mostread&quot;:{&quot;date&quot;:&quot;2016-07-18Z&quot;,&quot;articles&quot;:[{&quot;views&quot;:430602,&quot;rank&quot;:3,&quot;title&quot;:&quot;Pokémon_Go&quot;,&quot;pageid&quot;:47774416,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Pok%C3%A9mon_Go_Plus.jpg/285px-Pok%C3%A9mon_Go_Plus.jpg&quot;,&quot;width&quot;:285,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;Pokémon Go&quot;,&quot;description&quot;:&quot;augmented reality mobile game based on the Pokémon franchise&quot;},{&quot;views&quot;:244935,&quot;rank&quot;:4,&quot;title&quot;:&quot;Eazy-E&quot;,&quot;pageid&quot;:163169,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Eazy-E.jpg/210px-Eazy-E.jpg&quot;,&quot;width&quot;:210,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;Eazy-E&quot;,&quot;description&quot;:&quot;Gangsta rapper, producer&quot;},{&quot;views&quot;:237150,&quot;rank&quot;:5,&quot;title&quot;:&quot;Qandeel_Baloch&quot;,&quot;pageid&quot;:49846280,&quot;normalizedtitle&quot;:&quot;Qandeel Baloch&quot;,&quot;description&quot;:&quot;Pakistani model, actress, feminist activist and social media celebrity&quot;},{&quot;views&quot;:210219,&quot;rank&quot;:7,&quot;title&quot;:&quot;Stranger_Things_(TV_series)&quot;,&quot;pageid&quot;:46301800,&quot;normalizedtitle&quot;:&quot;Stranger Things (TV series)&quot;,&quot;description&quot;:&quot;American television series&quot;},{&quot;views&quot;:202355,&quot;rank&quot;:8,&quot;title&quot;:&quot;Henrik_Stenson&quot;,&quot;pageid&quot;:3884507,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Henrik_Stenson_in_Jan_2014.jpg/257px-Henrik_Stenson_in_Jan_2014.jpg&quot;,&quot;width&quot;:257,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;Henrik Stenson&quot;,&quot;description&quot;:&quot;Swedish professional golfer&quot;},{&quot;views&quot;:192396,&quot;rank&quot;:9,&quot;title&quot;:&quot;Okto&quot;,&quot;pageid&quot;:19725179,&quot;normalizedtitle&quot;:&quot;Okto&quot;},{&quot;views&quot;:189119,&quot;rank&quot;:10,&quot;title&quot;:&quot;London_Paramount&quot;,&quot;pageid&quot;:37262476,&quot;normalizedtitle&quot;:&quot;London Paramount&quot;,&quot;description&quot;:&quot;theme park in Kent, United Kingdom&quot;},{&quot;views&quot;:178677,&quot;rank&quot;:11,&quot;title&quot;:&quot;Proyecto_40&quot;,&quot;pageid&quot;:32146723,&quot;normalizedtitle&quot;:&quot;Proyecto 40&quot;,&quot;description&quot;:&quot;television network operated by TV Azteca in Mexico. Programming generally consists of news, informational and entertainment shows. XHTVM is the flagship station of the network&quot;},{&quot;views&quot;:174187,&quot;rank&quot;:12,&quot;title&quot;:&quot;Mike_Pence&quot;,&quot;pageid&quot;:391324,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Mike_Pence_February_2015.jpg/233px-Mike_Pence_February_2015.jpg&quot;,&quot;width&quot;:233,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;Mike Pence&quot;,&quot;description&quot;:&quot;American politician&quot;},{&quot;views&quot;:172411,&quot;rank&quot;:13,&quot;title&quot;:&quot;Dr._Dre&quot;,&quot;pageid&quot;:8083,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Dr._Dre_in_2011.jpg/206px-Dr._Dre_in_2011.jpg&quot;,&quot;width&quot;:206,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;Dr. Dre&quot;,&quot;description&quot;:&quot;American record producer, rapper, entrepreneur, and actor&quot;},{&quot;views&quot;:162226,&quot;rank&quot;:14,&quot;title&quot;:&quot;Ghostbusters_(2016_film)&quot;,&quot;pageid&quot;:44067307,&quot;normalizedtitle&quot;:&quot;Ghostbusters (2016 film)&quot;,&quot;description&quot;:&quot;2016 film&quot;},{&quot;views&quot;:147498,&quot;rank&quot;:16,&quot;title&quot;:&quot;Sultan_(2016_film)&quot;,&quot;pageid&quot;:45453032,&quot;normalizedtitle&quot;:&quot;Sultan (2016 film)&quot;},{&quot;views&quot;:143203,&quot;rank&quot;:17,&quot;title&quot;:&quot;N.W.A&quot;,&quot;pageid&quot;:21149,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bring_the_Noise_Tour_at_Joe_Louis_Arena_1988-12-10_%28ticket%29.jpg/320px-Bring_the_Noise_Tour_at_Joe_Louis_Arena_1988-12-10_%28ticket%29.jpg&quot;,&quot;wi</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.135</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>dth&quot;:320,&quot;height&quot;:251},&quot;normalizedtitle&quot;:&quot;N.W.A&quot;,&quot;description&quot;:&quot;American hip hop group from Compton, California&quot;},{&quot;views&quot;:142846,&quot;rank&quot;:18,&quot;title&quot;:&quot;Code_talker&quot;,&quot;pageid&quot;:48877,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/en/thumb/c/c5/ChoctawCoders.jpg/320px-ChoctawCoders.jpg&quot;,&quot;width&quot;:320,&quot;height&quot;:230},&quot;normalizedtitle&quot;:&quot;Code talker&quot;},{&quot;views&quot;:134805,&quot;rank&quot;:19,&quot;title&quot;:&quot;Ice_Cube&quot;,&quot;pageid&quot;:148328,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Ice-Cube_2014-01-09-Chicago-photoby-Adam-Bielawski.jpg/213px-Ice-Cube_2014-01-09-Chicago-photoby-Adam-Bielawski.jpg&quot;,&quot;width&quot;:213,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;Ice Cube&quot;,&quot;description&quot;:&quot;American hip hop artist, record producer and actor&quot;},{&quot;views&quot;:131511,&quot;rank&quot;:20,&quot;title&quot;:&quot;Jordan_Belfort&quot;,&quot;pageid&quot;:13791911,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/8/89/Jordan_Belfort_-_May_30%2C_2010.jpg&quot;,&quot;width&quot;:320,&quot;height&quot;:292},&quot;normalizedtitle&quot;:&quot;Jordan Belfort&quot;,&quot;description&quot;:&quot;American author, motivational speaker, and former stockbroker&quot;},{&quot;views&quot;:118067,&quot;rank&quot;:21,&quot;title&quot;:&quot;Withdrawal_from_the_European_Union&quot;,&quot;pageid&quot;:4917774,&quot;normalizedtitle&quot;:&quot;Withdrawal from the European Union&quot;},{&quot;views&quot;:112803,&quot;rank&quot;:22,&quot;title&quot;:&quot;Suge_Knight&quot;,&quot;pageid&quot;:161482,&quot;normalizedtitle&quot;:&quot;Suge Knight&quot;,&quot;description&quot;:&quot;Music executive&quot;},{&quot;views&quot;:104335,&quot;rank&quot;:23,&quot;title&quot;:&quot;Pokémon&quot;,&quot;pageid&quot;:23745,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/English_Pok%C3%A9mon_logo.svg/320px-English_Pok%C3%A9mon_logo.svg.png&quot;,&quot;width&quot;:320,&quot;height&quot;:118},&quot;normalizedtitle&quot;:&quot;Pokémon&quot;,&quot;description&quot;:&quot;Japanese media franchise&quot;},{&quot;views&quot;:103206,&quot;rank&quot;:24,&quot;title&quot;:&quot;Phil_Mickelson&quot;,&quot;pageid&quot;:592392,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Phil_Mickelson_%40_2008_US_Open%2C_Torrey_Pines%2C_San_Diego%2C_CA.jpg/256px-Phil_Mickelson_%40_2008_US_Open%2C_Torrey_Pines%2C_San_Diego%2C_CA.jpg&quot;,&quot;width&quot;:256,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;Phil Mickelson&quot;,&quot;description&quot;:&quot;American professional golfer&quot;},{&quot;views&quot;:100907,&quot;rank&quot;:26,&quot;title&quot;:&quot;Jerry_Heller&quot;,&quot;pageid&quot;:4202083,&quot;normalizedtitle&quot;:&quot;Jerry Heller&quot;,&quot;description&quot;:&quot;American businessman&quot;},{&quot;views&quot;:92339,&quot;rank&quot;:27,&quot;title&quot;:&quot;Fethullah_Gülen&quot;,&quot;pageid&quot;:7517723,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/0/09/Fethullah_G%C3%BClen_cropped_%28cropped%29.jpg&quot;,&quot;width&quot;:167,&quot;height&quot;:198},&quot;normalizedtitle&quot;:&quot;Fethullah Gülen&quot;,&quot;description&quot;:&quot;Turkish preacher, former imam, writer, and political figure&quot;},{&quot;views&quot;:90183,&quot;rank&quot;:28,&quot;title&quot;:&quot;2016_Turkish_coup_d&#39;état_attempt&quot;,&quot;pageid&quot;:51082294,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/4/4a/Mustafa_Kemal_Atat%C3%BCrk.jpg&quot;,&quot;width&quot;:200,&quot;height&quot;:300},&quot;normalizedtitle&quot;:&quot;2016 Turkish coup d&#39;état attempt&quot;,&quot;description&quot;:&quot;July 2016 attempted military junta coup in Turkey&quot;},{&quot;views&quot;:86217,&quot;rank&quot;:29,&quot;title&quot;:&quot;Recep_Tayyip_Erdoğan&quot;,&quot;pageid&quot;:376619,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/5/54/RecepTayyipErdo%C4%9Fan_%28cropped%29.jpg/236px-RecepTayyipErdo%C4%9Fan_%28cropped%29.jpg&quot;,&quot;width&quot;:236,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;Recep Tayyip Erdoğan&quot;,&quot;description&quot;:&quot;President of Turkey, former Prime Minister&quot;},{&quot;views&quot;:84372,&quot;rank&quot;:30,&quot;title&quot;:&quot;Deaths_in_2016&quot;,&quot;pageid&quot;:48857868,&quot;normalizedtitle&quot;:&quot;Deaths in 2016&quot;,&quot;description&quot;:&quot;Wikimedia list article&quot;},{&quot;views&quot;:80862,&quot;rank&quot;:31,&quot;title&quot;:&quot;Great_Grand_Masti&quot;,&quot;pageid&quot;:47090981,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Great_Grand_Masti_poster.jpg/320px-Great_Grand_Masti_poster.jpg&quot;,&quot;width&quot;:320,&quot;height&quot;:160},&quot;normalizedtitle&quot;:&quot;Great Grand Masti&quot;},{&quot;views&quot;:80182,&quot;rank&quot;:32,&quot;title&quot;:&quot;Straight_Outta_Compton_(film)&quot;,&quot;pageid&quot;:43108238,&quot;normalizedtitle&quot;:&quot;Straight Outta Compton (film)&quot;,&quot;description&quot;:&quot;2015 film&quot;},{&quot;views&quot;:77791,&quot;rank&quot;:33,&quot;title&quot;:&quot;Ghostbusters&quot;,&quot;pageid&quot;:205013,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Ghostbusters_Firehouse.jpg/320px-Ghostbusters_Firehouse.jpg&quot;,&quot;widt</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.135</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>h&quot;:320,&quot;height&quot;:213},&quot;normalizedtitle&quot;:&quot;Ghostbusters&quot;,&quot;description&quot;:&quot;1984 comedy film&quot;},{&quot;views&quot;:77234,&quot;rank&quot;:34,&quot;title&quot;:&quot;Alan_Vega&quot;,&quot;pageid&quot;:797572,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Suicide%28band%29crop.jpg/306px-Suicide%28band%29crop.jpg&quot;,&quot;width&quot;:306,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;Alan Vega&quot;,&quot;description&quot;:&quot;American artist&quot;},{&quot;views&quot;:74664,&quot;rank&quot;:35,&quot;title&quot;:&quot;Teeline_Shorthand&quot;,&quot;pageid&quot;:1303474,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/en/3/3f/Teeline-alphabet.jpg&quot;,&quot;width&quot;:206,&quot;height&quot;:225},&quot;normalizedtitle&quot;:&quot;Teeline Shorthand&quot;},{&quot;views&quot;:73610,&quot;rank&quot;:36,&quot;title&quot;:&quot;Earth&quot;,&quot;pageid&quot;:9228,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/320px-The_Earth_seen_from_Apollo_17.jpg&quot;,&quot;width&quot;:320,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;Earth&quot;,&quot;description&quot;:&quot;Third planet closest to the Sun in the Solar System&quot;},{&quot;views&quot;:73126,&quot;rank&quot;:37,&quot;title&quot;:&quot;2016_Nice_attack&quot;,&quot;pageid&quot;:51075331,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Nice_Promenade_des_Anglais_FRANCE-cropped.jpg/320px-Nice_Promenade_des_Anglais_FRANCE-cropped.jpg&quot;,&quot;width&quot;:320,&quot;height&quot;:203},&quot;normalizedtitle&quot;:&quot;2016 Nice attack&quot;,&quot;description&quot;:&quot;terrorist attack in France on 14 July 2016&quot;},{&quot;views&quot;:72793,&quot;rank&quot;:38,&quot;title&quot;:&quot;Donald_Trump&quot;,&quot;pageid&quot;:4848272,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Donald_Trump_August_19%2C_2015_%28cropped%29.jpg/235px-Donald_Trump_August_19%2C_2015_%28cropped%29.jpg&quot;,&quot;width&quot;:235,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;Donald Trump&quot;,&quot;description&quot;:&quot;American business magnate, television personality, author and politician&quot;},{&quot;views&quot;:70238,&quot;rank&quot;:39,&quot;title&quot;:&quot;Andrew_Johnston_(golfer)&quot;,&quot;pageid&quot;:33659166,&quot;normalizedtitle&quot;:&quot;Andrew Johnston (golfer)&quot;,&quot;description&quot;:&quot;golfer&quot;},{&quot;views&quot;:69745,&quot;rank&quot;:40,&quot;title&quot;:&quot;Michael_Page_(fighter)&quot;,&quot;pageid&quot;:36520532,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Michael_Page.png/320px-Michael_Page.png&quot;,&quot;width&quot;:320,&quot;height&quot;:285},&quot;normalizedtitle&quot;:&quot;Michael Page (fighter)&quot;,&quot;description&quot;:&quot;Mixed martial artist&quot;},{&quot;views&quot;:69139,&quot;rank&quot;:41,&quot;title&quot;:&quot;List_of_Pokémon&quot;,&quot;pageid&quot;:23840,&quot;normalizedtitle&quot;:&quot;List of Pokémon&quot;,&quot;description&quot;:&quot;Wikimedia list article&quot;},{&quot;views&quot;:67517,&quot;rank&quot;:42,&quot;title&quot;:&quot;Turkey&quot;,&quot;pageid&quot;:11125639,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/320px-Flag_of_Turkey.svg.png&quot;,&quot;width&quot;:320,&quot;height&quot;:213},&quot;normalizedtitle&quot;:&quot;Turkey&quot;,&quot;description&quot;:&quot;country spanning Southeastern Europe and Western Asia&quot;},{&quot;views&quot;:64759,&quot;rank&quot;:43,&quot;title&quot;:&quot;Mr._Robot_(TV_series)&quot;,&quot;pageid&quot;:44801986,&quot;normalizedtitle&quot;:&quot;Mr. Robot (TV series)&quot;,&quot;description&quot;:&quot;American television series&quot;},{&quot;views&quot;:63556,&quot;rank&quot;:45,&quot;title&quot;:&quot;The_Open_Championship&quot;,&quot;pageid&quot;:176725,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Willie_Park_Senior_wearing_the_Championship_Belt.jpg/194px-Willie_Park_Senior_wearing_the_Championship_Belt.jpg&quot;,&quot;width&quot;:194,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;The Open Championship&quot;,&quot;description&quot;:&quot;golf tournament held in the United Kingdom&quot;},{&quot;views&quot;:63470,&quot;rank&quot;:46,&quot;title&quot;:&quot;Suicide_Squad_(film)&quot;,&quot;pageid&quot;:43884887,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Suicide_Squad_filming_in_Toronto_3.jpg/320px-Suicide_Squad_filming_in_Toronto_3.jpg&quot;,&quot;width&quot;:320,&quot;height&quot;:240},&quot;normalizedtitle&quot;:&quot;Suicide Squad (film)&quot;,&quot;description&quot;:&quot;2016 film&quot;},{&quot;views&quot;:61355,&quot;rank&quot;:47,&quot;title&quot;:&quot;Deontay_Wilder&quot;,&quot;pageid&quot;:11685377,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Deontay_Wilder_2015.jpg/248px-Deontay_Wilder_2015.jpg&quot;,&quot;width&quot;:248,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;Deontay Wilder&quot;,&quot;description&quot;:&quot;American boxer&quot;},{&quot;views&quot;:60710,&quot;rank&quot;:48,&quot;title&quot;:&quot;Baton_Rouge,_Louisiana&quot;,&quot;pageid&quot;:57835,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Baton_Rouge_Louisiana_waterfront_aerial_view.jpg/320</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.135</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>px-Baton_Rouge_Louisiana_waterfront_aerial_view.jpg&quot;,&quot;width&quot;:320,&quot;height&quot;:256},&quot;normalizedtitle&quot;:&quot;Baton Rouge, Louisiana&quot;,&quot;description&quot;:&quot;capital of the state of Louisiana, United States; parish seat of  East Baton Rouge Parish, Louisiana&quot;},{&quot;views&quot;:59614,&quot;rank&quot;:49,&quot;title&quot;:&quot;A._R._Rahman&quot;,&quot;pageid&quot;:222417,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/en/thumb/4/49/A_R_Rahman_NH7_BLR_2015_1.jpg/320px-A_R_Rahman_NH7_BLR_2015_1.jpg&quot;,&quot;width&quot;:320,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;A. R. Rahman&quot;,&quot;description&quot;:&quot;Indian singer and composer&quot;},{&quot;views&quot;:58160,&quot;rank&quot;:50,&quot;title&quot;:&quot;List_of_Bollywood_films_of_2016&quot;,&quot;pageid&quot;:44953417,&quot;normalizedtitle&quot;:&quot;List of Bollywood films of 2016&quot;,&quot;description&quot;:&quot;Wikimedia list article&quot;},{&quot;views&quot;:57120,&quot;rank&quot;:51,&quot;title&quot;:&quot;Rowan_Atkinson&quot;,&quot;pageid&quot;:19614294,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Rowan_Atkinson%2C_2011.jpg/263px-Rowan_Atkinson%2C_2011.jpg&quot;,&quot;width&quot;:263,&quot;height&quot;:320},&quot;normalizedtitle&quot;:&quot;Rowan Atkinson&quot;,&quot;description&quot;:&quot;English actor, comedian, and screenwriter&quot;}]},&quot;news&quot;:[{&quot;links&quot;:[{&quot;title&quot;:&quot;Turkish_Armed_Forces&quot;,&quot;pageid&quot;:30205,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/The_Selimiye_Barracks_%288425276098%29.jpg/1024px-The_Selimiye_Barracks_%288425276098%29.jpg&quot;,&quot;width&quot;:1024,&quot;height&quot;:683},&quot;normalizedtitle&quot;:&quot;Turkish Armed Forces&quot;},{&quot;title&quot;:&quot;2016_Turkish_coup_d&#39;état_attempt&quot;,&quot;pageid&quot;:51082294,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/4/4a/Mustafa_Kemal_Atat%C3%BCrk.jpg&quot;,&quot;width&quot;:200,&quot;height&quot;:300},&quot;normalizedtitle&quot;:&quot;2016 Turkish coup d&#39;état attempt&quot;,&quot;description&quot;:&quot;July 2016 attempted military junta coup in Turkey&quot;}],&quot;story&quot;:&quot;&lt;!--July 15--&gt; At least 265 people are killed as a faction within the &lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./Turkish_Armed_Forces\&quot; title=\&quot;Turkish Armed Forces\&quot; id=\&quot;mwBA\&quot;&gt;Turkish Armed Forces&lt;/a&gt; launches &lt;b id=\&quot;mwBQ\&quot;&gt;&lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./2016_Turkish_coup_d&#39;état_attempt\&quot; title=\&quot;2016 Turkish coup d&#39;état attempt\&quot; id=\&quot;mwBg\&quot;&gt;an unsuccessful coup&lt;/a&gt;&lt;/b&gt;.&quot;},{&quot;links&quot;:[{&quot;title&quot;:&quot;2016_Nice_attack&quot;,&quot;pageid&quot;:51075331,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Nice_Promenade_des_Anglais_FRANCE-cropped.jpg/1024px-Nice_Promenade_des_Anglais_FRANCE-cropped.jpg&quot;,&quot;width&quot;:1024,&quot;height&quot;:648},&quot;normalizedtitle&quot;:&quot;2016 Nice attack&quot;,&quot;description&quot;:&quot;terrorist attack in France on 14 July 2016&quot;},{&quot;title&quot;:&quot;Bastille_Day&quot;,&quot;pageid&quot;:3936,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Feu_d%27artifice_du_14_juillet_2014_-_Tour_Eiffel_%2820%29.jpg/1024px-Feu_d%27artifice_du_14_juillet_2014_-_Tour_Eiffel_%2820%29.jpg&quot;,&quot;width&quot;:1024,&quot;height&quot;:576},&quot;normalizedtitle&quot;:&quot;Bastille Day&quot;,&quot;description&quot;:&quot;French National Day&quot;},{&quot;title&quot;:&quot;Nice&quot;,&quot;pageid&quot;:47088,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Nizza-C%C3%B4te_d%27Azur.jpg/1024px-Nizza-C%C3%B4te_d%27Azur.jpg&quot;,&quot;width&quot;:1024,&quot;height&quot;:512},&quot;normalizedtitle&quot;:&quot;Nice&quot;,&quot;description&quot;:&quot;commune in Alpes-Maritimes, France&quot;}],&quot;story&quot;:&quot;&lt;!--July 14--&gt; An attacker &lt;b id=\&quot;mwCA\&quot;&gt;&lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./2016_Nice_attack\&quot; title=\&quot;2016 Nice attack\&quot; id=\&quot;mwCQ\&quot;&gt;drives&lt;/a&gt;&lt;/b&gt; a cargo truck into a &lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./Bastille_Day\&quot; title=\&quot;Bastille Day\&quot; id=\&quot;mwCg\&quot;&gt;Bastille Day&lt;/a&gt; crowd in &lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./Nice\&quot; title=\&quot;Nice\&quot; id=\&quot;mwCw\&quot;&gt;Nice&lt;/a&gt;, France, killing more than 80 people.&quot;},{&quot;links&quot;:[{&quot;title&quot;:&quot;Theresa_May&quot;,&quot;pageid&quot;:351873,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Theresa_May_UK_Home_Office_%28cropped%29.jpg/768px-Theresa_May_UK_Home_Office_%28cropped%29.jpg&quot;,&quot;width&quot;:768,&quot;height&quot;:1024},&quot;normalizedtitle&quot;:&quot;Theresa May&quot;,&quot;description&quot;:&quot;Prime Minister of the United Kingdom&quot;},{&quot;title&quot;:&quot;Conservative_Party_(UK)_leadership_election,_2016&quot;,&quot;pageid&quot;:48010380,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Theresa_May_</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.135</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>UK_Home_Office_%28cropped%29.jpg/768px-Theresa_May_UK_Home_Office_%28cropped%29.jpg&quot;,&quot;width&quot;:768,&quot;height&quot;:1024},&quot;normalizedtitle&quot;:&quot;Conservative Party (UK) leadership election, 2016&quot;},{&quot;title&quot;:&quot;David_Cameron&quot;,&quot;pageid&quot;:419342,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/2/21/David_Cameron_official.jpg/768px-David_Cameron_official.jpg&quot;,&quot;width&quot;:768,&quot;height&quot;:1024},&quot;normalizedtitle&quot;:&quot;David Cameron&quot;,&quot;description&quot;:&quot;Prime Minister of the United Kingdom, First Lord of the Treasury, Minister for the Civil Service and Leader of the Conservative Party&quot;},{&quot;title&quot;:&quot;Conservative_Party_(UK)&quot;,&quot;pageid&quot;:32113,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/d/d0/Robert_Peel.jpg&quot;,&quot;width&quot;:467,&quot;height&quot;:604},&quot;normalizedtitle&quot;:&quot;Conservative Party (UK)&quot;,&quot;description&quot;:&quot;political party in the United Kingdom&quot;},{&quot;title&quot;:&quot;Prime_Minister_of_the_United_Kingdom&quot;,&quot;pageid&quot;:24150,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Gladstone%27s_Cabinet_of_1868_by_Lowes_Cato_Dickinson.jpg/1024px-Gladstone%27s_Cabinet_of_1868_by_Lowes_Cato_Dickinson.jpg&quot;,&quot;width&quot;:1024,&quot;height&quot;:655},&quot;normalizedtitle&quot;:&quot;Prime Minister of the United Kingdom&quot;,&quot;description&quot;:&quot;head of Her Majesty&#39;s Government in the United Kingdom&quot;}],&quot;story&quot;:&quot;&lt;!--July 13--&gt; &lt;b id=\&quot;mwDQ\&quot;&gt;&lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./Theresa_May\&quot; title=\&quot;Theresa May\&quot; id=\&quot;mwDg\&quot;&gt;Theresa May&lt;/a&gt;&lt;/b&gt; &lt;i id=\&quot;mwDw\&quot;&gt;(pictured)&lt;/i&gt; &lt;b id=\&quot;mwEA\&quot;&gt;&lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./Conservative_Party_(UK)_leadership_election,_2016\&quot; title=\&quot;Conservative Party (UK) leadership election, 2016\&quot; id=\&quot;mwEQ\&quot;&gt;replaces&lt;/a&gt;&lt;/b&gt; &lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./David_Cameron\&quot; title=\&quot;David Cameron\&quot; id=\&quot;mwEg\&quot;&gt;David Cameron&lt;/a&gt; as leader of the &lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./Conservative_Party_(UK)\&quot; title=\&quot;Conservative Party (UK)\&quot; id=\&quot;mwEw\&quot;&gt;Conservative Party&lt;/a&gt; and becomes &lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./Prime_Minister_of_the_United_Kingdom\&quot; title=\&quot;Prime Minister of the United Kingdom\&quot; id=\&quot;mwFA\&quot;&gt;Prime Minister of the United Kingdom&lt;/a&gt;.&quot;},{&quot;links&quot;:[{&quot;title&quot;:&quot;Andria–Corato_train_collision&quot;,&quot;pageid&quot;:51055944,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/8/83/Elettrotreno_ELT_200.jpg&quot;,&quot;width&quot;:799,&quot;height&quot;:522},&quot;normalizedtitle&quot;:&quot;Andria–Corato train collision&quot;,&quot;description&quot;:&quot;July 2016 train crash in Italy&quot;},{&quot;title&quot;:&quot;Andria&quot;,&quot;pageid&quot;:2629272,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Castel_del_Monte_Mai08.jpg/1024px-Castel_del_Monte_Mai08.jpg&quot;,&quot;width&quot;:1024,&quot;height&quot;:720},&quot;normalizedtitle&quot;:&quot;Andria&quot;,&quot;description&quot;:&quot;city and comune in Apulia, Italy&quot;}],&quot;story&quot;:&quot;&lt;!--July 12--&gt; At least 23 people are killed when two trains &lt;b id=\&quot;mwFg\&quot;&gt;&lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./Andria–Corato_train_collision\&quot; title=\&quot;Andria–Corato train collision\&quot; id=\&quot;mwFw\&quot;&gt;collide&lt;/a&gt;&lt;/b&gt; near &lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./Andria\&quot; title=\&quot;Andria\&quot; id=\&quot;mwGA\&quot;&gt;Andria&lt;/a&gt;, Italy.&quot;},{&quot;links&quot;:[{&quot;title&quot;:&quot;Association_football&quot;,&quot;pageid&quot;:10568,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/b/b9/Football_iu_1996.jpg&quot;,&quot;width&quot;:641,&quot;height&quot;:445},&quot;normalizedtitle&quot;:&quot;Association football&quot;,&quot;description&quot;:&quot;sport in which two teams (usually of 11 players) compete to kick a ball into a defended goal&quot;},{&quot;title&quot;:&quot;UEFA_Euro_2016&quot;,&quot;pageid&quot;:7932564,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/UEFA_Euro_2016_qualifying_map.svg/1024px-UEFA_Euro_2016_qualifying_map.svg.png&quot;,&quot;width&quot;:1024,&quot;height&quot;:795},&quot;normalizedtitle&quot;:&quot;UEFA Euro 2016&quot;,&quot;description&quot;:&quot;football tournament held in 2016&quot;},{&quot;title&quot;:&quot;Portugal_national_football_team&quot;,&quot;pageid&quot;:576328,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/a/ad/Selecc%C3%A3o_Nacional_Portugal_1921.jpg&quot;,&quot;width&quot;:900,&quot;height&quot;:450},&quot;normalizedtitle&quot;:&quot;Portugal national football team&quot;,&quot;description&quot;:&quot;national association football team&quot;},{&quot;title&quot;:&quot;France_national_football_team&quot;,&quot;pageid&quot;:</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.135</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>250197,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Michel_Platini_in_Wroclaw_by_Klearchos_Kapoutsis_tight_crop.jpg/720px-Michel_Platini_in_Wroclaw_by_Klearchos_Kapoutsis_tight_crop.jpg&quot;,&quot;width&quot;:720,&quot;height&quot;:1024},&quot;normalizedtitle&quot;:&quot;France national football team&quot;,&quot;description&quot;:&quot;national association football team representing France&quot;},{&quot;title&quot;:&quot;UEFA_Euro_2016_Final&quot;,&quot;pageid&quot;:48809245,&quot;ns&quot;:0,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Germany_vs_Poland_0-0_%2827103531294%29.jpg/1024px-Germany_vs_Poland_0-0_%2827103531294%29.jpg&quot;,&quot;width&quot;:1024,&quot;height&quot;:576},&quot;normalizedtitle&quot;:&quot;UEFA Euro 2016 Final&quot;,&quot;description&quot;:&quot;match of UEFA Euro 2016&quot;}],&quot;story&quot;:&quot;&lt;!--July 10--&gt; In &lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./Association_football\&quot; title=\&quot;Association football\&quot; id=\&quot;mwGg\&quot;&gt;association football&lt;/a&gt;,  &lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./UEFA_Euro_2016\&quot; title=\&quot;UEFA Euro 2016\&quot; id=\&quot;mwGw\&quot;&gt;Euro 2016&lt;/a&gt; concludes with &lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./Portugal_national_football_team\&quot; title=\&quot;Portugal national football team\&quot; id=\&quot;mwHA\&quot;&gt;Portugal&lt;/a&gt; defeating &lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./France_national_football_team\&quot; title=\&quot;France national football team\&quot; id=\&quot;mwHQ\&quot;&gt;France&lt;/a&gt; in &lt;b id=\&quot;mwHg\&quot;&gt;&lt;a rel=\&quot;mw:WikiLink\&quot; href=\&quot;./UEFA_Euro_2016_Final\&quot; title=\&quot;UEFA Euro 2016 Final\&quot; id=\&quot;mwHw\&quot;&gt;the final&lt;/a&gt;&lt;/b&gt;.&quot;}],&quot;image&quot;:{&quot;title&quot;:&quot;File:Garza azulada (Ardea herodias), Las Bachas, isla Santa Cruz, islas Galápagos, Ecuador, 2015-07-23, DD 12 ver II.jpg&quot;,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Garza_azulada_%28Ardea_herodias%29%2C_Las_Bachas%2C_isla_Santa_Cruz%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-23%2C_DD_12_ver_II.jpg/640px-Garza_azulada_%28Ardea_herodias%29%2C_Las_Bachas%2C_isla_Santa_Cruz%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-23%2C_DD_12_ver_II.jpg&quot;,&quot;width&quot;:640,&quot;height&quot;:380},&quot;image&quot;:{&quot;source&quot;:&quot;https://upload.wikimedia.org/wikipedia/commons/9/9c/Garza_azulada_%28Ardea_herodias%29%2C_Las_Bachas%2C_isla_Santa_Cruz%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-23%2C_DD_12_ver_II.jpg&quot;,&quot;width&quot;:4131,&quot;height&quot;:2455},&quot;description&quot;:{&quot;text&quot;:&quot;&lt;a href=\&quot;https://en.wikipedia.org/wiki/Great_blue_heron\&quot; class=\&quot;extiw\&quot; title=\&quot;en:Great blue heron\&quot;&gt;Great blue heron&lt;/a&gt; (&lt;i&gt;Ardea herodias&lt;/i&gt;) looking for fish in the coastal rocks of Las Bachas, &lt;a href=\&quot;https://en.wikipedia.org/wiki/Baltra_Island\&quot; class=\&quot;extiw\&quot; title=\&quot;en:Baltra Island\&quot;&gt;Baltra Island&lt;/a&gt;, &lt;a href=\&quot;https://en.wikipedia.org/wiki/Gal%C3%A1pagos_Islands\&quot; class=\&quot;extiw\&quot; title=\&quot;en:Galápagos Islands\&quot;&gt;Galápagos Islands&lt;/a&gt;, Ecuador.&quot;,&quot;lang&quot;:&quot;en&quot;}}}</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.135</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>&lt;-- END HTTP (22698-byte body)</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>07-18 13:48:48.245</td>
+                                <td>warn</td>
+                                <td>EGL_emulation</td>
+                                <td>eglSurfaceAttrib not implemented</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.275</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.views.FaceAndColorDetectImageView</td>
+                                <td>detectFace():87: Face detection took 4ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.315</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 2110K, 13% free 18389K/20935K, paused 1ms+1ms, total 15ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.315</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.views.FaceAndColorDetectImageView</td>
+                                <td>detectFace():87: Face detection took 28ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.335</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.views.FaceAndColorDetectImageView</td>
+                                <td>detectFace():87: Face detection took 5ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.375</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; GET https://en.wikipedia.org/w/api.php?format=json&amp;formatversion=2&amp;action=query&amp;prop=pageterms|pageimages|pageprops&amp;ppprop=mainpage|disambiguation&amp;wbptterms=description&amp;generator=search&amp;gsrnamespace=0&amp;gsrwhat=text&amp;gsrinfo=&amp;gsrprop=redirecttitle&amp;gsrlimit=5&amp;piprop=thumbnail&amp;pithumbsize=320&amp;pilimit=5&amp;gsrsearch=morelike:Mesopotamia http/1.1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.375</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; END GET</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>&lt;-- 200 OK https://meta.wikimedia.org/w/api.php?format=json&amp;formatversion=2&amp;action=options&amp;optionname=userjs-app-pref-font-size&amp;optionvalue=7 (362ms)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Date: Mon, 18 Jul 2016 19:48:50 GMT</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Content-Type: application/json; charset=utf-8</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Connection: keep-alive</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Server: mw1232.eqiad.wmnet</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Powered-By: HHVM/3.12.1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Content-Type-Options: nosniff</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Cache-control: private, must-revalidate, max-age=0</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Frame-Options: DENY</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Vary: Accept-Encoding</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Set-Cookie: UseDC=master; expires=Mon, 18-Jul-2016 19:49:00 GMT; Max-Age=10; path=/; secure; httponly</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Set-Cookie: UseCDNCache=false; expires=Mon, 18-Jul-2016 19:49:00 GMT; Max-Age=10; path=/; secure; httponly</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Backend-Timing: D=268729 t=1468871330007512</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Varnish: 2493835895, 4104768460, 2045035303</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Via: 1.1 varnish, 1.1 varnish, 1.1 varnish</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Accept-Ranges: bytes</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Age: 0</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Cache: cp1068 pass, cp2016 pass, cp2007 pass</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Strict-Transport-Security: max-age=31536000; includeSubDomains; preload</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Analytics: WMF-Last-Access=18-Jul-2016;https=1;wmfuuid=ebc04a89-225a-4ae8-a25d-c9ac0c5738b7</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Client-IP: 73.34.253.51</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>{&quot;options&quot;:&quot;success&quot;}</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.435</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>&lt;-- END HTTP (21-byte body)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.445</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; POST https://meta.wikimedia.org/w/api.php?format=json&amp;formatversion=2&amp;action=options&amp;optionname=userjs-app-pref-theme&amp;optionvalue=false http/1.1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.445</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Content-Type: application/x-www-form-urlencoded</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.445</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Content-Length: 52</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.445</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>token=48a7813dd13407727828fa34f009d27b578d32a1%2B%5C</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.445</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; END POST (52-byte body)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>&lt;-- 200 OK https://en.wikipedia.org/w/api.php?format=json&amp;formatversion=2&amp;action=query&amp;prop=pageterms|pageimages|pageprops&amp;ppprop=mainpage|disambiguation&amp;wbptterms=description&amp;generator=search&amp;gsrnamespace=0&amp;gsrwhat=text&amp;gsrinfo=&amp;gsrprop=redirecttitle&amp;gsrlimit=5&amp;piprop=thumbnail&amp;pithumbsize=320&amp;pilimit=5&amp;gsrsearch=morelike:Mesopotamia (255ms)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Date: Mon, 18 Jul 2016 19:48:50 GMT</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Content-Type: application/json; charset=utf-8</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Connection: keep-alive</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Server: mw1233.eqiad.wmnet</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Powered-By: HHVM/3.12.1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Content-Type-Options: nosniff</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Cache-control: private, must-revalidate, max-age=0</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Frame-Options: SAMEORIGIN</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Vary: Accept-Encoding</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Backend-Timing: D=61121 t=1468871330407231</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Varnish: 1291161914, 3823875406, 2045036858</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Via: 1.1 varnish, 1.1 varnish, 1.1 varnish</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Accept-Ranges: bytes</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.625</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Age: 0</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.635</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Cache: cp1067 pass, cp2010 pass, cp2007 pass</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.635</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Strict-Transport-Security: max-age=31536000; includeSubDomains; preload</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.635</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Analytics: ns=-1;special=Badtitle;loggedIn=1;WMF-Last-Access=18-Jul-2016;https=1;wmfuuid=ebc04a89-225a-4ae8-a25d-c9ac0c5738b7</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.635</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Client-IP: 73.34.253.51</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.635</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>{&quot;batchcomplete&quot;:true,&quot;continue&quot;:{&quot;gsroffset&quot;:5,&quot;continue&quot;:&quot;gsroffset||&quot;},&quot;query&quot;:{&quot;pages&quot;:[{&quot;pageid&quot;:1566,&quot;ns&quot;:0,&quot;title&quot;:&quot;Akkadian Empire&quot;,&quot;index&quot;:3,&quot;terms&quot;:{&quot;description&quot;:[&quot;historical state in Mesopotamia&quot;]},&quot;thumbnail&quot;:{&quot;source&quot;:&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Empire_akkad.svg/320px-Empire_akkad.svg.png&quot;,&quot;width&quot;:320,&quot;height&quot;:249}},{&quot;pageid&quot;:2085,&quot;ns&quot;:0,&quot;title&quot;:&quot;Assyria&quot;,&quot;index&quot;:2,&quot;terms&quot;:{&quot;description&quot;:[&quot;major Mesopotamian East Semitic kingdom&quot;]},&quot;thumbnail&quot;:{&quot;source&quot;:&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Ancient_Egypt_and_Mesopotamia_c._1450_BC.png/261px-Ancient_Egypt_and_Mesopotamia_c._1450_BC.png&quot;,&quot;width&quot;:261,&quot;height&quot;:320}},{&quot;pageid&quot;:50521,&quot;ns&quot;:0,&quot;title&quot;:&quot;Sumer&quot;,&quot;index&quot;:1,&quot;terms&quot;:{&quot;description&quot;:[&quot;ancient civilization and historical region in southern Mesopotamia&quot;]},&quot;thumbnail&quot;:{&quot;source&quot;:&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Cities_of_Sumer_%28en%29.svg/291px-Cities_of_Sumer_%28en%29.svg.png&quot;,&quot;width&quot;:291,&quot;height&quot;:320}},{&quot;pageid&quot;:85442,&quot;ns&quot;:0,&quot;title&quot;:&quot;Uruk&quot;,&quot;index&quot;:4,&quot;terms&quot;:{&quot;description&quot;:[&quot;ancient city of Sumer and Babylonia&quot;]},&quot;thumbnail&quot;:{&quot;source&quot;:&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Part_of_front_of_Inanna_temple_of_Kara_Indasch_from_Uruk_Vorderasiatisches_Museum_Berlin.jpg/320px-Part_of_front_of_Inanna_temple_of_Kara_Indasch_from_Uruk_Vorderasiatisches_Museum_Berlin.jpg&quot;,&quot;width&quot;:320,&quot;height&quot;:248}},{&quot;pageid&quot;:5223262,&quot;ns&quot;:0,&quot;title&quot;:&quot;History of Mesopotamia&quot;,&quot;index&quot;:5,&quot;thumbnail&quot;:{&quot;source&quot;:&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/N-Mesopotamia_and_Syria_english.svg/320px-N-Mesopotamia_and_Syria_english.svg.png&quot;,&quot;width&quot;:320,&quot;height&quot;:226}}]}}</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.635</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>&lt;-- END HTTP (1681-byte body)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.705</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@979845e0 in: STOPPED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.705</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.MainActivity</td>
+                                <td>unregisterBus():1176: Unregistered bus.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.705</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@979845e0 in: DESTROYED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.756</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageLoadTest</td>
+                                <td>testPages():91: title=Mercury tag=Mercury</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.786</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97a02430 in: PAUSED</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.786</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>failed: testPagesWithImagesPortrait(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>----- begin exception -----</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>java.lang.ClassCastException: org.wikipedia.feed.FeedFragment cannot be cast to org.wikipedia.page.PageFragment</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.wikipedia.page.BasePageLoadTest.getFragment(BasePageLoadTest.java:92)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.wikipedia.page.BasePageLoadTest.loadPageSync(BasePageLoadTest.java:46)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.wikipedia.page.BasePageLoadTest.loadPageSync(BasePageLoadTest.java:40)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.wikipedia.page.PageLoadTest.testPages(PageLoadTest.java:92)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.wikipedia.page.PageLoadTest.testPages(PageLoadTest.java:85)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.wikipedia.page.PageLoadTest.testPagesWithImages(PageLoadTest.java:67)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.wikipedia.page.PageLoadTest.testPagesWithImagesPortrait(PageLoadTest.java:37)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at java.lang.reflect.Method.invokeNative(Native Method)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at java.lang.reflect.Method.invoke(Method.java:511)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:270)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.rules.RunRules.evaluate(RunRules.java:20)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.Suite.runChild(Suite.java:128)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.Suite.runChild(Suite.java:27)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.796</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>----- end exception -----</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.796</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>&lt;-- 200 OK https://meta.wikimedia.org/w/api.php?format=json&amp;formatversion=2&amp;action=options&amp;optionname=userjs-app-pref-theme&amp;optionvalue=false (357ms)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.796</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Date: Mon, 18 Jul 2016 19:48:50 GMT</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.796</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Content-Type: application/json; charset=utf-8</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.796</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Connection: keep-alive</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.796</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Server: mw1227.eqiad.wmnet</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.796</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Powered-By: HHVM/3.12.1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.796</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Content-Type-Options: nosniff</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.796</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Cache-control: private, must-revalidate, max-age=0</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.796</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Frame-Options: DENY</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.796</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Vary: Accept-Encoding</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.796</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Set-Cookie: UseDC=master; expires=Mon, 18-Jul-2016 19:49:00 GMT; Max-Age=10; path=/; secure; httponly</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Set-Cookie: UseCDNCache=false; expires=Mon, 18-Jul-2016 19:49:00 GMT; Max-Age=10; path=/; secure; httponly</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Backend-Timing: D=254231 t=1468871330383635</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Varnish: 1291161878, 4104770046, 2045036827</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Via: 1.1 varnish, 1.1 varnish, 1.1 varnish</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Accept-Ranges: bytes</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Age: 0</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Cache: cp1067 pass, cp2016 pass, cp2007 pass</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Strict-Transport-Security: max-age=31536000; includeSubDomains; preload</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Analytics: WMF-Last-Access=18-Jul-2016;https=1;wmfuuid=ebc04a89-225a-4ae8-a25d-c9ac0c5738b7</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.805</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Client-IP: 73.34.253.51</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.815</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>{&quot;options&quot;:&quot;success&quot;}</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.815</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>&lt;-- END HTTP (21-byte body)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.815</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; GET https://meta.wikimedia.org/w/api.php?format=json&amp;formatversion=2&amp;action=query&amp;meta=userinfo&amp;uiprop=options http/1.1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-18 13:48:48.815</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; END GET</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-18 13:48:48.835</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>finished: testPagesWithImagesPortrait(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
