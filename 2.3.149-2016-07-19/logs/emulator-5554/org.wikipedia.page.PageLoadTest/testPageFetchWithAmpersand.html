@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Fetch With Ampersand</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../../static/spoon.css" rel="stylesheet">
+        <script src="../../../static/jquery.min.js"></script>
+        <script src="../../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Test failed in 0 seconds on 16-nexus-s">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Page Fetch With Ampersand</h1>
+                <p>Test failed in 0 seconds on 16-nexus-s</p>
+            </div>
+            <div class="row log">
+                <div class="span12">
+                    <table class="table table-striped table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Level</th>
+                                <th>Tag</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.240</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>started: testPageFetchWithAmpersand(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.250</td>
+                                <td>info</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Activities that are still in CREATED to STOPPED: 1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.250</td>
+                                <td>debug</td>
+                                <td>ActivityTestRule</td>
+                                <td>Launching activity org.wikipedia.MainActivity</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.250</td>
+                                <td>debug</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.400</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97d07f30 in: PRE_ON_CREATE</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>07-19 11:03:29.410</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppCrashReporter</td>
+                                <td>checkCrashes():40: Checking for HockeyApp crashes.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.510</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 4370K, 22% free 16088K/20615K, paused 1ms+3ms, total 97ms</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.530</td>
+                                <td>info</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionSyncAdapter</td>
+                                <td>upload():61: uploading 2 option(s)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.530</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; POST https://meta.wikimedia.org/w/api.php?format=json&amp;formatversion=2&amp;action=options&amp;optionname=userjs-app-pref-font-size&amp;optionvalue=7 http/1.1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.530</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Content-Type: application/x-www-form-urlencoded</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.530</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Content-Length: 52</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.530</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>token=065983ed852b8942918b03d65727ac62578e5d6f%2B%5C</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.540</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; END POST (52-byte body)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.550</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.MainActivity</td>
+                                <td>registerBus():1170: Registered bus.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.550</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.RemoteConfigRefreshTask</td>
+                                <td>Skipping recurring task, remote-config-refresher. Last execution was Mon Jul 18 13:48:45 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.550</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.snippet.SharedImageCleanupTask</td>
+                                <td>Skipping recurring task, shared-image-cleanup. Last execution was Mon Jul 18 13:48:45 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.550</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.recurring.DailyEventTask</td>
+                                <td>Skipping recurring task, dailyEventTask. Last execution was Mon Jul 18 13:48:45 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.560</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97d07f30 in: CREATED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.580</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 2935K, 30% free 14509K/20615K, paused 12ms, total 17ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.600</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; GET http://en.wikipedia.org/api/rest_v1/feed/featured/2016/07/19 http/1.1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.600</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>--&gt; END GET</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.610</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97d07f30 in: STARTED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.610</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97d07f30 in: RESUMED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.710</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 926K, 25% free 15503K/20615K, paused 15ms+1ms, total 26ms</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>07-19 11:03:29.730</td>
+                                <td>warn</td>
+                                <td>EGL_emulation</td>
+                                <td>eglSurfaceAttrib not implemented</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.890</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>&lt;-- 200 OK https://meta.wikimedia.org/w/api.php?format=json&amp;formatversion=2&amp;action=options&amp;optionname=userjs-app-pref-font-size&amp;optionvalue=7 (353ms)</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.890</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Date: Tue, 19 Jul 2016 17:03:45 GMT</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.890</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Content-Type: application/json; charset=utf-8</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.890</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Connection: keep-alive</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.890</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Server: mw1199.eqiad.wmnet</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Powered-By: HHVM/3.12.1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Content-Type-Options: nosniff</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Cache-control: private, must-revalidate, max-age=0</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Frame-Options: DENY</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Vary: Accept-Encoding</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Set-Cookie: UseDC=master; expires=Tue, 19-Jul-2016 17:03:55 GMT; Max-Age=10; path=/; secure; httponly</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Set-Cookie: UseCDNCache=false; expires=Tue, 19-Jul-2016 17:03:55 GMT; Max-Age=10; path=/; secure; httponly</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Backend-Timing: D=199242 t=1468947825007652</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Varnish: 2080827989, 3447192021, 2220048510</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Via: 1.1 varnish, 1.1 varnish, 1.1 varnish</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Accept-Ranges: bytes</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Age: 0</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Cache: cp1052 pass, cp2023 pass, cp2007 pass</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>Strict-Transport-Security: max-age=31536000; includeSubDomains; preload</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Analytics: ns=-1;special=Badtitle;loggedIn=1;WMF-Last-Access=19-Jul-2016;https=1;wmfuuid=ebc04a89-225a-4ae8-a25d-c9ac0c5738b7</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.901</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>X-Client-IP: 73.34.253.51</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.911</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>{&quot;options&quot;:&quot;success&quot;}</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>07-19 11:03:29.911</td>
+                                <td>debug</td>
+                                <td>OkHttp</td>
+                                <td>&lt;-- END HTTP (21-byte body)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>failed: testPageFetchWithAmpersand(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>----- begin exception -----</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>java.lang.ClassCastException: org.wikipedia.feed.FeedFragment cannot be cast to org.wikipedia.page.PageFragment</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.wikipedia.page.BasePageLoadTest.getFragment(BasePageLoadTest.java:92)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.wikipedia.page.BasePageLoadTest.loadPageSync(BasePageLoadTest.java:46)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.wikipedia.page.BasePageLoadTest.loadPageSync(BasePageLoadTest.java:40)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.wikipedia.page.PageLoadTest.testPageFetchWithAmpersand(PageLoadTest.java:25)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at java.lang.reflect.Method.invokeNative(Native Method)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at java.lang.reflect.Method.invoke(Method.java:511)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:270)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.rules.RunRules.evaluate(RunRules.java:20)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.Suite.runChild(Suite.java:128)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.Suite.runChild(Suite.java:27)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>&#9;at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.911</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>----- end exception -----</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>07-19 11:03:29.921</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>finished: testPageFetchWithAmpersand(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
