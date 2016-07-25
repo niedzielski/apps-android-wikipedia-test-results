@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Huawei Nexus 6P</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../static/spoon.css" rel="stylesheet">
+        <script src="../static/jquery.min.js"></script>
+        <script src="../static/bootstrap.min.js"></script>
+        <meta name="description" content="">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Huawei Nexus 6P</h1>
+                <p>1 test run at 2016-07-25 04:06 PM</p>
+                <p>Running Android 6.0.1 (API 23)</p>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <div class="alert alert-error stacktrace">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-10">Instrumentation run failed due to 'Process crashed.'</h4>
+                        <div class="alert-error stacktrace-body collapse" id="stacktrace-10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-editing-EditPreviewTaskTest-testPreview">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        Preview <small>EditPreviewTaskTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/84B7N15A07005249/org.wikipedia.editing.EditPreviewTaskTest/testPreview.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.editing.EditPreviewTaskTest/testPreview.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-9">java.lang.RuntimeException: org.mediawiki.api.json.ApiException: java.net.SocketTimeoutException: failed to connect to test.wikipedia.org/2620:0:860:ed1a::1 (port 443) after 10000ms</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-9">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.ApiTask.onCatch(ApiTask.java:46)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:72)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask.finish(AsyncTask.java:651)</div>
+                            <div class="stacktrace-line">Caused by: at android.os.AsyncTask.-wrap1(AsyncTask.java)</div>
+                            <div class="stacktrace-line">Caused by: org.mediawiki.api.json.ApiException: java.net.SocketTimeoutException: failed to connect to test.wikipedia.org/2620:0:860:ed1a::1 (port 443) after 10000ms</div>
+                            <div class="stacktrace-line">Caused by: java.net.SocketTimeoutException: failed to connect to test.wikipedia.org/2620:0:860:ed1a::1 (port 443) after 10000ms</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('.icon, .thumbnail img').tooltip({
+                container: 'body'
+            });
+        </script>
+    </body>
+</html>
