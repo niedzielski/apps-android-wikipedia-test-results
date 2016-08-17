@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Fetch With Ampersand</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../../static/spoon.css" rel="stylesheet">
+        <script src="../../../static/jquery.min.js"></script>
+        <script src="../../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Test passed in 0 seconds on 16-nexus-s">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Page Fetch With Ampersand</h1>
+                <p>Test passed in 0 seconds on 16-nexus-s</p>
+            </div>
+            <div class="row log">
+                <div class="span12">
+                    <table class="table table-striped table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Level</th>
+                                <th>Tag</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="level-info info">
+                                <td>08-17 14:36:56.485</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>started: testPageFetchWithAmpersand(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>08-17 14:36:56.485</td>
+                                <td>info</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Activities that are still in CREATED to STOPPED: 1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.485</td>
+                                <td>debug</td>
+                                <td>ActivityTestRule</td>
+                                <td>Launching activity org.wikipedia.MainActivity</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.485</td>
+                                <td>debug</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.664</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97b0e790 in: PRE_ON_CREATE</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>08-17 14:36:56.675</td>
+                                <td>verbose</td>
+                                <td>org.wikipedia.crash.hockeyapp.HockeyAppCrashReporter</td>
+                                <td>checkCrashes():40: Checking for HockeyApp crashes.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.715</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1686K, 53% free 15716K/33351K, paused 17ms+2ms, total 33ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.725</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.MainActivity</td>
+                                <td>registerBus():1390: Registered bus.</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>08-17 14:36:56.725</td>
+                                <td>info</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionContentResolver</td>
+                                <td>requestSync():48: no account</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.725</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.RemoteConfigRefreshTask</td>
+                                <td>Skipping recurring task, remote-config-refresher. Last execution was Wed Aug 17 14:34:11 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.725</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.snippet.SharedImageCleanupTask</td>
+                                <td>Skipping recurring task, shared-image-cleanup. Last execution was Wed Aug 17 14:34:11 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.725</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.recurring.DailyEventTask</td>
+                                <td>Skipping recurring task, dailyEventTask. Last execution was Wed Aug 17 14:34:11 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.725</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97b0e790 in: CREATED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.745</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 357K, 49% free 17215K/33351K, paused 14ms, total 15ms</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>08-17 14:36:56.745</td>
+                                <td>info</td>
+                                <td>dalvikvm-heap</td>
+                                <td>Grow heap (frag case) to 19.655MB for 2949132-byte allocation</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.765</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 18K, 40% free 20076K/33351K, paused 13ms+0ms, total 19ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.785</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>loadFromBackStack():206: Loaded page Moon from backstack</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.795</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97b0e790 in: STARTED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.795</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.MainActivity@97b0e790 in: RESUMED</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>08-17 14:36:56.855</td>
+                                <td>warn</td>
+                                <td>EGL_emulation</td>
+                                <td>eglSurfaceAttrib not implemented</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.964</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Reading from cache: Moon</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.975</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 2206K, 42% free 19414K/33351K, paused 7ms, total 7ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.984</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 913K, 41% free 19870K/33351K, paused 5ms, total 5ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:56.984</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 820K, 39% free 20520K/33351K, paused 4ms, total 4ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:57.015</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 2674K, 41% free 19806K/33351K, paused 18ms+0ms, total 24ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:57.055</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1482K, 40% free 20344K/33351K, paused 17ms+1ms, total 22ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:57.094</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1742K, 39% free 20527K/33351K, paused 19ms+0ms, total 25ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:57.124</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1735K, 38% free 20711K/33351K, paused 12ms+0ms, total 18ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:57.144</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_FOR_ALLOC freed 1496K, 37% free 21100K/33351K, paused 5ms, total 5ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:57.174</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_CONCURRENT freed 1853K, 37% free 21292K/33351K, paused 14ms+1ms, total 21ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:57.174</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>WAIT_FOR_CONCURRENT_GC blocked 5ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:57.265</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():622: Sent message &#39;displayLeadSection&#39; for page: Ampersand &amp; title</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>08-17 14:36:57.305</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Writing to cache: Ampersand &amp; title</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>08-17 14:36:57.325</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>finished: testPageFetchWithAmpersand(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
