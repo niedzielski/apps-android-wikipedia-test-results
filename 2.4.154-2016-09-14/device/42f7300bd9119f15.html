@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>samsung SCH-I605</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../static/spoon.css" rel="stylesheet">
+        <script src="../static/jquery.min.js"></script>
+        <script src="../static/bootstrap.min.js"></script>
+        <meta name="description" content="">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>samsung SCH-I605</h1>
+                <p>39 tests run with 30 passing and 9 failing in 5 minutes, 15 seconds at 2016-09-14 02:07 PM</p>
+                <p>Running Android 4.4.2 (API 19) with locale en-US</p>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <div class="alert alert-error stacktrace">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-19">Instrumentation run failed due to 'org.mediawiki.api.json.ApiException'</h4>
+                        <div class="alert-error stacktrace-body collapse" id="stacktrace-19">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-editing-EditPreviewTaskTest-testPreview">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Preview <small>EditPreviewTaskTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.editing.EditPreviewTaskTest/testPreview.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.editing.EditPreviewTaskTest/testPreview.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-editing-richtext-SyntaxHighlighterTest-testSyntaxHighlight">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        Syntax Highlight <small>SyntaxHighlighterTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.editing.richtext.SyntaxHighlighterTest/testSyntaxHighlight.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.editing.richtext.SyntaxHighlighterTest/testSyntaxHighlight.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-10">java.lang.RuntimeException: Can't create handler inside thread that has not called Looper.prepare()</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-10">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Handler.<init>(Handler.java:200)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Handler.<init>(Handler.java:114)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.sec.clipboard.ClipboardExManager$1.<init>(ClipboardExManager.java:118)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.sec.clipboard.ClipboardExManager.<init>(ClipboardExManager.java:118)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.ContextImpl$11.createService(ContextImpl.java:492)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.ContextImpl$ServiceFetcher.getService(ContextImpl.java:372)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.ContextImpl.getSystemService(ContextImpl.java:2265)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.view.ContextThemeWrapper.getSystemService(ContextThemeWrapper.java:117)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.widget.EditText.<init>(EditText.java:81)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.widget.EditText.<init>(EditText.java:75)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.widget.EditText.<init>(EditText.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.editing.richtext.SyntaxHighlighterTest.testSyntaxHighlight(SyntaxHighlighterTest.java:28)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invokeNative(Native Method)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Method.java:515)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:128)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:27)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1729)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-feed-view-CardLargeHeaderViewTest-testFocus">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        Focus <small>CardLargeHeaderViewTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.feed.view.CardLargeHeaderViewTest/testFocus.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.feed.view.CardLargeHeaderViewTest/testFocus.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-11">org.junit.experimental.theories.internal.ParameterizedAssertionError: testFocus("LIGHT" <from THEMES[0]>)</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-11">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:128)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:27)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1729)</div>
+                            <div class="stacktrace-line">Caused by: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException</div>
+                            <div class="stacktrace-line">Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException</div>
+                            <div class="stacktrace-line">Caused by: java.lang.reflect.InvocationTargetException</div>
+                            <div class="stacktrace-line">Caused by: java.lang.NullPointerException</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-feed-view-CardLargeHeaderViewTest-testLayoutDirection">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Layout Direction <small>CardLargeHeaderViewTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.feed.view.CardLargeHeaderViewTest/testLayoutDirection.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.feed.view.CardLargeHeaderViewTest/testLayoutDirection.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-feed-view-CardLargeHeaderViewTest-testOnClickListener">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        On Click Listener <small>CardLargeHeaderViewTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.feed.view.CardLargeHeaderViewTest/testOnClickListener.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.feed.view.CardLargeHeaderViewTest/testOnClickListener.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-feed-view-CardLargeHeaderViewTest-testSetImage">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Set Image <small>CardLargeHeaderViewTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.feed.view.CardLargeHeaderViewTest/testSetImage.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.feed.view.CardLargeHeaderViewTest/testSetImage.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-feed-view-CardLargeHeaderViewTest-testSetTitle">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Set Title <small>CardLargeHeaderViewTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.feed.view.CardLargeHeaderViewTest/testSetTitle.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.feed.view.CardLargeHeaderViewTest/testSetTitle.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-feed-view-CardLargeHeaderViewTest-testTheme">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Theme <small>CardLargeHeaderViewTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.feed.view.CardLargeHeaderViewTest/testTheme.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.feed.view.CardLargeHeaderViewTest/testTheme.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-feed-view-CardLargeHeaderViewTest-testWidth">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Width <small>CardLargeHeaderViewTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.feed.view.CardLargeHeaderViewTest/testWidth.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.feed.view.CardLargeHeaderViewTest/testWidth.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-navtab-NavTabViewTest-testIcon">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        Icon <small>NavTabViewTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.navtab.NavTabViewTest/testIcon.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.navtab.NavTabViewTest/testIcon.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-12">android.content.res.Resources$NotFoundException: File res/drawable/ic_globe.xml from drawable resource ID #0x7f02008b</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-12">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.content.res.Resources.loadDrawable(Resources.java:3422)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.content.res.Resources.getDrawable(Resources.java:1909)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:354)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.navtab.NavTabView.drawable(NavTabView.java:64)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.navtab.NavTabView.icon(NavTabView.java:26)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.navtab.NavTabViewTest.setUp(NavTabViewTest.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.navtab.NavTabViewTest.testIcon(NavTabViewTest.java:48)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invokeNative(Native Method)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Method.java:515)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor$2.evaluate(Theories.java:274)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:232)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:128)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:27)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1729)</div>
+                            <div class="stacktrace-line">Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-navtab-NavTabViewTest-testLayoutDirection">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        Layout Direction <small>NavTabViewTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.navtab.NavTabViewTest/testLayoutDirection.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.navtab.NavTabViewTest/testLayoutDirection.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-13">org.junit.experimental.theories.internal.ParameterizedAssertionError: testLayoutDirection("480" <from ints>, "LOCALE" <from LAYOUT_DIRECTIONS[0]>)</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-13">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:128)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:27)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1729)</div>
+                            <div class="stacktrace-line">Caused by: android.content.res.Resources$NotFoundException: File res/drawable/ic_globe.xml from drawable resource ID #0x7f02008b</div>
+                            <div class="stacktrace-line">Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-navtab-NavTabViewTest-testSelect">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        Select <small>NavTabViewTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.navtab.NavTabViewTest/testSelect.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.navtab.NavTabViewTest/testSelect.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-14">org.junit.experimental.theories.internal.ParameterizedAssertionError: testSelect("LIGHT" <from THEMES[0]>)</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-14">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:128)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:27)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1729)</div>
+                            <div class="stacktrace-line">Caused by: android.content.res.Resources$NotFoundException: File res/drawable/ic_globe.xml from drawable resource ID #0x7f02008b</div>
+                            <div class="stacktrace-line">Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-navtab-NavTabViewTest-testText">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        Text <small>NavTabViewTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.navtab.NavTabViewTest/testText.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.navtab.NavTabViewTest/testText.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-15">android.content.res.Resources$NotFoundException: File res/drawable/ic_globe.xml from drawable resource ID #0x7f02008b</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-15">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.content.res.Resources.loadDrawable(Resources.java:3422)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.content.res.Resources.getDrawable(Resources.java:1909)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:354)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.navtab.NavTabView.drawable(NavTabView.java:64)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.navtab.NavTabView.icon(NavTabView.java:26)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.navtab.NavTabViewTest.setUp(NavTabViewTest.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.navtab.NavTabViewTest.testText(NavTabViewTest.java:43)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invokeNative(Native Method)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Method.java:515)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor$2.evaluate(Theories.java:274)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:232)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:128)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:27)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1729)</div>
+                            <div class="stacktrace-line">Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-navtab-NavTabViewTest-testTheme">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        Theme <small>NavTabViewTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.navtab.NavTabViewTest/testTheme.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.navtab.NavTabViewTest/testTheme.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-16">org.junit.experimental.theories.internal.ParameterizedAssertionError: testTheme("LIGHT" <from THEMES[0]>)</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-16">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:128)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:27)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1729)</div>
+                            <div class="stacktrace-line">Caused by: android.content.res.Resources$NotFoundException: File res/drawable/ic_globe.xml from drawable resource ID #0x7f02008b</div>
+                            <div class="stacktrace-line">Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-navtab-NavTabViewTest-testWidth">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        Width <small>NavTabViewTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.navtab.NavTabViewTest/testWidth.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.navtab.NavTabViewTest/testWidth.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-17">org.junit.experimental.theories.internal.ParameterizedAssertionError: testWidth("720" <from ints>, "1.0" <from FONT_SCALES[0]>)</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-17">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:128)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:27)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1729)</div>
+                            <div class="stacktrace-line">Caused by: android.content.res.Resources$NotFoundException: File res/drawable/ic_globe.xml from drawable resource ID #0x7f02008b</div>
+                            <div class="stacktrace-line">Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-nearby-NearbyUnitTests-testAndroidTestCaseSetupProperly">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Android Test Case Setup Properly <small>NearbyUnitTests</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.nearby.NearbyUnitTests/testAndroidTestCaseSetupProperly.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.nearby.NearbyUnitTests/testAndroidTestCaseSetupProperly.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-nearby-NearbyUnitTests-testCompare">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Compare <small>NearbyUnitTests</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.nearby.NearbyUnitTests/testCompare.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.nearby.NearbyUnitTests/testCompare.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-nearby-NearbyUnitTests-testGetDistanceLabelKilometers">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Get Distance Label Kilometers <small>NearbyUnitTests</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.nearby.NearbyUnitTests/testGetDistanceLabelKilometers.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.nearby.NearbyUnitTests/testGetDistanceLabelKilometers.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-nearby-NearbyUnitTests-testGetDistanceLabelMeters">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Get Distance Label Meters <small>NearbyUnitTests</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.nearby.NearbyUnitTests/testGetDistanceLabelMeters.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.nearby.NearbyUnitTests/testGetDistanceLabelMeters.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-nearby-NearbyUnitTests-testGetDistanceLabelNull">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Get Distance Label Null <small>NearbyUnitTests</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.nearby.NearbyUnitTests/testGetDistanceLabelNull.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.nearby.NearbyUnitTests/testGetDistanceLabelNull.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-nearby-NearbyUnitTests-testGetDistanceLabelSameLocation">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Get Distance Label Same Location <small>NearbyUnitTests</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.nearby.NearbyUnitTests/testGetDistanceLabelSameLocation.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.nearby.NearbyUnitTests/testGetDistanceLabelSameLocation.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-nearby-NearbyUnitTests-testSort">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Sort <small>NearbyUnitTests</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.nearby.NearbyUnitTests/testSort.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.nearby.NearbyUnitTests/testSort.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-nearby-NearbyUnitTests-testSortWithNullLocations">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Sort With Null Locations <small>NearbyUnitTests</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.nearby.NearbyUnitTests/testSortWithNullLocations.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.nearby.NearbyUnitTests/testSortWithNullLocations.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-page-PageLoadTest-testPageFetch">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Page Fetch <small>PageLoadTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPageFetch.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.page.PageLoadTest/testPageFetch.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-page-PageLoadTest-testPageFetchWithAmpersand">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Page Fetch With Ampersand <small>PageLoadTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPageFetchWithAmpersand.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.page.PageLoadTest/testPageFetchWithAmpersand.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-page-PageLoadTest-testPagesRtlLandscape">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Pages Rtl Landscape <small>PageLoadTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                        <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape.gif" title="View as animated GIF" class="pull-right icon">
+                            <img src="../static/icon-animated.png" alt="View as animated GIF">
+                        </a>
+                    </h2>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1473862305103_Algebra.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1473862305103_Algebra.png" title="Algebra">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1473862311254_Water.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1473862311254_Water.png" title="Water">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1473862317499_Dinosaur.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1473862317499_Dinosaur.png" title="Dinosaur">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1473862323672_Helium.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlLandscape/1473862323672_Helium.png" title="Helium">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-page-PageLoadTest-testPagesRtlPortrait">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Pages Rtl Portrait <small>PageLoadTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                        <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait.gif" title="View as animated GIF" class="pull-right icon">
+                            <img src="../static/icon-animated.png" alt="View as animated GIF">
+                        </a>
+                    </h2>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1473862215000_Algebra.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1473862215000_Algebra.png" title="Algebra">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1473862221371_Water.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1473862221371_Water.png" title="Water">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1473862228861_Dinosaur.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1473862228861_Dinosaur.png" title="Dinosaur">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1473862236069_Helium.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesRtlPortrait/1473862236069_Helium.png" title="Helium">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-page-PageLoadTest-testPagesWithImagesLandscape">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Pages With Images Landscape <small>PageLoadTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                        <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape.gif" title="View as animated GIF" class="pull-right icon">
+                            <img src="../static/icon-animated.png" alt="View as animated GIF">
+                        </a>
+                    </h2>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862084054_Mercury.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862084054_Mercury.png" title="Mercury">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862090013_Venus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862090013_Venus.png" title="Venus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862096081_Earth.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862096081_Earth.png" title="Earth">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862102128_Mars.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862102128_Mars.png" title="Mars">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862108175_Jupiter.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862108175_Jupiter.png" title="Jupiter">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862114016_Saturn.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862114016_Saturn.png" title="Saturn">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862119966_Uranus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862119966_Uranus.png" title="Uranus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862125916_Neptune.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862125916_Neptune.png" title="Neptune">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862131972_Barack_Obama.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862131972_Barack_Obama.png" title="Barack Obama">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862138396_Moon.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesLandscape/1473862138396_Moon.png" title="Moon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-page-PageLoadTest-testPagesWithImagesPortrait">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Pages With Images Portrait <small>PageLoadTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                        <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait.gif" title="View as animated GIF" class="pull-right icon">
+                            <img src="../static/icon-animated.png" alt="View as animated GIF">
+                        </a>
+                    </h2>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862146608_Mercury.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862146608_Mercury.png" title="Mercury">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862152547_Venus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862152547_Venus.png" title="Venus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862158773_Earth.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862158773_Earth.png" title="Earth">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862164930_Mars.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862164930_Mars.png" title="Mars">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862171909_Jupiter.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862171909_Jupiter.png" title="Jupiter">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862178157_Saturn.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862178157_Saturn.png" title="Saturn">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862184325_Uranus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862184325_Uranus.png" title="Uranus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862190687_Neptune.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862190687_Neptune.png" title="Neptune">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862197053_Barack_Obama.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862197053_Barack_Obama.png" title="Barack Obama">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862204551_Moon.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithImagesPortrait/1473862204551_Moon.png" title="Moon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-page-PageLoadTest-testPagesWithoutImagesLandscape">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Pages Without Images Landscape <small>PageLoadTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                        <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape.gif" title="View as animated GIF" class="pull-right icon">
+                            <img src="../static/icon-animated.png" alt="View as animated GIF">
+                        </a>
+                    </h2>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862243848_Mecyclothorax_aa.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862243848_Mecyclothorax_aa.png" title="Mecyclothorax Aa">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862249715_Mecyclothorax_abax.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862249715_Mecyclothorax_abax.png" title="Mecyclothorax Abax">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862255509_Mecyclothorax_acutangulus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862255509_Mecyclothorax_acutangulus.png" title="Mecyclothorax Acutangulus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862261308_Mecyclothorax_aeneipennis.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862261308_Mecyclothorax_aeneipennis.png" title="Mecyclothorax Aeneipennis">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862267073_Mecyclothorax_aeneus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862267073_Mecyclothorax_aeneus.png" title="Mecyclothorax Aeneus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862272789_Mecyclothorax_altiusculoides.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862272789_Mecyclothorax_altiusculoides.png" title="Mecyclothorax Altiusculoides">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862278562_Mecyclothorax_altiusculus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862278562_Mecyclothorax_altiusculus.png" title="Mecyclothorax Altiusculus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862284338_Mecyclothorax_amaroides.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862284338_Mecyclothorax_amaroides.png" title="Mecyclothorax Amaroides">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862290099_Mecyclothorax_ambiguus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862290099_Mecyclothorax_ambiguus.png" title="Mecyclothorax Ambiguus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862295890_Mecyclothorax_angulosus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesLandscape/1473862295890_Mecyclothorax_angulosus.png" title="Mecyclothorax Angulosus">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-page-PageLoadTest-testPagesWithoutImagesPortrait">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Pages Without Images Portrait <small>PageLoadTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                        <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait.gif" title="View as animated GIF" class="pull-right icon">
+                            <img src="../static/icon-animated.png" alt="View as animated GIF">
+                        </a>
+                    </h2>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862024708_Mecyclothorax_aa.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862024708_Mecyclothorax_aa.png" title="Mecyclothorax Aa">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862030459_Mecyclothorax_abax.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862030459_Mecyclothorax_abax.png" title="Mecyclothorax Abax">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862036261_Mecyclothorax_acutangulus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862036261_Mecyclothorax_acutangulus.png" title="Mecyclothorax Acutangulus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862042018_Mecyclothorax_aeneipennis.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862042018_Mecyclothorax_aeneipennis.png" title="Mecyclothorax Aeneipennis">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862047759_Mecyclothorax_aeneus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862047759_Mecyclothorax_aeneus.png" title="Mecyclothorax Aeneus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862053466_Mecyclothorax_altiusculoides.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862053466_Mecyclothorax_altiusculoides.png" title="Mecyclothorax Altiusculoides">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862059246_Mecyclothorax_altiusculus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862059246_Mecyclothorax_altiusculus.png" title="Mecyclothorax Altiusculus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862064950_Mecyclothorax_amaroides.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862064950_Mecyclothorax_amaroides.png" title="Mecyclothorax Amaroides">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862070714_Mecyclothorax_ambiguus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862070714_Mecyclothorax_ambiguus.png" title="Mecyclothorax Ambiguus">
+                            </a>
+                        </li>
+                        <li class="span2">
+                            <a href="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862076450_Mecyclothorax_angulosus.png" class="thumbnail">
+                                <img src="../image/42f7300bd9119f15/org.wikipedia.page.PageLoadTest/testPagesWithoutImagesPortrait/1473862076450_Mecyclothorax_angulosus.png" title="Mecyclothorax Angulosus">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-savedpages-ImageUrlMapTest-testNonClosedImgTag">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Non Closed Img Tag <small>ImageUrlMapTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.savedpages.ImageUrlMapTest/testNonClosedImgTag.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.savedpages.ImageUrlMapTest/testNonClosedImgTag.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-savedpages-ImageUrlMapTest-testUrlRewrite">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Url Rewrite <small>ImageUrlMapTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.savedpages.ImageUrlMapTest/testUrlRewrite.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.savedpages.ImageUrlMapTest/testUrlRewrite.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-test-BridgeTests-testDOMLoaded">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        DOM Loaded <small>BridgeTests</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.test.BridgeTests/testDOMLoaded.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.test.BridgeTests/testDOMLoaded.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-test-BridgeTests-testPingBackHandling">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Ping Back Handling <small>BridgeTests</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.test.BridgeTests/testPingBackHandling.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.test.BridgeTests/testPingBackHandling.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-test-CreateAccountTaskTest-testCreateAccountInfoFetch">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Create Account Info Fetch <small>CreateAccountTaskTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.test.CreateAccountTaskTest/testCreateAccountInfoFetch.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.test.CreateAccountTaskTest/testCreateAccountInfoFetch.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-test-CreateAccountTaskTest-testFetchCaptchaImage">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Fetch Captcha Image <small>CreateAccountTaskTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.test.CreateAccountTaskTest/testFetchCaptchaImage.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.test.CreateAccountTaskTest/testFetchCaptchaImage.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-test-EditTaskTest-testAbuseFilterTriggerStopOnArbitraryErrorCode">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        Abuse Filter Trigger Stop On Arbitrary Error Code <small>EditTaskTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.test.EditTaskTest/testAbuseFilterTriggerStopOnArbitraryErrorCode.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.test.EditTaskTest/testAbuseFilterTriggerStopOnArbitraryErrorCode.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" id="org-wikipedia-test-EditTaskTest-testEdit">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        Edit <small>EditTaskTest</small>
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../logs/42f7300bd9119f15/org.wikipedia.test.EditTaskTest/testEdit.html" title="View device log" class="pull-right icon">
+                            <img src="../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../test/org.wikipedia.test.EditTaskTest/testEdit.html" title="View on all devices" class="pull-right icon">
+                            <img src="../static/icon-devices.png" alt="View on all devices">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-18">java.lang.RuntimeException: ratelimited: You've exceeded your rate limit. Please wait some time and try again</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-18">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.ApiTask.onCatch(ApiTask.java:46)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:72)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask.finish(AsyncTask.java:632)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask.access$600(AsyncTask.java:177)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Handler.dispatchMessage(Handler.java:102)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.os.Looper.loop(Looper.java:146)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.ActivityThread.main(ActivityThread.java:5602)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invokeNative(Native Method)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Method.java:515)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1283)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1099)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at dalvik.system.NativeStart.main(Native Method)</div>
+                            <div class="stacktrace-line">Caused by: ratelimited: You've exceeded your rate limit. Please wait some time and try again</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('.icon, .thumbnail img').tooltip({
+                container: 'body'
+            });
+        </script>
+    </body>
+</html>
