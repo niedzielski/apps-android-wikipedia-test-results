@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="75" failures="10" errors="0" skipped="0" time="310.722" timestamp="2016-09-19T20:44:01" hostname="localhost">
+  <properties />
+  <testcase name="testPreview" classname="org.wikipedia.editing.EditPreviewTaskTest" time="0.453" />
+  <testcase name="testSyntaxHighlight" classname="org.wikipedia.editing.richtext.SyntaxHighlighterTest" time="0.533" />
+  <testcase name="testLayoutDirection" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.051">
+    <failure>org.junit.experimental.theories.internal.ParameterizedAssertionError: testLayoutDirection("LOCALE" &lt;from LAYOUT_DIRECTIONS[0]&gt;)
+at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)
+at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+Caused by: java.lang.NullPointerException
+at android.widget.RelativeLayout.onMeasure(RelativeLayout.java:495)
+at android.view.View.measure(View.java:15172)
+at com.facebook.testing.screenshot.ViewHelpers.layoutInternal(ViewHelpers.java:76)
+at com.facebook.testing.screenshot.ViewHelpers.layout(ViewHelpers.java:66)
+at org.wikipedia.test.ViewTest.snap(ViewTest.java:89)
+at org.wikipedia.feed.view.CardLargeHeaderViewTest.testLayoutDirection(CardLargeHeaderViewTest.java:37)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.experimental.theories.Theories$TheoryAnchor$2.evaluate(Theories.java:274)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:232)
+... 27 more
+</failure>
+  </testcase>
+  <testcase name="testFocus" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.0">
+    <failure>org.junit.experimental.theories.internal.ParameterizedAssertionError: testFocus("LIGHT" &lt;from THEMES[0]&gt;)
+at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)
+at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+Caused by: java.lang.NullPointerException
+at android.widget.RelativeLayout.onMeasure(RelativeLayout.java:495)
+at android.view.View.measure(View.java:15172)
+at com.facebook.testing.screenshot.ViewHelpers.layoutInternal(ViewHelpers.java:76)
+at com.facebook.testing.screenshot.ViewHelpers.layout(ViewHelpers.java:66)
+at org.wikipedia.test.ViewTest.snap(ViewTest.java:89)
+at org.wikipedia.feed.view.CardLargeHeaderViewTest.testFocus(CardLargeHeaderViewTest.java:52)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.experimental.theories.Theories$TheoryAnchor$2.evaluate(Theories.java:274)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:232)
+... 27 more
+</failure>
+  </testcase>
+  <testcase name="testTheme" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.026">
+    <failure>org.junit.experimental.theories.internal.ParameterizedAssertionError: testTheme("LIGHT" &lt;from THEMES[0]&gt;)
+at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)
+at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+Caused by: java.lang.NullPointerException
+at android.widget.RelativeLayout.onMeasure(RelativeLayout.java:495)
+at android.view.View.measure(View.java:15172)
+at com.facebook.testing.screenshot.ViewHelpers.layoutInternal(ViewHelpers.java:76)
+at com.facebook.testing.screenshot.ViewHelpers.layout(ViewHelpers.java:66)
+at org.wikipedia.test.ViewTest.snap(ViewTest.java:89)
+at org.wikipedia.feed.view.CardLargeHeaderViewTest.testTheme(CardLargeHeaderViewTest.java:42)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.experimental.theories.Theories$TheoryAnchor$2.evaluate(Theories.java:274)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:232)
+... 27 more
+</failure>
+  </testcase>
+  <testcase name="testWidth" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.051">
+    <failure>org.junit.experimental.theories.internal.ParameterizedAssertionError: testWidth("480" &lt;from ints&gt;, "1.0" &lt;from FONT_SCALES[0]&gt;, "0" &lt;from ints&gt;, "0" &lt;from ints&gt;)
+at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)
+at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+Caused by: java.lang.NullPointerException
+at android.widget.RelativeLayout.onMeasure(RelativeLayout.java:495)
+at android.view.View.measure(View.java:15172)
+at com.facebook.testing.screenshot.ViewHelpers.layoutInternal(ViewHelpers.java:76)
+at com.facebook.testing.screenshot.ViewHelpers.layout(ViewHelpers.java:66)
+at org.wikipedia.test.ViewTest.snap(ViewTest.java:89)
+at org.wikipedia.feed.view.CardLargeHeaderViewTest.testWidth(CardLargeHeaderViewTest.java:31)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.experimental.theories.Theories$TheoryAnchor$2.evaluate(Theories.java:274)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:232)
+... 33 more
+</failure>
+  </testcase>
+  <testcase name="testOnClickListener" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.026" />
+  <testcase name="testSetImage" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.0" />
+  <testcase name="testSetTitle" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.0" />
+  <testcase name="testIcon" classname="org.wikipedia.navtab.NavTabViewTest" time="0.026">
+    <failure>android.content.res.Resources$NotFoundException: File res/drawable/ic_globe.xml from drawable resource ID #0x7f02008b
+at android.content.res.Resources.loadDrawable(Resources.java:1918)
+at android.content.res.Resources.getDrawable(Resources.java:659)
+at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:354)
+at org.wikipedia.navtab.NavTabView.drawable(NavTabView.java:63)
+at org.wikipedia.navtab.NavTabView.icon(NavTabView.java:26)
+at org.wikipedia.navtab.NavTabViewTest.setUp(NavTabViewTest.java:58)
+at org.wikipedia.navtab.NavTabViewTest.testIcon(NavTabViewTest.java:48)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.experimental.theories.Theories$TheoryAnchor$2.evaluate(Theories.java:274)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:232)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)
+at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector
+at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:877)
+at android.graphics.drawable.Drawable.createFromXml(Drawable.java:818)
+at android.content.res.Resources.loadDrawable(Resources.java:1915)
+... 38 more
+</failure>
+  </testcase>
+  <testcase name="testText" classname="org.wikipedia.navtab.NavTabViewTest" time="0.051">
+    <failure>android.content.res.Resources$NotFoundException: File res/drawable/ic_globe.xml from drawable resource ID #0x7f02008b
+at android.content.res.Resources.loadDrawable(Resources.java:1918)
+at android.content.res.Resources.getDrawable(Resources.java:659)
+at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:354)
+at org.wikipedia.navtab.NavTabView.drawable(NavTabView.java:63)
+at org.wikipedia.navtab.NavTabView.icon(NavTabView.java:26)
+at org.wikipedia.navtab.NavTabViewTest.setUp(NavTabViewTest.java:58)
+at org.wikipedia.navtab.NavTabViewTest.testText(NavTabViewTest.java:43)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.experimental.theories.Theories$TheoryAnchor$2.evaluate(Theories.java:274)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:232)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)
+at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector
+at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:877)
+at android.graphics.drawable.Drawable.createFromXml(Drawable.java:818)
+at android.content.res.Resources.loadDrawable(Resources.java:1915)
+... 38 more
+</failure>
+  </testcase>
+  <testcase name="testLayoutDirection" classname="org.wikipedia.navtab.NavTabViewTest" time="0.0">
+    <failure>org.junit.experimental.theories.internal.ParameterizedAssertionError: testLayoutDirection("LOCALE" &lt;from LAYOUT_DIRECTIONS[0]&gt;)
+at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)
+at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+Caused by: android.content.res.Resources$NotFoundException: File res/drawable/ic_globe.xml from drawable resource ID #0x7f02008b
+at android.content.res.Resources.loadDrawable(Resources.java:1918)
+at android.content.res.Resources.getDrawable(Resources.java:659)
+at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:354)
+at org.wikipedia.navtab.NavTabView.drawable(NavTabView.java:63)
+at org.wikipedia.navtab.NavTabView.icon(NavTabView.java:26)
+at org.wikipedia.navtab.NavTabViewTest.setUp(NavTabViewTest.java:58)
+at org.wikipedia.navtab.NavTabViewTest.testLayoutDirection(NavTabViewTest.java:27)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.experimental.theories.Theories$TheoryAnchor$2.evaluate(Theories.java:274)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:232)
+... 27 more
+Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector
+at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:877)
+at android.graphics.drawable.Drawable.createFromXml(Drawable.java:818)
+at android.content.res.Resources.loadDrawable(Resources.java:1915)
+... 40 more
+</failure>
+  </testcase>
+  <testcase name="testTheme" classname="org.wikipedia.navtab.NavTabViewTest" time="0.051">
+    <failure>org.junit.experimental.theories.internal.ParameterizedAssertionError: testTheme("LIGHT" &lt;from THEMES[0]&gt;)
+at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)
+at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+Caused by: android.content.res.Resources$NotFoundException: File res/drawable/ic_globe.xml from drawable resource ID #0x7f02008b
+at android.content.res.Resources.loadDrawable(Resources.java:1918)
+at android.content.res.Resources.getDrawable(Resources.java:659)
+at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:354)
+at org.wikipedia.navtab.NavTabView.drawable(NavTabView.java:63)
+at org.wikipedia.navtab.NavTabView.icon(NavTabView.java:26)
+at org.wikipedia.navtab.NavTabViewTest.setUp(NavTabViewTest.java:58)
+at org.wikipedia.navtab.NavTabViewTest.testTheme(NavTabViewTest.java:32)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.experimental.theories.Theories$TheoryAnchor$2.evaluate(Theories.java:274)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:232)
+... 27 more
+Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector
+at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:877)
+at android.graphics.drawable.Drawable.createFromXml(Drawable.java:818)
+at android.content.res.Resources.loadDrawable(Resources.java:1915)
+... 40 more
+</failure>
+  </testcase>
+  <testcase name="testWidth" classname="org.wikipedia.navtab.NavTabViewTest" time="0.0">
+    <failure>org.junit.experimental.theories.internal.ParameterizedAssertionError: testWidth("720" &lt;from ints&gt;, "1.0" &lt;from FONT_SCALES[0]&gt;)
+at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)
+at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+Caused by: android.content.res.Resources$NotFoundException: File res/drawable/ic_globe.xml from drawable resource ID #0x7f02008b
+at android.content.res.Resources.loadDrawable(Resources.java:1918)
+at android.content.res.Resources.getDrawable(Resources.java:659)
+at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:354)
+at org.wikipedia.navtab.NavTabView.drawable(NavTabView.java:63)
+at org.wikipedia.navtab.NavTabView.icon(NavTabView.java:26)
+at org.wikipedia.navtab.NavTabViewTest.setUp(NavTabViewTest.java:58)
+at org.wikipedia.navtab.NavTabViewTest.testWidth(NavTabViewTest.java:22)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.experimental.theories.Theories$TheoryAnchor$2.evaluate(Theories.java:274)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:232)
+... 29 more
+Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector
+at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:877)
+at android.graphics.drawable.Drawable.createFromXml(Drawable.java:818)
+at android.content.res.Resources.loadDrawable(Resources.java:1915)
+... 42 more
+</failure>
+  </testcase>
+  <testcase name="testSelect" classname="org.wikipedia.navtab.NavTabViewTest" time="0.051">
+    <failure>org.junit.experimental.theories.internal.ParameterizedAssertionError: testSelect("LIGHT" &lt;from THEMES[0]&gt;)
+at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)
+at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+Caused by: android.content.res.Resources$NotFoundException: File res/drawable/ic_globe.xml from drawable resource ID #0x7f02008b
+at android.content.res.Resources.loadDrawable(Resources.java:1918)
+at android.content.res.Resources.getDrawable(Resources.java:659)
+at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:354)
+at org.wikipedia.navtab.NavTabView.drawable(NavTabView.java:63)
+at org.wikipedia.navtab.NavTabView.icon(NavTabView.java:26)
+at org.wikipedia.navtab.NavTabViewTest.setUp(NavTabViewTest.java:58)
+at org.wikipedia.navtab.NavTabViewTest.testSelect(NavTabViewTest.java:37)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.experimental.theories.Theories$TheoryAnchor$2.evaluate(Theories.java:274)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:232)
+... 27 more
+Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector
+at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:877)
+at android.graphics.drawable.Drawable.createFromXml(Drawable.java:818)
+at android.content.res.Resources.loadDrawable(Resources.java:1915)
+... 40 more
+</failure>
+  </testcase>
+  <testcase name="testCompare" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelKilometers" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelMeters" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.001" />
+  <testcase name="testGetDistanceLabelNull" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelSameLocation" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSort" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSortWithNullLocations" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testPagesWithoutImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="54.463" />
+  <testcase name="testPagesWithImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="59.45" />
+  <testcase name="testPagesWithImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="58.089" />
+  <testcase name="testPageFetchWithAmpersand" classname="org.wikipedia.page.PageLoadTest" time="1.751" />
+  <testcase name="testPagesRtlPortrait" classname="org.wikipedia.page.PageLoadTest" time="33.96" />
+  <testcase name="testPagesWithoutImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="57.236" />
+  <testcase name="testPageFetch" classname="org.wikipedia.page.PageLoadTest" time="0.451" />
+  <testcase name="testPagesRtlLandscape" classname="org.wikipedia.page.PageLoadTest" time="27.588" />
+  <testcase name="testNonClosedImgTag" classname="org.wikipedia.savedpages.ImageUrlMapTest" time="0.025" />
+  <testcase name="testUrlRewrite" classname="org.wikipedia.savedpages.ImageUrlMapTest" time="0.0" />
+  <testcase name="testDOMLoaded" classname="org.wikipedia.test.BridgeTests" time="0.025" />
+  <testcase name="testPingBackHandling" classname="org.wikipedia.test.BridgeTests" time="0.0" />
+  <testcase name="testCreateAccountInfoFetch" classname="org.wikipedia.test.CreateAccountTaskTest" time="0.489" />
+  <testcase name="testFetchCaptchaImage" classname="org.wikipedia.test.CreateAccountTaskTest" time="0.376" />
+  <testcase name="testAbuseFilterTriggerStopOnArbitraryErrorCode" classname="org.wikipedia.test.EditTaskTest" time="0.741" />
+  <testcase name="testEdit" classname="org.wikipedia.test.EditTaskTest" time="2.706" />
+  <testcase name="testCaptcha" classname="org.wikipedia.test.EditTaskTest" time="0.753" />
+  <testcase name="testAbuseFilterTriggerStop" classname="org.wikipedia.test.EditTaskTest" time="0.728" />
+  <testcase name="testAbuseFilterTriggerWarn" classname="org.wikipedia.test.EditTaskTest" time="0.577" />
+  <testcase name="testPageFetch" classname="org.wikipedia.test.FetchSectionWikitextTaskTests" time="0.402" />
+  <testcase name="testEmptyResults" classname="org.wikipedia.test.FullSearchTaskTests" time="0.326" />
+  <testcase name="testFullTextSearchWithResults" classname="org.wikipedia.test.FullSearchTaskTests" time="0.541" />
+  <testcase name="testOneTitle" classname="org.wikipedia.test.GetDescriptionsTaskTests" time="0.326" />
+  <testcase name="testThreeTitles" classname="org.wikipedia.test.GetDescriptionsTaskTests" time="0.326" />
+  <testcase name="testDefaultLocaleAndAcceptLanguageAgree" classname="org.wikipedia.test.LanguageVariantTests" time="0.05" />
+  <testcase name="testLogin" classname="org.wikipedia.test.LoginTaskTest" time="2.21" />
+  <testcase name="testJSONSerialization" classname="org.wikipedia.test.PageTests" time="0.0" />
+  <testcase name="testHistoryEntry" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testLruCache" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testPageImage" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testPageProperties" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testPageTitle" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testPageTitleTalk" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testSite" classname="org.wikipedia.test.ParcelableTest" time="0.0" />
+  <testcase name="testJSONSerialization" classname="org.wikipedia.test.SectionTests" time="0.0" />
+  <testcase name="testSectionLead" classname="org.wikipedia.test.SectionTests" time="0.0" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="org.wikipedia.test.SectionTests" time="0.0" />
+  <testcase name="testEquals" classname="org.wikipedia.test.SiteTests" time="0.0" />
+  <testcase name="testIsSupportedSite" classname="org.wikipedia.test.SiteTests" time="0.0" />
+  <testcase name="testNormalization" classname="org.wikipedia.test.SiteTests" time="0.025" />
+  <testcase name="testTitleForInternalLink" classname="org.wikipedia.test.SiteTests" time="0.0" />
+  <testcase name="testFilter1ResultDifferentFromTitle" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.025" />
+  <testcase name="testFilter1ResultSameAsTitleIgnoreCase" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.025" />
+  <testcase name="testFilter4ResultsDifferentFromTitle" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.0" />
+  <testcase name="testFilterNoResults" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.025" />
+  <testcase name="testTask" classname="org.wikipedia.test.SuggestionsTaskTests" time="0.502" />
+  <testcase name="testAllTranslations" classname="org.wikipedia.test.TranslationTests" time="7.847" />
+  <testcase name="testAppropriateThreadException" classname="org.wikipedia.test.concurrency.AsyncTaskTest" time="0.328" />
+  <testcase name="testAppropriateThreadFinish" classname="org.wikipedia.test.concurrency.AsyncTaskTest" time="0.151" />
+  <testcase name="testExceptionHandling" classname="org.wikipedia.test.concurrency.AsyncTaskTest" time="0.154" />
+  <testcase name="testFinishHandling" classname="org.wikipedia.test.concurrency.AsyncTaskTest" time="0.176" />
+  <testcase name="testLoadPages" classname="org.wikipedia.test.perf.PageLoadPerformanceTests" time="6.964" />
+</testsuite>
