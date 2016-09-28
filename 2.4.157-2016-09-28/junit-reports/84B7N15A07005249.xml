@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="40" failures="1" errors="0" skipped="0" time="0.0" timestamp="2016-09-28T16:55:07" hostname="localhost">
+  <properties />
+  <testcase name="testPreview" classname="org.wikipedia.editing.EditPreviewTaskTest" time="0.602" />
+  <testcase name="testSyntaxHighlight" classname="org.wikipedia.editing.richtext.SyntaxHighlighterTest" time="0.527" />
+  <testcase name="testLayoutDirection" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.527" />
+  <testcase name="testFocus" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.226" />
+  <testcase name="testTheme" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.226" />
+  <testcase name="testWidth" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="3.55" />
+  <testcase name="testOnClickListener" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.026" />
+  <testcase name="testSetImage" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.0" />
+  <testcase name="testSetTitle" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.025" />
+  <testcase name="testIcon" classname="org.wikipedia.navtab.NavTabViewTest" time="0.0" />
+  <testcase name="testText" classname="org.wikipedia.navtab.NavTabViewTest" time="0.0" />
+  <testcase name="testLayoutDirection" classname="org.wikipedia.navtab.NavTabViewTest" time="0.075" />
+  <testcase name="testTheme" classname="org.wikipedia.navtab.NavTabViewTest" time="0.075" />
+  <testcase name="testWidth" classname="org.wikipedia.navtab.NavTabViewTest" time="0.603" />
+  <testcase name="testSelect" classname="org.wikipedia.navtab.NavTabViewTest" time="0.101" />
+  <testcase name="testCompare" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelKilometers" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelMeters" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelNull" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelSameLocation" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSort" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSortWithNullLocations" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testPagesWithoutImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="61.584" />
+  <testcase name="testPagesWithImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="59.983" />
+  <testcase name="testPagesWithImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="63.651" />
+  <testcase name="testPageFetchWithAmpersand" classname="org.wikipedia.page.PageLoadTest" time="2.587" />
+  <testcase name="testPagesRtlPortrait" classname="org.wikipedia.page.PageLoadTest" time="30.532" />
+  <testcase name="testPagesWithoutImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="60.863" />
+  <testcase name="testPageFetch" classname="org.wikipedia.page.PageLoadTest" time="0.426" />
+  <testcase name="testPagesRtlLandscape" classname="org.wikipedia.page.PageLoadTest" time="25.695" />
+  <testcase name="testNonClosedImgTag" classname="org.wikipedia.savedpages.ImageUrlMapTest" time="0.0" />
+  <testcase name="testUrlRewrite" classname="org.wikipedia.savedpages.ImageUrlMapTest" time="0.0" />
+  <testcase name="testDOMLoaded" classname="org.wikipedia.test.BridgeTests" time="0.15" />
+  <testcase name="testPingBackHandling" classname="org.wikipedia.test.BridgeTests" time="0.075" />
+  <testcase name="testCreateAccountInfoFetch" classname="org.wikipedia.test.CreateAccountTaskTest" time="0.226" />
+  <testcase name="testFetchCaptchaImage" classname="org.wikipedia.test.CreateAccountTaskTest" time="0.201" />
+  <testcase name="testAbuseFilterTriggerStopOnArbitraryErrorCode" classname="org.wikipedia.test.EditTaskTest" time="0.527" />
+  <testcase name="testEdit" classname="org.wikipedia.test.EditTaskTest" time="2.538" />
+  <testcase name="testCaptcha" classname="org.wikipedia.test.EditTaskTest" time="0.426" />
+  <testcase name="testAbuseFilterTriggerStop" classname="org.wikipedia.test.EditTaskTest" time="0.213">
+    <failure>java.lang.RuntimeException: ratelimited: You've exceeded your rate limit. Please wait some time and try again
+at org.wikipedia.ApiTask.onCatch(ApiTask.java:46)
+at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:72)
+at android.os.AsyncTask.finish(AsyncTask.java:660)
+at android.os.AsyncTask.-wrap1(AsyncTask.java)
+at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:677)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:154)
+at android.app.ActivityThread.main(ActivityThread.java:6077)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:865)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:755)
+Caused by: ratelimited: You've exceeded your rate limit. Please wait some time and try again
+at org.mediawiki.api.json.ApiResult.assertSuccess(ApiResult.java:110)
+at org.mediawiki.api.json.ApiResult.asObject(ApiResult.java:81)
+at org.wikipedia.editing.EditTask.processResult(EditTask.java:58)
+at org.wikipedia.editing.EditTask.processResult(EditTask.java:15)
+at org.wikipedia.ApiTask.performTask(ApiTask.java:31)
+at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:57)
+at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:16)
+at android.os.AsyncTask$2.call(AsyncTask.java:304)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+at java.lang.Thread.run(Thread.java:761)
+</failure>
+  </testcase>
+</testsuite>

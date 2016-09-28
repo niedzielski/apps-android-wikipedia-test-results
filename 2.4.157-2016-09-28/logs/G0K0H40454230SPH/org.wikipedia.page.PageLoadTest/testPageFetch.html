@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Fetch</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../../static/spoon.css" rel="stylesheet">
+        <script src="../../../static/jquery.min.js"></script>
+        <script src="../../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Test passed in 1 second on Amazon KFFOWI">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Page Fetch</h1>
+                <p>Test passed in 1 second on Amazon KFFOWI</p>
+            </div>
+            <div class="row log">
+                <div class="span12">
+                    <table class="table table-striped table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Level</th>
+                                <th>Tag</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="level-info info">
+                                <td>09-28 10:54:41.520</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>started: testPageFetch(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>09-28 10:54:41.522</td>
+                                <td>info</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Activities that are still in CREATED to STOPPED: 1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:41.573</td>
+                                <td>debug</td>
+                                <td>ActivityTestRule</td>
+                                <td>Launching activity org.wikipedia.page.PageActivity</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:41.583</td>
+                                <td>debug</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>09-28 10:54:41.949</td>
+                                <td>info</td>
+                                <td>art</td>
+                                <td>Background sticky concurrent mark sweep GC freed 51504(1272KB) AllocSpace objects, 8(411KB) LOS objects, 2% free, 61MB/63MB, paused 8.068ms total 52.420ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:42.011</td>
+                                <td>debug</td>
+                                <td>CRLSetManager</td>
+                                <td>getInstance binder: android.os.BinderProxy@3e70a873</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:42.159</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@18e7ee62 in: PRE_ON_CREATE</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>09-28 10:54:42.320</td>
+                                <td>warn</td>
+                                <td>art</td>
+                                <td>Attempt to remove local handle scope entry from IRT, ignoring</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>09-28 10:54:42.332</td>
+                                <td>warn</td>
+                                <td>AwContents</td>
+                                <td>onDetachedFromWindow called when already detached. Ignoring</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:42.415</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageActivity</td>
+                                <td>registerBus():880: Registered bus.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:42.419</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.analytics.Funnel</td>
+                                <td>log():140: LinkPreviewFunnel: Sending event, event_action = navigate</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>09-28 10:54:42.423</td>
+                                <td>info</td>
+                                <td>org.wikipedia.useroption.sync.UserOptionContentResolver</td>
+                                <td>requestSync():48: no account</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:42.424</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@18e7ee62 in: CREATED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:42.424</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.RemoteConfigRefreshTask</td>
+                                <td>Skipping recurring task, remote-config-refresher. Last execution was Wed Sep 28 10:50:01 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:42.426</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.snippet.SharedImageCleanupTask</td>
+                                <td>Skipping recurring task, shared-image-cleanup. Last execution was Wed Sep 28 10:50:01 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:42.427</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.recurring.DailyEventTask</td>
+                                <td>Skipping recurring task, dailyEventTask. Last execution was Wed Sep 28 10:50:01 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:42.428</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.alphaupdater.AlphaUpdateChecker</td>
+                                <td>Skipping recurring task, alpha-update-checker. Last execution was Wed Sep 28 10:50:02 MDT 2016.</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>09-28 10:54:42.429</td>
+                                <td>warn</td>
+                                <td>art</td>
+                                <td>Attempt to remove local handle scope entry from IRT, ignoring</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>09-28 10:54:42.429</td>
+                                <td>warn</td>
+                                <td>art</td>
+                                <td>Attempt to remove local handle scope entry from IRT, ignoring</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:42.440</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>loadFromBackStack():203: Loaded page Mecyclothorax angulosus from backstack</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:42.440</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@18e7ee62 in: STARTED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:42.441</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@18e7ee62 in: RESUMED</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>09-28 10:54:42.445</td>
+                                <td>verbose</td>
+                                <td>GameCircleVendorCallback</td>
+                                <td>getImpliedSystemUiVisibility </td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>09-28 10:54:42.469</td>
+                                <td>verbose</td>
+                                <td>GameCircleVendorCallback</td>
+                                <td>getImpliedSystemUiVisibility </td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>09-28 10:54:42.483</td>
+                                <td>info</td>
+                                <td>MaliEGL</td>
+                                <td>[Mali]window_type=1, is_framebuffer=0, errnum = 0</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>09-28 10:54:42.483</td>
+                                <td>info</td>
+                                <td>MaliEGL</td>
+                                <td>[Mali]surface-&gt;num_buffers=4, surface-&gt;num_frames=3, win_min_undequeued=1</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>09-28 10:54:42.483</td>
+                                <td>info</td>
+                                <td>MaliEGL</td>
+                                <td>[Mali]max_allowed_dequeued_buffers=3</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>09-28 10:54:42.535</td>
+                                <td>verbose</td>
+                                <td>GameCircleVendorCallback</td>
+                                <td>getImpliedSystemUiVisibility </td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>09-28 10:54:42.580</td>
+                                <td>info</td>
+                                <td>art</td>
+                                <td>Background sticky concurrent mark sweep GC freed 26180(1125KB) AllocSpace objects, 0(0B) LOS objects, 1% free, 62MB/63MB, paused 8.462ms total 66.850ms</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>09-28 10:54:42.633</td>
+                                <td>warn</td>
+                                <td>BindingManager</td>
+                                <td>Cannot call determinedVisibility() - never saw a connection for the pid: 8527</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:42.926</td>
+                                <td>debug</td>
+                                <td>CRLSetManager</td>
+                                <td>getInstance binder: android.os.BinderProxy@3e70a873</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:43.043</td>
+                                <td>debug</td>
+                                <td>PageCache</td>
+                                <td>Reading from cache: Mecyclothorax angulosus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:43.070</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy$13</td>
+                                <td>onGetComplete():512: Using page from cache: Mecyclothorax angulosus</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:43.091</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.JsonPageLoadStrategy</td>
+                                <td>sendLeadSectionPayload():617: Sent message &#39;displayLeadSection&#39; for page: &lt;i&gt;Mecyclothorax angulosus&lt;/i&gt;</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>09-28 10:54:43.103</td>
+                                <td>verbose</td>
+                                <td>GameCircleVendorCallback</td>
+                                <td>getImpliedSystemUiVisibility </td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>09-28 10:54:43.108</td>
+                                <td>warn</td>
+                                <td>ResourceType</td>
+                                <td>Attempt to retrieve bag 0x0103003e which is invalid or in a cycle.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:43.142</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@1b97af86 in: STOPPED</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:43.144</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.page.PageActivity</td>
+                                <td>unregisterBus():886: Unregistered bus.</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:43.145</td>
+                                <td>debug</td>
+                                <td>LifecycleMonitor</td>
+                                <td>Lifecycle status change: org.wikipedia.page.PageActivity@1b97af86 in: DESTROYED</td>
+                            </tr>
+                            <tr class="level-warn warning">
+                                <td>09-28 10:54:43.160</td>
+                                <td>warn</td>
+                                <td>art</td>
+                                <td>Suspending all threads took: 10.146ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:43.191</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.analytics.Funnel</td>
+                                <td>log():140: LinkPreviewFunnel: Sending event, event_action = navigate</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:54:43.197</td>
+                                <td>debug</td>
+                                <td>org.wikipedia.analytics.Funnel</td>
+                                <td>log():140: PageScrollFunnel: Sending event, event_pageID = 40178884, event_pageHeight = 552, event_scrollFluxDown = 0, event_scrollFluxUp = 0, event_maxPercentViewed = 100</td>
+                            </tr>
+                            <tr class="level-verbose ">
+                                <td>09-28 10:54:43.206</td>
+                                <td>verbose</td>
+                                <td>GameCircleVendorCallback</td>
+                                <td>getImpliedSystemUiVisibility </td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>09-28 10:54:43.209</td>
+                                <td>info</td>
+                                <td>art</td>
+                                <td>Background partial concurrent mark sweep GC freed 31570(1746KB) AllocSpace objects, 8(328KB) LOS objects, 6% free, 61MB/65MB, paused 23.950ms total 268.243ms</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>09-28 10:54:43.212</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>finished: testPageFetch(org.wikipedia.page.PageLoadTest)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

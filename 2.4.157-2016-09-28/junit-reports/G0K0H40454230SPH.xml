@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="38" failures="2" errors="0" skipped="0" time="0.0" timestamp="2016-09-28T16:55:15" hostname="localhost">
+  <properties />
+  <testcase name="testPreview" classname="org.wikipedia.editing.EditPreviewTaskTest" time="0.629" />
+  <testcase name="testSyntaxHighlight" classname="org.wikipedia.editing.richtext.SyntaxHighlighterTest" time="0.553" />
+  <testcase name="testLayoutDirection" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.376" />
+  <testcase name="testFocus" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.062">
+    <failure>org.junit.experimental.theories.internal.ParameterizedAssertionError: testFocus("LIGHT" &lt;from THEMES[0]&gt;)
+at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)
+at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)
+at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1874)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+at com.facebook.testing.screenshot.internal.ScreenshotImpl.runCallableOnUiThread(ScreenshotImpl.java:323)
+at com.facebook.testing.screenshot.internal.ScreenshotImpl.storeBitmap(ScreenshotImpl.java:128)
+at com.facebook.testing.screenshot.internal.ScreenshotImpl.record(ScreenshotImpl.java:249)
+at com.facebook.testing.screenshot.internal.RecordBuilderImpl.record(RecordBuilderImpl.java:148)
+at org.wikipedia.test.ViewTest.snap(ViewTest.java:98)
+at org.wikipedia.feed.view.CardLargeHeaderViewTest.testFocus(CardLargeHeaderViewTest.java:52)
+at java.lang.reflect.Method.invoke(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:372)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.experimental.theories.Theories$TheoryAnchor$2.evaluate(Theories.java:274)
+at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:232)
+... 27 more
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+at com.facebook.testing.screenshot.WindowAttachment.invokeUnchecked(WindowAttachment.java:109)
+at com.facebook.testing.screenshot.WindowAttachment.invokeUnchecked(WindowAttachment.java:115)
+at com.facebook.testing.screenshot.WindowAttachment.invoke(WindowAttachment.java:100)
+at com.facebook.testing.screenshot.WindowAttachment.dispatchAttach(WindowAttachment.java:64)
+at com.facebook.testing.screenshot.internal.ScreenshotImpl.storeBitmap(ScreenshotImpl.java:153)
+at com.facebook.testing.screenshot.internal.ScreenshotImpl.access$000(ScreenshotImpl.java:43)
+at com.facebook.testing.screenshot.internal.ScreenshotImpl$2.call(ScreenshotImpl.java:131)
+at com.facebook.testing.screenshot.internal.ScreenshotImpl$2.call(ScreenshotImpl.java:128)
+at com.facebook.testing.screenshot.internal.ScreenshotImpl$3.run(ScreenshotImpl.java:305)
+at android.os.Handler.handleCallback(Handler.java:739)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.os.Looper.loop(Looper.java:135)
+at android.app.ActivityThread.main(ActivityThread.java:5468)
+at java.lang.reflect.Method.invoke(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:372)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:976)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:771)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.lang.reflect.Method.invoke(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:372)
+at com.facebook.testing.screenshot.WindowAttachment.invokeUnchecked(WindowAttachment.java:107)
+... 16 more
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.view.inputmethod.InputMethodManager.focusIn(android.view.View)' on a null object reference
+at android.view.View.onAttachedToWindow(View.java:13420)
+... 19 more
+</failure>
+  </testcase>
+  <testcase name="testTheme" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.125" />
+  <testcase name="testWidth" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="1.61" />
+  <testcase name="testOnClickListener" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.076" />
+  <testcase name="testSetImage" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.025" />
+  <testcase name="testSetTitle" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.025" />
+  <testcase name="testIcon" classname="org.wikipedia.navtab.NavTabViewTest" time="0.026" />
+  <testcase name="testText" classname="org.wikipedia.navtab.NavTabViewTest" time="0.0" />
+  <testcase name="testLayoutDirection" classname="org.wikipedia.navtab.NavTabViewTest" time="0.1" />
+  <testcase name="testTheme" classname="org.wikipedia.navtab.NavTabViewTest" time="0.076" />
+  <testcase name="testWidth" classname="org.wikipedia.navtab.NavTabViewTest" time="0.201" />
+  <testcase name="testSelect" classname="org.wikipedia.navtab.NavTabViewTest" time="0.076" />
+  <testcase name="testCompare" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelKilometers" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelMeters" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.025" />
+  <testcase name="testGetDistanceLabelNull" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelSameLocation" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSort" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSortWithNullLocations" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testPagesWithoutImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="60.732" />
+  <testcase name="testPagesWithImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="63.073" />
+  <testcase name="testPagesWithImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="65.106" />
+  <testcase name="testPageFetchWithAmpersand" classname="org.wikipedia.page.PageLoadTest" time="2.61" />
+  <testcase name="testPagesRtlPortrait" classname="org.wikipedia.page.PageLoadTest" time="29.057" />
+  <testcase name="testPagesWithoutImagesLandscape" classname="org.wikipedia.page.PageLoadTest" time="59.757" />
+  <testcase name="testPageFetch" classname="org.wikipedia.page.PageLoadTest" time="1.709" />
+  <testcase name="testPagesRtlLandscape" classname="org.wikipedia.page.PageLoadTest" time="28.723" />
+  <testcase name="testNonClosedImgTag" classname="org.wikipedia.savedpages.ImageUrlMapTest" time="0.0" />
+  <testcase name="testUrlRewrite" classname="org.wikipedia.savedpages.ImageUrlMapTest" time="0.025" />
+  <testcase name="testDOMLoaded" classname="org.wikipedia.test.BridgeTests" time="0.326" />
+  <testcase name="testPingBackHandling" classname="org.wikipedia.test.BridgeTests" time="0.151" />
+  <testcase name="testCreateAccountInfoFetch" classname="org.wikipedia.test.CreateAccountTaskTest" time="1.279" />
+  <testcase name="testFetchCaptchaImage" classname="org.wikipedia.test.CreateAccountTaskTest" time="0.201" />
+  <testcase name="testAbuseFilterTriggerStopOnArbitraryErrorCode" classname="org.wikipedia.test.EditTaskTest" time="0.251">
+    <failure>java.lang.RuntimeException: ratelimited: You've exceeded your rate limit. Please wait some time and try again
+at org.wikipedia.ApiTask.onCatch(ApiTask.java:46)
+at org.wikipedia.concurrency.SaneAsyncTask.onPostExecute(SaneAsyncTask.java:72)
+at android.os.AsyncTask.finish(AsyncTask.java:636)
+at android.os.AsyncTask.access$500(AsyncTask.java:177)
+at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:653)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:135)
+at android.app.ActivityThread.main(ActivityThread.java:5468)
+at java.lang.reflect.Method.invoke(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:372)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:976)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:771)
+Caused by: ratelimited: You've exceeded your rate limit. Please wait some time and try again
+at org.mediawiki.api.json.ApiResult.assertSuccess(ApiResult.java:110)
+at org.mediawiki.api.json.ApiResult.asObject(ApiResult.java:81)
+at org.wikipedia.editing.EditTask.processResult(EditTask.java:58)
+at org.wikipedia.editing.EditTask.processResult(EditTask.java:15)
+at org.wikipedia.ApiTask.performTask(ApiTask.java:31)
+at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:57)
+at org.wikipedia.concurrency.SaneAsyncTask.doInBackground(SaneAsyncTask.java:16)
+at android.os.AsyncTask$2.call(AsyncTask.java:292)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+at java.lang.Thread.run(Thread.java:818)
+</failure>
+  </testcase>
+</testsuite>

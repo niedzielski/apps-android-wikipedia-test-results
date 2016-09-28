@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appropriate Thread Finish</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../../static/spoon.css" rel="stylesheet">
+        <script src="../../../static/jquery.min.js"></script>
+        <script src="../../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Test passed in 0 seconds on LGE LGL41C">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Appropriate Thread Finish</h1>
+                <p>Test passed in 0 seconds on LGE LGL41C</p>
+            </div>
+            <div class="row log">
+                <div class="span12">
+                    <table class="table table-striped table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Level</th>
+                                <th>Tag</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="level-info info">
+                                <td>09-28 10:55:49.651</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>started: testAppropriateThreadFinish(org.wikipedia.test.concurrency.AsyncTaskTest)</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>09-28 10:55:49.681</td>
+                                <td>info</td>
+                                <td>MonitoringInstrumentation</td>
+                                <td>Activities that are still in CREATED to STOPPED: 1</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:55:50.201</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_EXPLICIT freed 95K, 26% free 35461K/47536K, paused 12ms+21ms, total 289ms</td>
+                            </tr>
+                            <tr class="level-debug ">
+                                <td>09-28 10:55:50.411</td>
+                                <td>debug</td>
+                                <td>dalvikvm</td>
+                                <td>GC_EXPLICIT freed 17K, 26% free 35454K/47536K, paused 7ms+37ms, total 214ms</td>
+                            </tr>
+                            <tr class="level-info info">
+                                <td>09-28 10:55:50.411</td>
+                                <td>info</td>
+                                <td>TestRunner</td>
+                                <td>finished: testAppropriateThreadFinish(org.wikipedia.test.concurrency.AsyncTaskTest)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
