@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="24" failures="1" errors="0" skipped="0" time="0.0" timestamp="2016-10-13T17:35:14" hostname="localhost">
+  <properties />
+  <testcase name="testPreview" classname="org.wikipedia.editing.EditPreviewTaskTest" time="0.703" />
+  <testcase name="testSyntaxHighlight" classname="org.wikipedia.editing.richtext.SyntaxHighlighterTest" time="0.529" />
+  <testcase name="testLayoutDirection" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.402" />
+  <testcase name="testFocus" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.251" />
+  <testcase name="testTheme" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.176" />
+  <testcase name="testWidth" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="1.833" />
+  <testcase name="testOnClickListener" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.051" />
+  <testcase name="testSetImage" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.0" />
+  <testcase name="testSetTitle" classname="org.wikipedia.feed.view.CardLargeHeaderViewTest" time="0.0" />
+  <testcase name="testIcon" classname="org.wikipedia.navtab.NavTabViewTest" time="0.025" />
+  <testcase name="testText" classname="org.wikipedia.navtab.NavTabViewTest" time="0.0" />
+  <testcase name="testLayoutDirection" classname="org.wikipedia.navtab.NavTabViewTest" time="0.075" />
+  <testcase name="testTheme" classname="org.wikipedia.navtab.NavTabViewTest" time="0.076" />
+  <testcase name="testWidth" classname="org.wikipedia.navtab.NavTabViewTest" time="0.251" />
+  <testcase name="testSelect" classname="org.wikipedia.navtab.NavTabViewTest" time="0.101" />
+  <testcase name="testCompare" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelKilometers" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelMeters" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelNull" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testGetDistanceLabelSameLocation" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSort" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testSortWithNullLocations" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testAndroidTestCaseSetupProperly" classname="org.wikipedia.nearby.NearbyUnitTests" time="0.0" />
+  <testcase name="testPagesWithoutImagesPortrait" classname="org.wikipedia.page.PageLoadTest" time="24.367">
+    <failure>Test failed to run to completion. Reason: 'Test run failed to complete. Expected 75 tests, received 23'. Check device logcat for details</failure>
+  </testcase>
+</testsuite>
