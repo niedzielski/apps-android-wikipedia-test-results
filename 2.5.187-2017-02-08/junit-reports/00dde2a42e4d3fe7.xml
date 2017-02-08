@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="10" failures="1" errors="0" skipped="0" time="0.0" timestamp="2017-02-08T22:27:42" hostname="localhost">
+  <properties />
+  <testcase name="testSetOnShowPasswordListener" classname="android.support.design.widget.PasswordTextInputTest" time="0.076" />
+  <testcase name="testIsPasswordVisible" classname="android.support.design.widget.PasswordTextInputTest" time="0.0" />
+  <testcase name="testDOMLoaded" classname="org.wikipedia.bridge.CommunicationBridgeTest" time="0.427" />
+  <testcase name="testPingBackHandling" classname="org.wikipedia.bridge.CommunicationBridgeTest" time="0.05" />
+  <testcase name="testAppropriateThreadFinish" classname="org.wikipedia.concurrency.SaneAsyncTaskTest" time="0.0" />
+  <testcase name="testAppropriateThreadException" classname="org.wikipedia.concurrency.SaneAsyncTaskTest" time="0.0" />
+  <testcase name="testFinishHandling" classname="org.wikipedia.concurrency.SaneAsyncTaskTest" time="0.0" />
+  <testcase name="testExceptionHandling" classname="org.wikipedia.concurrency.SaneAsyncTaskTest" time="0.025" />
+  <testcase name="testLayoutDirection" classname="org.wikipedia.descriptions.DescriptionEditHelpViewTest" time="6.348" />
+  <testcase name="testFocus" classname="org.wikipedia.descriptions.DescriptionEditHelpViewTest" time="1.463">
+    <failure>Test failed to run to completion. Reason: 'Test run failed to complete. Expected 147 tests, received 9'. Check device logcat for details</failure>
+  </testcase>
+</testsuite>

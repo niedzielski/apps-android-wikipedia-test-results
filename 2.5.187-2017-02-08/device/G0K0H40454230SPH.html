@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amazon KFFOWI</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../static/spoon.css" rel="stylesheet">
+        <script src="../static/jquery.min.js"></script>
+        <script src="../static/bootstrap.min.js"></script>
+        <meta name="description" content="">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Amazon KFFOWI</h1>
+                <p>0 tests run at 2017-02-08 03:27 PM</p>
+                <p>Running Android 5.1.1 (API 22) with locale en-US</p>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <div class="alert alert-error stacktrace">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-139">No test results</h4>
+                        <div class="alert-error stacktrace-body collapse" id="stacktrace-139">
+                        </div>
+                    </div>
+                    <div class="alert alert-error stacktrace">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-140">com.android.ddmlib.AdbCommandRejectedException: device 'G0K0H40454230SPH' not found</h4>
+                        <div class="alert-error stacktrace-body collapse" id="stacktrace-140">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.ddmlib.AdbHelper.setDevice(AdbHelper.java:862)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:451)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:382)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:353)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.android.ddmlib.Device.executeShellCommand(Device.java:599)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.squareup.spoon.SpoonDeviceRunner.getExternalStoragePath(SpoonDeviceRunner.java:465)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.squareup.spoon.SpoonDeviceRunner.getScreenshotDirOnExternalStorage(SpoonDeviceRunner.java:459)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.squareup.spoon.SpoonDeviceRunner.pullDirectory(SpoonDeviceRunner.java:417)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.squareup.spoon.SpoonDeviceRunner.pullDeviceFiles(SpoonDeviceRunner.java:407)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.squareup.spoon.SpoonDeviceRunner.run(SpoonDeviceRunner.java:289)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at com.squareup.spoon.SpoonDeviceRunner.main(SpoonDeviceRunner.java:503)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('.icon, .thumbnail img').tooltip({
+                container: 'body'
+            });
+        </script>
+    </body>
+</html>

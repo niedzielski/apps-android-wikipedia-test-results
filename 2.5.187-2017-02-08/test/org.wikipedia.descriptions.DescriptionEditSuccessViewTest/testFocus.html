@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Focus</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="../../static/bootstrap.min.css" rel="stylesheet">
+        <link href="../../static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../../static/spoon.css" rel="stylesheet">
+        <script src="../../static/jquery.min.js"></script>
+        <script src="../../static/bootstrap.min.js"></script>
+        <meta name="description" content="Ran on 2 devices with 1 passing and 1 failing in an average of 0 seconds">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Focus</h1>
+                <p>Ran on 2 devices with 1 passing and 1 failing in an average of 0 seconds</p>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result pass">
+                        23-nexus-s
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/emulator-5558/org.wikipedia.descriptions.DescriptionEditSuccessViewTest/testFocus.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/emulator-5558.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="test-result fail">
+                        16-nexus-s
+                        <!-- Icons modified from Glyphish Free. http://glyphish.com -->
+                        <a href="../../logs/emulator-5554/org.wikipedia.descriptions.DescriptionEditSuccessViewTest/testFocus.html" title="View device log" class="pull-right icon">
+                            <img src="../../static/icon-log.png" alt="View device log">
+                        </a>
+                        <a href="../../device/emulator-5554.html" title="View only this device" class="pull-right icon">
+                            <img src="../../static/icon-devices.png" alt="View only this device">
+                        </a>
+                    </h2>
+                    <div class="alert alert-error stacktrace fail">
+                        <h4 data-toggle="collapse" data-target="#stacktrace-emulator-5554">org.junit.experimental.theories.internal.ParameterizedAssertionError: testFocus("LIGHT" <from THEMES[0]>)</h4>
+                        <div class="stacktrace-body collapse" id="stacktrace-emulator-5554">
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.reportParameterizedError(Theories.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor$1$1.evaluate(Theories.java:237)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithCompleteAssignment(Theories.java:218)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:204)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithIncompleteAssignment(Theories.java:212)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.runWithAssignment(Theories.java:202)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.experimental.theories.Theories$TheoryAnchor.evaluate(Theories.java:187)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:128)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.Suite.runChild(Suite.java:27)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)</div>
+                            <div class="stacktrace-line">&nbsp;&nbsp;&nbsp;&nbsp;at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)</div>
+                            <div class="stacktrace-line">Caused by: android.content.res.Resources$NotFoundException: File res/drawable/ic_mode_edit_white_24dp.xml from drawable resource ID #0x7f0200a5</div>
+                            <div class="stacktrace-line">Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('.icon, .thumbnail img').tooltip({
+                container: 'body'
+            });
+        </script>
+    </body>
+</html>
