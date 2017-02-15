@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.wikipedia.test" tests="22" failures="1" errors="0" skipped="0" time="0.0" timestamp="2017-02-15T21:12:59" hostname="localhost">
+  <properties />
+  <testcase name="testSetOnShowPasswordListener" classname="android.support.design.widget.PasswordTextInputTest" time="0.076" />
+  <testcase name="testIsPasswordVisible" classname="android.support.design.widget.PasswordTextInputTest" time="0.0" />
+  <testcase name="testDOMLoaded" classname="org.wikipedia.bridge.CommunicationBridgeTest" time="0.803" />
+  <testcase name="testPingBackHandling" classname="org.wikipedia.bridge.CommunicationBridgeTest" time="0.051" />
+  <testcase name="testAppropriateThreadFinish" classname="org.wikipedia.concurrency.SaneAsyncTaskTest" time="0.025" />
+  <testcase name="testAppropriateThreadException" classname="org.wikipedia.concurrency.SaneAsyncTaskTest" time="0.0" />
+  <testcase name="testFinishHandling" classname="org.wikipedia.concurrency.SaneAsyncTaskTest" time="0.0" />
+  <testcase name="testExceptionHandling" classname="org.wikipedia.concurrency.SaneAsyncTaskTest" time="0.025" />
+  <testcase name="testLayoutDirection" classname="org.wikipedia.descriptions.DescriptionEditHelpViewTest" time="1.506" />
+  <testcase name="testFocus" classname="org.wikipedia.descriptions.DescriptionEditHelpViewTest" time="1.38" />
+  <testcase name="testTheme" classname="org.wikipedia.descriptions.DescriptionEditHelpViewTest" time="1.431" />
+  <testcase name="testWidth" classname="org.wikipedia.descriptions.DescriptionEditHelpViewTest" time="3.287" />
+  <testcase name="testSetCallback" classname="org.wikipedia.descriptions.DescriptionEditHelpViewTest" time="0.025" />
+  <testcase name="testLayoutDirection" classname="org.wikipedia.descriptions.DescriptionEditSuccessViewTest" time="1.079" />
+  <testcase name="testFocus" classname="org.wikipedia.descriptions.DescriptionEditSuccessViewTest" time="1.129" />
+  <testcase name="testTheme" classname="org.wikipedia.descriptions.DescriptionEditSuccessViewTest" time="1.157" />
+  <testcase name="testWidth" classname="org.wikipedia.descriptions.DescriptionEditSuccessViewTest" time="2.686" />
+  <testcase name="testSetCallback" classname="org.wikipedia.descriptions.DescriptionEditSuccessViewTest" time="0.025" />
+  <testcase name="testLayoutDirection" classname="org.wikipedia.descriptions.DescriptionEditTutorialPageViewTest" time="2.786" />
+  <testcase name="testFocus" classname="org.wikipedia.descriptions.DescriptionEditTutorialPageViewTest" time="2.409" />
+  <testcase name="testTheme" classname="org.wikipedia.descriptions.DescriptionEditTutorialPageViewTest" time="2.712" />
+  <testcase name="testWidth" classname="org.wikipedia.descriptions.DescriptionEditTutorialPageViewTest" time="1.163">
+    <failure>Test failed to run to completion. Reason: 'Test run failed to complete. Expected 147 tests, received 21'. Check device logcat for details</failure>
+  </testcase>
+</testsuite>
